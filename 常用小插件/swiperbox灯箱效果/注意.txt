@@ -1,4 +1,0 @@
-根据图文件放置位置 修改icons icons.svg loader.gif 的swipbox 的css文件目录
-
-
-修改 $(".swipebox").swipebox(); 类名达到同页面使用多个灯箱
