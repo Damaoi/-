@@ -1,0 +1,417 @@
+.box{
+    max-width: 7.5rem;
+    background-color: #eee;
+    margin: 0 auto;
+}
+.box a:hover{
+    text-decoration: none;
+}
+/*头部开始*/
+.topone{
+    display: flex;
+    height: .95rem;
+    justify-content: center;
+    margin-bottom: .1rem;
+}
+.search{
+    width: 7.02rem;
+    height: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-left{
+    height: .8rem;
+    display: flex;
+    align-items: center;
+    color: #18a42d;
+    font-size: .36rem;
+}
+.search-left img{
+    width: .83rem;
+    height: .42rem;
+    margin-top: .12rem;
+}
+.search-right{
+    display: flex;
+    align-items: center;
+}
+.search-right a{
+    display: inline-block;
+    width: .9rem;
+    height: .6rem;
+    background-color: #18a42d;
+    border: .03rem solid #18a42d;
+    border-left: none;
+    border-radius: 0 .3rem .3rem 0;
+}
+#fangdajing{
+    width: .35rem;
+    height: .35rem;
+    /*padding-top: .14rem;*/
+    padding-left: .22rem;
+    margin-top: .12rem;
+}
+.xiaoa{
+    margin-top: .12rem;
+}
+.search-right input{
+    width: 4.8rem;
+    height: .6rem;
+    border-radius: .3rem 0 0 .3rem;
+    border: none;
+    border: .03rem solid #18a42d;
+    outline:none;
+    padding-left: .2rem;
+    margin-top: .12rem;
+}
+/*头部结束*/
+
+/*参展流程开始*/
+.fenlei{
+    height: .8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: -0.11rem;
+}
+.fenlei p{
+    color: #333333;
+    font-size: .3rem;
+}
+.fenlei span{
+    display: flex;
+    height: .8rem;
+    align-items: center;
+    color: #18a42d;
+    font-size: .36rem;
+    padding-left: .2rem;
+    font-weight: bold;
+    border-left: .1rem solid #18a42d;
+}
+.fenlei-right{
+    display: flex;
+    align-items: center;
+}
+.fenlei-right a{
+    width: 1.1rem;
+    height: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: .04rem solid green;
+    background-color: #18a42d;
+    border-radius: .3rem;
+    margin-right: .3rem;
+    border: none;
+    text-decoration: none;
+}
+.fenlei-right a:hover{
+    text-decoration: none;
+}
+.fenlei-right img{
+    width: .15rem;
+    height: .25rem;
+    padding-left: .1rem;
+}
+.canzhanliucheng a:hover{
+    text-decoration: none;
+}
+/*参展流程结束*/
+.fenlei-bottom{
+    overflow: hidden;
+    background-color: #fff;
+}
+.page-first{
+    margin-top: .2rem;
+}
+.page-first ul li{
+    display: flex;
+    justify-content: space-around;
+}
+.page-first ul li a{
+    width: 2.2rem;
+    height: 1.04rem;
+    display: block;
+    text-decoration: none;
+    background-size: 100%;
+    padding-left: .2rem;
+    padding-top: .1rem;
+}
+.duixiang1{
+    font-size: .34rem;
+    color: #eee;
+    /*font-weight: bold;*/
+}
+.duixiang2{
+    color: #eee;
+    /*font-weight: bold;*/
+    font-size: .17rem;
+}
+.w1{
+    background: url("../images/w1.png") no-repeat;
+}
+.w2{
+    background: url("../images/w2.png") no-repeat;
+}
+.w3{
+    background: url("../images/w3.png") no-repeat;
+}
+.w4{
+    background: url("../images/w4.png") no-repeat;
+}
+.w5{
+    background: url("../images/w5.png") no-repeat;
+}
+.w6{
+    background: url("../images/w6.png") no-repeat;
+}
+.oo{
+    margin-left: 3.2rem;
+}
+
+/*展厅导航开始*/
+.tuijianzhanwei{
+    background-color: #fff;
+}
+.list-one,.list-two,.list-three{
+    width: 7rem;
+    height: 3.3rem;
+    margin: .2rem auto;
+}
+.list-one{
+    position: relative;
+}
+.list-one img{
+    width: 7.02rem;
+    height: 3.3rem;
+}
+.list-two{
+    position: relative;
+}
+.list-two img{
+    width: 7.02rem;
+    height: 3.3rem;
+}
+.list-three{
+    position: relative;
+}
+.list-three img{
+    width: 7.02rem;
+    height: 3.3rem;
+}
+.mengban{
+    height: .97rem;
+    width: 7rem;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pp1{
+    margin-top: .12rem;
+    margin-left: .2rem;
+    color: #ffffff;
+    font-size: .3rem;
+}
+.pp2{
+    margin-left: .2rem;
+    color: #9e9e9e;
+    font-size: .24rem;
+}
+.eyeye{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: .1rem;
+    right: .1rem;
+}
+.eyeye img{
+    width: .30rem;
+    height: .17rem;
+}
+.eyeye p{
+    color: #9e9e9e;
+}
+.zhengzhou{
+    display: flex;
+    padding-top: .10rem;
+    padding-right: .10rem;
+    position: relative;
+}
+.zhengzhou p{
+    font-size: .22rem;
+    position: absolute;
+    color: #fff;
+    right: .1rem;
+    top: -3.3rem;
+}
+/*展厅导航结束*/
+
+/*最新展位开始*/
+.zuixinzhanwei{
+    background-color: #fff;
+    margin-bottom: -10px;
+}
+.neirong{
+    width: 7.02rem;
+    height: 17.8rem;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.neirong a:hover{
+    text-decoration: none;
+}
+.zhanwei-one,.zhanwei-two,.zhanwei-three,.zhanwei-four{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .2rem;
+}
+.one-left-top{
+    width: 3.41rem;
+    height: 3.78rem;
+    position: relative;
+}
+.yi{
+    background: url("../images/yi.png");
+    background-size: 3.41rem;
+}
+.er{
+    background: url("../images/er.png") no-repeat;
+    background-size: 3.41rem 3.41rem;
+}
+.san{
+    background: url("../images/san.png") no-repeat;
+    background-size: 3.41rem 3.41rem;
+}
+.si{
+    background: url("../images/si.png") no-repeat;
+    background-size: 3.41rem 3.41rem;
+}
+.wu{
+    background: url("../images/wu.png") no-repeat;
+    background-size: 3.41rem 3.41rem;
+}
+.liu{
+    background: url("../images/liu.png") no-repeat;
+    background-size: 3.41rem 3.41rem;
+}
+.qi{
+    background: url("../images/qi.png") no-repeat;
+    background-size: 3.41rem 3.41rem;
+}
+.ba{
+    background: url("../images/ba.png") no-repeat;
+    background-size: 3.41rem 3.41rem;
+}
+.onemoban{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 3.41rem;
+    height: .4rem;
+    background-color: rgba(0,0,0,0.9);
+}
+.onemoban p{
+    line-height: .4rem;
+    color: #7b766f;
+    margin-left: .1rem;
+}
+.one-left-bottom p{
+    color: #494949;
+    font-size: .26rem;
+    margin-top: .1rem;
+}
+.eee{
+    bottom: 0;
+}
+/*最新展位结束*/
+
+/*滑动开始*/
+.huandong{
+    font-size: .24rem;
+}
+.huadong a{
+    height: .7rem;
+    display: flex;
+    color: #9e9e9e;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: .2rem;
+}
+.huadong a:hover{
+    text-decoration: none;
+}
+.huadong img{
+    width: .24rem;
+    height: .24rem;
+}
+/*滑动结束*/
+
+/*底部导航开始*/
+.foot{
+    display: flex;
+    width: 7.5rem;
+    margin: 0 auto;
+    height: .9rem;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    border-top: .001rem solid #a9a9a9;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+.icon1{
+    display: block;
+    background: url("../images/home.png") no-repeat;
+}
+.icon2{
+    background: url("../images/chanpinicon.png") no-repeat;
+}
+.icon3{
+    background: url("../images/new.png") no-repeat;
+}
+.icon4{
+    background: url("../images/my.png") no-repeat;
+}
+/*首页变亮图标*/
+.icon11{
+    background: url("../images/qiyeicon.png") no-repeat;
+}
+.icon21{
+    background: url("../images/chanpin.png") no-repeat;
+}
+.icon31{
+    background: url("../images/xinwenicon.png") no-repeat;
+}
+.icon41{
+    background: url("../images/canzhanicon.png") no-repeat;
+}
+/*首页变亮图标*/
+.foot a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foot i{
+    width: .38rem;
+    height: .38rem;
+    background-size: .38rem .38rem;
+}
+.foot span{
+    color: #333333;
+    font-size: .24rem;
+    padding-top: .02rem;
+}
+.foot a:hover{
+    text-decoration: none;
+}
+/*底部导航结束*/

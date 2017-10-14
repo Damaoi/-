@@ -1,0 +1,348 @@
+.box{
+    max-width: 7.5rem;
+    background-color: #eee;
+    margin: 0 auto;
+    height: 20rem;
+}
+.box a:hover{
+    text-decoration: none;
+}
+/*头部开始*/
+.topone{
+    /*background-color: black;*/
+    display: flex;
+    height: .95rem;
+    justify-content: center;
+    margin-bottom: .1rem;
+}
+.search{
+    width: 7.02rem;
+    height: .8rem;
+    /*background-color: #b3d4fc;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-left{
+    height: .8rem;
+    display: flex;
+    align-items: center;
+    color: #18a42d;
+    font-size: .36rem;
+}
+.search-left img{
+    width: .83rem;
+    height: .42rem;
+    margin-top: .12rem;
+}
+.search-right{
+    display: flex;
+    align-items: center;
+}
+.search-right a{
+    display: inline-block;
+    width: .9rem;
+    height: .6rem;
+    background-color: #18a42d;
+    border: .05rem solid #18a42d;
+    border-left: none;
+    border-radius: 0 .4rem .4rem 0;
+}
+#fangdajing{
+    width: .35rem;
+    height: .35rem;
+    /*padding-top: .14rem;*/
+    padding-left: .22rem;
+    margin-top: .12rem;
+}
+.xiaoa{
+    margin-top: .12rem;
+}
+.search-right input{
+    width: 4.8rem;
+    height: .6rem;
+    border-radius: .4rem 0 0 .4rem;
+    border: none;
+    border: .05rem solid #18a42d;
+    outline:none;
+    padding-left: .2rem;
+    margin-top: .12rem;
+}
+/*头部结束*/
+
+/*列表选项开始*/
+    .listchoice{
+    height: .8rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    }
+    .listchoice a{
+    display: block;
+    color: #4a4a4a;
+    font-size: .24rem;
+    }
+    .listchoice a:hover{
+    text-decoration: none;
+    }
+    .listchoice-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 5.93rem;
+    height: .8rem;
+    /*background-color: yellow;*/
+    }
+    .listchoice-right{
+    border-left: .001rem #cacaca solid;
+    width: 1.57rem;
+    height: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: blue;*/
+    }
+    .listchoice-right img{
+    padding-left: .1rem;
+    width: .29rem;
+    height: .33rem;
+    }
+    .listchoice-right a{
+    width: .92rem;
+    height: .8rem;
+    display: flex;
+    align-items: center;
+    }
+/*列表选项结束*/
+
+/*参展流程开始*/
+.fenlei{
+    height: .8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.fenlei span{
+    display: flex;
+    height: .8rem;
+    align-items: center;
+    color: #18a42d;
+    font-size: .36rem;
+    padding-left: .2rem;
+    font-weight: bold;
+    border-left: .1rem solid #18a42d;
+}
+.fenlei-right{
+    display: flex;
+    align-items: center;
+}
+.fenlei-right a{
+    width: 1.1rem;
+    height: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: .04rem solid green;
+    background-color: #18a42d;
+    border-radius: .3rem;
+    margin-right: .3rem;
+    border: none;
+    text-decoration: none;
+}
+.fenlei-right a:hover{
+    text-decoration: none;
+}
+.fenlei-right img{
+    width: .15rem;
+    height: .25rem;
+    padding-left: .1rem;
+}
+.canzhanliucheng{
+    height: 2.14rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.canzhanliucheng img{
+    width: .8rem;
+    height: .8rem;
+}
+.canzhanliucheng p{
+    color: #333333;
+}
+.canzhanliucheng a:hover{
+    text-decoration: none;
+}
+.canzhanliuchengxian{
+    width: 4.73rem;
+    display: block;
+    border-bottom: .003rem dotted #d0d0d0;
+    position: relative;
+    bottom: 1.25rem;
+    margin: 0 auto;
+}
+/*参展流程结束*/
+.fenlei-bottom{
+    overflow: hidden;
+    background-color: #fff;
+}
+.page-first{
+    margin-top: .2rem;
+}
+.page-first ul li{
+    display: flex;
+    justify-content: space-around;
+
+}
+.page-first ul li a{
+    width: 2.2rem;
+    height: 1.04rem;
+    display: block;
+    text-decoration: none;
+    background-size: 100%;
+    padding-left: .2rem;
+    padding-top: .2rem;
+}
+.page-first ul li a p{
+    color: #eee;
+    font-weight: bold;
+}
+.w1{
+    background: url("../images/w1.png") no-repeat;
+}
+.w2{
+    background: url("../images/w2.png") no-repeat;
+}
+.w3{
+    background: url("../images/w3.png") no-repeat;
+}
+.w4{
+    background: url("../images/w4.png") no-repeat;
+}
+.w5{
+    background: url("../images/w5.png") no-repeat;
+}
+.w6{
+    background: url("../images/w6.png") no-repeat;
+}
+.oo{
+    margin-left: 3.2rem;
+}
+
+/*展厅导航开始*/
+.eyeye{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: .1rem;
+    right: .1rem;
+}
+.eyeye img{
+    width: .30rem;
+    height: .17rem;
+}
+.eyeye p{
+    color: #9e9e9e;
+}
+.zhengzhou{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: .10rem;
+    padding-right: .10rem;
+}
+.zhengzhou p{
+    font-size: .22rem;
+    color: #fff;
+}
+/*展厅导航结束*/
+
+/*最新展位开始*/
+/*最新展位结束*/
+
+/*滑动开始*/
+.huandong{
+    font-size: .24rem;
+}
+.huadong a{
+    height: .7rem;
+    display: flex;
+    color: #9e9e9e;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: .2rem;
+}
+.huadong a:hover{
+    text-decoration: none;
+}
+.huadong img{
+    width: .24rem;
+    height: .24rem;
+}
+/*滑动结束*/
+
+/*底部导航开始*/
+.foot{
+    width: 7.5rem;
+    margin: 0 auto;
+    display: flex;
+    height: .9rem;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: .001rem solid #a9a9a9;
+    z-index: 10000;
+}
+.icon1{
+    display: block;
+    background: url("../images/home.png") no-repeat;
+}
+.icon2{
+    background: url("../images/chanpinicon.png") no-repeat;
+}
+.icon3{
+    background: url("../images/new.png") no-repeat;
+}
+.icon4{
+    background: url("../images/my.png") no-repeat;
+}
+/*首页变亮图标*/
+.icon11{
+    background: url("../images/qiyeicon.png") no-repeat;
+}
+.icon21{
+    background: url("../images/chanpin.png") no-repeat;
+}
+.icon31{
+    background: url("../images/xinwenicon.png") no-repeat;
+}
+.icon41{
+    background: url("../images/canzhanicon.png") no-repeat;
+}
+.foot a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foot i{
+    width: .38rem;
+    height: .38rem;
+    background-size: .38rem .38rem;
+}
+.foot span{
+    color: #333333;
+    font-size: .24rem;
+    padding-top: .02rem;
+}
+.foot a:hover{
+    text-decoration: none;
+}
+/*底部导航结束*/
