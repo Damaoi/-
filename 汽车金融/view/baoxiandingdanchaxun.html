@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="../css/cheliangbaoxiandingdan.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="../css/public-1.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <script src="../js/base.js"></script>
+    <title>车辆保险订单查询</title>
+    <style>
+        .cx-bb{
+           border-bottom: .01rem solid #eeeeee;
+        }
+        #show_bm{
+            display: block;
+        }
+    </style>
+</head>
+<body style="background-color: #f5f4f9">
+    <div class="box">
+
+        <!--车辆保险订单头部-->
+        <div class="clbx-tou">
+            <div class="clbxt-center">
+                <img src="../images/baisejiantou.png" alt="" class="ct-img1"/>
+                <p>车辆保险订单</p>
+                <img src="../images/search.png" alt="" class="ct-img2"/>
+            </div>
+        </div>
+        <!-- 车辆保险订单结束-->
+
+
+        <!--车险tab切换-->
+        <div class="cx-tab">
+            <div class="cx-center" id="bt">
+                <p class="cx-bb"><i>车险</i></p>
+                <p id><i>自驾游险</i></p>
+                <p><i>旅游险</i></p>
+            </div>
+        </div>
+        <div class="cx-xila">
+            <p id="show"><i>订单状态<img src="../images/xiangxiajiantou.png" alt=""/></i></p>
+            <p id="show1"><i>时间筛选<img src="../images/xiangxiajiantou.png" alt=""/></i></p>
+        </div>
+        <div class="z-tab" id="bm">
+            <ul>
+                <li id="show_bm">
+                    <div class="xiala-list">
+                        <div class="xll-center">
+                            <p>
+                                <a href="javascript:;">
+                                    1不限
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    投保进行中
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    审核未通过
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    待支付
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    支付完成
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    已失效
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li style="display: none">
+                    <div class="xiala-list">
+                        <div class="xll-center">
+                            <p>
+                                <a href="javascript:;">
+                                    2不限
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    投保进行中
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    审核未通过
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    待支付
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    支付完成
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    已失效
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li style="display: none">
+                    <div class="xiala-list">
+                        <div class="xll-center">
+                            <p>
+                                <a href="javascript:;">
+                                    3不限
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    投保进行中
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    审核未通过
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    待支付
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    支付完成
+                                </a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">
+                                    已失效
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--车险tab切换结束-->
+    </div>
+
+
+    <script>
+        window.onload = function(){
+            var ps = document.getElementById('bt').getElementsByTagName('p');
+            var lis = document.getElementById('bm').getElementsByTagName('li');
+            var show = document.getElementById("show");
+            var show1 = document.getElementById("show1")
+            console.log(lis);
+            for(var i= 0; i<ps.length; i++){
+                ps[i].index = i;
+                ps[i].onclick = function(){
+                    for(var i = 0; i<lis.length; i++){
+                        ps[i].className = "";
+                        lis[i].style.display = "none";
+                    }
+                    this.className = "cx-bb"
+                    lis[this.index].style.display = "block";
+                }
+            }
+            show.onclick = function(){
+                if(lis[0].style.display = "block"){
+                    lis[0].style.display = "none";
+                }else if(lis[0].style.display = "none"){
+                    lis[0].style.display = "block";
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

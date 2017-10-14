@@ -1,0 +1,129 @@
+.box{
+  max-width: 7.5rem;
+  background-color: #eee;
+  padding-bottom: 1.1rem;
+}
+
+
+
+
+.chlist{
+  width: 7.5rem;
+  height: 1.3rem;
+  background-color: #fff;
+  .chelist-center{
+    width: 7.1rem;
+    height: 1.3rem;
+    margin: 0 auto;
+    a{
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      width: 7.1rem;
+      height: 1.3rem;
+      i{
+        display: inline-block;
+        width: .86rem;
+        //height: .45rem;
+        img{
+          width: 100%;
+        }
+      }
+      p{
+        color: #363636;
+        font-size: .26rem;
+        margin-left: .42rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.pp-list-top{
+  width: 7.5rem;
+  height: .4rem;
+  background-color: #f5f4f9;
+  p{
+    width: 7.1rem;
+    margin: 0 auto;
+    line-height: .4rem;
+    color: #474747;
+    font-size: .26rem;
+  }
+}
+
+
+.pp-list{
+  width: 7.5rem;
+  background-color: #eee;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li{
+      width: 3.72rem;
+      height: 5.78rem;
+      background-color: #fff;
+      margin-bottom: .07rem;
+      border-radius: .1rem;
+      a{
+        width: 3.72rem;
+        height: 3.9rem;
+        i{
+          display: inline-block;
+          width: 3.72rem;
+          height: 3.9rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width: 100%;
+          }
+        }
+        p{
+          span{
+
+          }
+        }
+        .pp-p1{
+          display: inline-block;
+          color: #353535;
+          font-size: .3rem;
+          font-weight: bold;
+          margin-bottom: .2rem;
+        }
+        .pp-p2{
+          display: inline-block;
+          font-size: .22rem;
+          color: #aeaeae;
+          margin-bottom: .17rem;
+        }
+        .pp-p3{
+          border-bottom: .01rem solid #eeeeee;
+          margin-bottom: .1rem;
+        }
+        .pp-p4{
+          display: inline-block;
+          font-size: .22rem;
+          color: #aeaeae;
+          span{
+            font-size: .34rem;
+            color: #e63b40;
+            font-weight: bold;
+          }
+        }
+        div{
+          width: 3.41rem;
+          height: 1.56rem;
+          margin: 0 auto;
+
+        }
+      }
+    }
+  }
+}

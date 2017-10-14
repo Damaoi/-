@@ -1,0 +1,184 @@
+$bc-1:#eee;
+$bc-2:#fff;
+$width:7.5rem;
+$center:7.1rem;
+.box{
+  max-width: 7.5rem;
+  background-color: #eee;
+  overflow: hidden;
+  height: 100%;
+}
+//头部大图开始
+.t-img{
+  position: relative;
+  margin-bottom: .3rem;
+  p{
+    position: absolute;
+    top: .2rem;
+    width: 7.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: .36rem;
+  }
+  img{
+    width: 7.5rem;
+    height: 5.21rem;
+  }
+}
+//头部大图结束
+
+
+//申请列表开始
+.sq-list{
+  width: $width;
+  background-color: $bc-1;
+  ul{
+    width: $width;
+    li{
+      height: .88rem;
+      line-height: .88rem;
+      background-color: #fff;
+      margin-bottom: .06rem;
+      a{
+        width: $center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .sq-p1{
+          font-size: .30rem;
+          color: #4f4f4f;
+        }
+        .sq-p2{
+          color: #ababab;
+          font-size: .28rem;
+        }
+        input{
+          width: 1.9rem;
+          padding-right: .25rem;
+        }
+        input::-webkit-input-placeholder {
+          text-align: right;
+        }
+        button{
+          width: 2.84rem;
+          color: #eee;
+          background-color: #223c8b;
+          font-size: .28rem;
+        }
+        img{
+          width: .14rem;
+          height: .24rem;
+        }
+      }
+    }
+  }
+}
+//申请列表结束
+
+
+//立即申请开始
+.btn{
+  width: $width;
+  height: .88rem;
+  background-color: #223c8b;
+  font-size: .32rem;
+  color: #fff;
+  margin-top: 0.24rem;
+}
+//立即申请结束
+
+
+//列表名开始
+.ln{
+  width: 7.5rem;
+  height: .88rem;
+  position: relative;
+  i{
+    display: inline-block;
+    width: 3.2rem;
+    height: .44rem;
+    margin-left: 2.15rem;
+    border-bottom: .01rem solid #7d7d7d;
+  }
+  span{
+    width: 1.85rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: .22rem;
+    left: 2.825rem;
+    background-color: #eee;
+    color: #353535;
+    font-size: .3rem;
+  }
+  img{
+    width: .39rem;
+    height: .34rem;
+  }
+}
+//列表名结束
+
+
+
+//车贷流程开始
+.cdlc{
+  width: $width;
+  height: 1.82rem;
+  background-color: #fff;
+  .cdlc-center{
+    width: $center;
+    background-color: #fff;
+    margin: 0 auto;
+    ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+          width: .6rem;
+          height: .6rem;
+          margin-top: .35rem;
+        }
+        p{
+          margin-top: .2rem;
+          color: #3a3a3a;
+          font-size: .3rem;
+        }
+      }
+    }
+  }
+}
+//车贷流程结束
+
+
+//底线开始
+.foot-line{
+  width: 7.5rem;
+  height: .88rem;
+  position: relative;
+  i{
+    display: inline-block;
+    width: 7.1rem;
+    height: .44rem;
+    margin-left: .2rem;
+    border-bottom: .01rem solid #dcdcdc;
+  }
+  span{
+    width: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: .22rem;
+    left: 2.5rem;
+    background-color: #eee;
+    color: #353535;
+    font-size: .3rem;
+  }
+}
+
+//底线结束

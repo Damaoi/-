@@ -1,0 +1,30 @@
+.box{
+    max-width: 7.5rem;
+    overflow: hidden;
+}
+.top{
+    /*width: 7.2rem;*/
+    margin: 0 auto;
+}
+.top ul{
+    background-color: #223c8b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top ul li{
+    display: flex;
+    align-items: center;
+}
+#see{
+    font-size: .36rem;
+    color: #ffffff;
+}
+#dingwei{
+    width: .3rem;
+    height: .34rem;
+}
+.top img{
+    width: .2rem;
+    height: .35rem;
+}

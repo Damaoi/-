@@ -1,0 +1,257 @@
+.box{
+  max-width: 7.5rem;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+
+
+.clxx{
+  width: 7.5rem;
+  background-color: #fff;
+  a{
+    width: 7.1rem;
+    height: 2rem;
+  }
+  .clxx-center a{
+    width: 7.1rem;
+    height: 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .clxxc-l{
+      width: 1.6rem;
+      height: 1.6rem;
+      img{
+        width: 1.6rem;
+        height: 1.6rem;
+        vertical-align: middle;
+        border-radius: .1rem;
+      }
+    }
+    .cxllx-c{
+      width: 4.9rem;
+      height: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .cxll-p1{
+        color: #363636;
+        font-size: .32rem;
+      }
+      .cxll-p2{
+        font-size: .26rem;
+        color: #848484;
+        margin-top: .2rem;
+      }
+    }
+    .clxxc-r{
+      img{
+        width: .14rem;
+        height: .24rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+.clxq {
+  width: 7.5rem;
+  height: 2.3rem;
+  background-color: #fff;
+  margin-top: .2rem;
+  .clxq-center {
+    width: 7.1rem;
+    margin: 0 auto;
+    height: 2.3rem;
+    .clxqc-t a {
+      width: 7.1rem;
+      height: .7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: .01rem solid #f2f2f2;
+      .xq-p1 {
+        color: #5e5e5e;
+        font-size: .32rem;
+      }
+      .xq-p2 {
+        color: #848484;
+        font-size: .26rem;
+        display: flex;
+        align-items: center;
+        img{
+          width: .14rem;
+          height: .24rem;
+          margin-left: .23rem;
+        }
+      }
+    }
+  }
+  .clxqc-b{
+    height: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      font-size: .26rem;
+      color: #848484;
+      span{
+        color: #e05234;
+        font-size: .36rem;
+      }
+    }
+  }
+}
+
+
+
+
+.dkqx{
+  width: 7.5rem;
+  background-color: #fff;
+  margin-top: .2rem;
+  .dkqx-center{
+    width: 7.1rem;
+    height: .88rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .qx-p1{
+      color: #5e5e5e;
+      font-size: .32rem;
+    }
+    .qx-p2{
+      color: #848484;
+      font-size: .26rem;
+      display: flex;
+      align-items: center;
+      img{
+        width: .14rem;
+        height: .24rem;
+        margin-left: .23rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+.jrcp{
+  margin-top: .2rem;
+  background-color: #fff;
+  width: 7.5rem;
+  border-bottom: .01rem solid #f5f4f9;
+  .jrcp-top{
+    width: 5.84rem;
+    height: .88rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      color: #848484;
+      font-size: .26rem;
+    }
+    .mrys{
+      color: #223c8b;
+    }
+  }
+}
+.jrcp-bottom{
+  width: 7.5rem;
+  //height: 2.8rem;
+  background-color: #fff;
+  ul{
+    li{
+      a{
+        display: inline-block;
+        width: 7.5rem;
+        height: 1.4rem;
+        border-bottom: .01rem solid #f5f4f9;
+        .uld{
+          width: 7.1rem;
+          height: 1.4rem;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .uld-l{
+            width: .58rem;
+            i{
+              display: block;
+              width: .2rem;
+              height: .2rem;
+              border-radius: 50%;
+              border: .01rem solid #dcdcdc;
+            }
+          }
+          .uld-c{
+            width: 4.57rem;
+            .uld-p1{
+              color: #525252;
+              font-size: .28rem;
+              font-weight: bold;
+              margin-bottom: .1rem;
+            }
+            .uld-p2{
+              display: flex;
+              justify-content: space-between;
+              color: #bbbbbb;
+              font-size: .24rem;
+              margin-top: .1rem;
+              span{
+                color: #e36651;
+              }
+            }
+          }
+          .uld-r{
+            width: 1.94rem;
+            display: flex;
+            justify-content: flex-end;
+            img{
+              width: .14rem;
+              height: .24rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.choice-btn{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 7.5rem;
+  display: flex;
+  .cb-btn1{
+    width: 4.92rem;
+    height: .98rem;
+    background-color: #525252;
+    color: #fff;
+    font-size: .28rem;
+  }
+  .cb-btn2{
+    width: 2.58rem;
+    height: .98rem;
+    background-color: #223c8b;
+    color: #fff;
+    font-size: .28rem;
+  }
+}
+

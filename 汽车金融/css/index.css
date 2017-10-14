@@ -1,0 +1,225 @@
+.box{
+    max-width: 7.5rem;
+    overflow: hidden;
+    background-color: #eee;
+    position: relative;
+}
+/*轮播 ＋ 上导航结束开始*/
+.lunbo{
+    width: 7.5rem;
+}
+.lunbo img{
+    width: 100%;
+    cursor: pointer;
+}
+.icon-top{
+    width: 7.5rem;
+    height: 2.38rem;
+    position: absolute;
+    top: .25rem;
+    z-index: 10;
+}
+.ict-nh{
+    width: 7.09rem;
+    height: 2.38rem;
+    margin: 0 auto;
+}
+.nh-top{
+    width: 7.09rem;
+    height: .39rem;
+    display: flex;
+}
+.nh-center{
+    width: 7.09rem;
+    height: .86rem;
+}
+.nh-foot{
+    width: 7.09rem;
+    height: 1.13rem;
+}
+.nh-foot img{
+    width: .6rem;
+    height: .52rem;
+    margin-bottom: .25rem;
+}
+.nh-foot ul{
+    display: flex;
+    justify-content: space-between;
+}
+.nh-foot ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-size: .3rem;
+}
+.nht-left{
+    width: 1.05rem;
+    height: .39rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nht-left a{
+    color: #ffffff;
+    font-size: .32rem;
+}
+.nht-left img{
+    width: .3rem;
+    height: .34rem;
+}
+.nht-center{
+    width: 4.87rem;
+    height: .39rem;
+}
+.nht-right{
+    width: 1.17rem;
+    height: .39rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nht-right img{
+    width: .39rem;
+    height: .39rem;
+}
+/*轮播结束 ＋ 上导航结束*/
+
+
+/*列表名开始*/
+.ln{
+    width: 7.5rem;
+    height: .88rem;
+    position: relative;
+}
+.ln i{
+    display: inline-block;
+    width: 3.2rem;
+    height: .44rem;
+    margin-left: 2.15rem;
+    border-bottom: .01rem solid #7d7d7d;
+}
+.ln span{
+    width: 1.85rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: .22rem;
+    left: 2.825rem;
+    background-color: #eee;
+    color: #353535;
+    font-size: .3rem;
+
+}
+.ln img{
+    width: .39rem;
+    height: .34rem;
+}
+/*列表名结束*/
+
+
+/*车列表开始*/
+.cl{
+    width: 7.5rem;
+    height: 3.6rem;
+    background-color: #fff;
+}
+.cl ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cl ul li a{
+    width: 1.855rem;
+    height: 1.8rem;
+    color: #656565;
+    font-size: .26rem;
+}
+.cl ul li{
+    width: 1.855rem;
+    height: 1.8rem;
+    border-bottom: .01rem solid #e5e5e5;
+    border-right: .01rem solid #e5e5e5;
+}
+.cl ul li a img{
+    width: 1.855rem;
+    height: 1.8rem;
+}
+
+/*车列表结束*/
+
+
+
+
+/*热门车贷开始*/
+.cd{
+    display: flex;
+    justify-content: space-between;
+    width: 7.5rem;
+    height: 5.22rem;
+}
+.cd-l{
+    width: 2.96rem;
+    height: 5.22rem;
+}
+.cd-l img{
+    width: 100%;
+}
+.cd-r{
+    width: 4.48rem;
+    height: 5.22rem;
+}
+.cdr-t{
+    width: 4.48rem;
+    height: 2.14rem;
+}
+.cdr-t img{
+    width: 100%;
+}
+.cdr-f{
+    margin-top: .08rem;
+    width: 4.48rem;
+    height: 3.02rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cdr-f img{
+    width: 100%;
+}
+.cdrf-l{
+    width: 2.21rem;
+    height: 3.02rem;
+}
+.cdrf-r{
+    width: 2.21rem;
+    height: 3.02rem;
+}
+/*热门车贷结束*/
+
+/*我是有底线的开始*/
+.foot-line{
+    width: 7.5rem;
+    height: .88rem;
+    position: relative;
+}
+.foot-line i{
+    display: inline-block;
+    width: 7.1rem;
+    height: .44rem;
+    margin-left: .2rem;
+    border-bottom: .01rem solid #dcdcdc;
+}
+.foot-line span{
+    width: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: .22rem;
+    left: 2.5rem;
+    background-color: #eee;
+    color: #353535;
+    font-size: .3rem;
+}
+
+/*我是有底线的结束*/
