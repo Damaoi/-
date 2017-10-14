@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/e-logins.css"/>
+    <link rel="stylesheet" href="../css/e-common.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/jquery.toggle-password.min.js"></script>
+</head>
+<body>
+<div class="box">
+    <!--头部开始-->
+    <div class="zl-top">
+        <div class="zlt-c">
+            <div class="zltc-l">
+                <a href="javascript:;">
+                    <img src="../images/huisejiantou.png" alt=""/>
+                </a>
+            </div>
+            <div class="zltc-c">
+                <p>Sign in</p>
+            </div>
+            <div class="zltc-r">
+                <a href="javascript:;">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--账号密码开始-->
+    <div class="zm">
+        <div class="zm-c">
+            <ul>
+                <li>
+                    <p>
+                        User name&nbsp;
+                    </p>
+                    <input type="text" class="iup1" placeholder="Enter one user name"/>
+                    <a href="javascript:;" class="e-dele">
+                        <i>
+                            <img src="../images/dele.png" alt="" class="dele" style="display: none"/>
+                        </i>
+                    </a>
+                </li>
+                <li class="kejianli">
+                    <p>
+                        Password&nbsp;&nbsp;
+                    </p>
+                    <input type="password" class="iup2" id="password" placeholder="Please input a password"/>
+                    <em>
+                        <i style="margin-right: .25rem">
+                            <img src="../images/dele.png" alt="" class="dele2" style="display: none"/>
+                        </i>
+                        <i class="bukejian">
+                            <img src="../images/mieye.png" alt="" id="togglePassword"/>
+                        </i>
+                    </em>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--账号密码结束-->
+
+    <!--提示部分开始-->
+    <div class="ts">
+        <div class="ts-c">
+            <p>
+                User name or password error, please re-enter
+            </p>
+        </div>
+    </div>
+    <!-- 提示部分结束-->
+
+
+    <!--按钮部分开始-->
+    <div class="login-btn">
+        <div class="login-btn-c">
+            <button>GO</button>
+        </div>
+    </div>
+    <!--按钮部分结束-->
+
+
+    <!--底部小按钮开始-->
+    <div class="ficon">
+        <div class="ficon-c">
+            <ul>
+                <li>
+                    <i class="huii">
+                        <img src="../images/hongdui.png" alt=""/>
+                    </i>
+                    <p style="width: 2.8rem">No login for one month</p>
+                </li>
+                <li>
+                    <i>
+                        <img src="../images/huiji.png" alt=""/>
+                    </i>
+                    <p style="width: .9rem">
+                        <a href="javascript:;">
+                            Sign up
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <i>
+                        <img src="../images/huiwen.png" alt=""/>
+                    </i>
+                    <p style="width: 2rem">
+                        <a href="javascript:;">Forgot Password</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--底部小按钮结束-->
+
+
+</div>
+<script>
+    $(document).ready(function () {
+        $(".dele").click(function(){
+            $(".iup1").val("");
+            $(".dele").hide();
+            $("button").css('background','#eee');
+            $("button").css("color","#b4b4b4");
+        })
+        $("input").on("input", function() {
+            if($(".iup1").val() == ""){
+                $(".dele").css('display','none');
+            }else if($("iup1").val() != ""){
+                $(".dele").css('display','block');
+            }
+        });
+        $(".dele2").click(function(){
+            $(".iup2").val("");
+            $(".dele2").hide();
+            $("button").css('background','#eee');
+            $("button").css("color","#b4b4b4");
+        })
+        $("input").on("input", function() {
+            if($(".iup2").val() == ""){
+                $(".dele2").css('display','none');
+            }else if($("iup2").val() != ""){
+                $(".dele2").css('display','block');
+            }
+        });
+        $('#password').togglePassword({
+            el: '#togglePassword'
+        });
+        $("input").on("input", function() {
+            if(($("iup1").val() != "")&&($(".iup2").val() != "")){
+                $("button").css('background','#122a8c');
+                $("button").css("color","#fff")
+            } else {
+                $("button").css('background','#eee');
+            }
+        });
+
+//        免登陆
+        $(".huii>img").on("click",function(){
+            if($(".huii>img").attr("src")=="../images/hongdui.png"){
+                $(".huii>img").attr("src","../images/huiquan.png");
+            }
+            else{
+                $(".huii>img").attr("src","../images/hongdui.png");
+            }
+        })
+
+//      眼睛
+
+        $(".bukejian").on("click",function(){
+            if($(".bukejian>img").attr("src")=="../images/mieye.png"){
+                $(".bukejian>img").attr("src","../images/kejian.png");
+            }
+            else{
+                $(".bukejian>img").attr("src","../images/mieye.png");
+            }
+        })
+    })
+</script>
+</body>
+</html>
