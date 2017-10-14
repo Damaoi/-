@@ -1,0 +1,88 @@
+.qujinginfo {
+  margin: 0 auto;
+  width: 7.5rem; }
+  .qujinginfo .quanjing {
+    width: 7.5rem; }
+    .qujinginfo .quanjing a {
+      display: block;
+      width: 7.5rem;
+      height: 4rem; }
+      .qujinginfo .quanjing a img {
+        width: 100%;
+        height: 100%;
+        display: block; }
+  .qujinginfo .infojing {
+    width: 7.14rem;
+    height: 1.4rem;
+    margin: 0 auto; }
+    .qujinginfo .infojing span {
+      font-size: .24rem;
+      color: #7d7d7d;
+      margin-top: .09rem;
+      border-radius: .05rem;
+      display: inline-block;
+      padding: .1rem .1rem;
+      border: .01rem solid #d2d2d2; }
+
+.qyxxinfo {
+  width: 7.5rem;
+  margin: 0 auto; }
+  .qyxxinfo .qyxxinfoc {
+    width: 7.14rem;
+    margin: 0 auto; }
+    .qyxxinfo .qyxxinfoc span {
+      height: .5rem;
+      align-items: center;
+      display: flex; }
+      .qyxxinfo .qyxxinfoc span i {
+        display: block;
+        width: .22rem;
+        height: .22rem; }
+        .qyxxinfo .qyxxinfoc span i img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .qyxxinfo .qyxxinfoc span p {
+        display: flex;
+        align-items: center;
+        margin-left: .1rem;
+        color: #666666;
+        font-size: .26rem; }
+        .qyxxinfo .qyxxinfoc span p a {
+          color: #122a8c; }
+
+.fontwenben {
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+  color: #666666;
+  font-size: .26rem; }
+  .fontwenben a {
+    color: #122a8c; }
+
+.renzhenginfo {
+  margin: 0 auto;
+  width: 7.5rem;
+  height: 2.6rem; }
+  .renzhenginfo p:nth-child(1) {
+    margin-top: .4rem;
+    color: #000000;
+    font-size: .26rem;
+    text-align: center; }
+  .renzhenginfo p:nth-child(2) {
+    margin-top: .2rem;
+    text-align: center;
+    color: #666666;
+    font-size: .24rem; }
+  .renzhenginfo a {
+    display: block;
+    margin: .2rem auto;
+    width: 1.8rem;
+    height: .55rem;
+    background-color: #e83328;
+    color: #ffffff;
+    text-align: center;
+    line-height: .6rem;
+    border-radius: .05rem;
+    font-size: .26rem; }
+
+/*# sourceMappingURL=zhanshangxiangqing.css.map */

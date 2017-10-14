@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+</head>
+<body>
+<p>点我消失</p>
+<p>点我会消失</p>
+<p>显示真的会消失</p>
+<script>
+    $(document).ready(function(){
+        $(this)             /*当前元素*/
+        $(".p1")            /*class 类名为 .p1*/
+        $("#p1")            /*id名为 #p1*/
+        $("p")              /*所有的p标签*/
+        $("p.intro")        /*选取所有 class="intro"的<p> 元素*/
+        $("p#demo")         /*选取所有 id="demo" 的 <p> 元素*/
+
+        $("[href]")         /*选取所有带有 href 属性的元素*/
+        $("[href='#']")     /*选取所有带有 href 值等于 "#" 的元素*/
+        $("[href!='#']")    /*选取所有带有 href 值不等于 "#" 的元素*/
+        $("[href$='.jpg']") /*选取所有 href 值以 ".jpg" 结尾的元素*/
+        $("ul li:first")    /*每个 <ul> 的第一个 <li> 元素*/
+        $("div#intro .head")/*id="intro" 的 <div> 元素中的所有 class="head" 的元素*/
+    })
+</script>
+</body>
+</html>

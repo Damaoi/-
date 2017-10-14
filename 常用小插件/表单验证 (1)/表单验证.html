@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="Validform_v5.3.2_min.js"></script>
+    <link rel="stylesheet" href="Validform_v5.3.2_min.css"/>
+</head>
+<body>
+    <div class="box">
+        <from class="demoform">
+            <input type="text" value="" name="name" datatype="s5-16" errormsg="昵称至少5个字符,最多16个字符！"/>
+        </from>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".demoform").Validform();
+        })
+    </script>
+</body>
+</html>

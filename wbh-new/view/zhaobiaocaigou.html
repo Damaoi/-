@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>招标采购</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/zhaobiaocaigou.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <style>
+        .box {
+            max-width: 7.5rem;
+            background-color: #fff;
+            margin: 0 auto;
+            position: relative;
+        }
+        body{
+            padding-top: .8rem;
+        }
+        .daise{
+            color: #e83328!important;
+        }
+        .mayun{
+            background-color: #ffffff!important;
+        }
+        .shanxin{
+            color: #e83328!important;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <!--公共头部布局开始-->
+    <div class="header">
+        <div class="header-c">
+            <div class="hc-l">
+                <a href="javascript:history.back();">
+                    <img src="../images/own/back.png" alt=""/>
+                </a>
+                <p>返回</p>
+            </div>
+            <div class="hc-c">
+                <p>招标采购</p>
+            </div>
+            <div class="hc-r">
+                <a href="javascript:;" id="sandian">
+                    <img src="../images/own/sandian.png" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--公共头部布局开始-->
+
+    <!--搜索-->
+    <div class="sousouya">
+        <div class="sousouyac">
+            <input type="text"/>
+            <img src="../images/own/search.png" alt=""/>
+            <a href="javascript:;">
+                搜索
+            </a>
+        </div>
+    </div>
+    <!--搜索-->
+
+
+    <!--条件筛选-->
+    <div class="zbtjsx">
+        <a href="javascript:;" class="topone">
+            <p class="daise">类型</p>
+            <i>
+                <img src="../images/own/reddaosanjiao.png" alt=""/>
+            </i>
+        </a>
+        <a href="javascript:;" style="border-right: .01rem solid #e8e8e8;border-left: .01rem solid #e8e8e8">
+            <p>地区</p>
+            <i>
+                <img src="../images/own/daosanjiao.png" alt=""/>
+            </i>
+        </a>
+        <a href="javascript:;">
+            <p>行业</p>
+            <i>
+                <img src="../images/own/daosanjiao.png" alt=""/>
+            </i>
+        </a>
+    </div>
+    <!--条件筛选-->
+
+
+
+    <!--遮罩-->
+    <div class="zbzhezhao">
+        <div class="zblx">
+            <a href="javascript:;" class="zbbxlx">
+                <p>不限类型</p>
+            </a>
+            <ul>
+                <li>
+                    <a href="javascript:;"><span class="hongspan"></span><p>预告</p></a></li>
+                <li><a href="javascript:;"><span></span><p>招标</p></a></li>
+                <li><a href="javascript:;"><span></span><p>招标变更</p></a></li>
+                <li><a href="javascript:;"><span></span><p>废标</p></a></li>
+                <li><a href="javascript:;"><span></span><p>中标</p></a></li>
+                <li><a href="javascript:;"><span></span><p>中标变更</p></a></li>
+            </ul>
+        </div>
+        <div class="zbdq">
+            <a href="javascript:;" class="zbbxlx">
+                <p>不限地区</p>
+            </a>
+            <div class="diqu">
+                <div class="diqul">
+                    <a href="javascript:;" class="mayun">
+                        <span class="hongspan"></span>
+                        <p>热门城市</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>陕西</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>河南</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>郑州</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>北京</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>河南</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>郑州</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>北京</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>河南</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>郑州</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>北京</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>河南</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>郑州</p>
+                    </a>
+                    <a href="javascript:;">
+                        <span></span>
+                        <p>北京</p>
+                    </a>
+                </div>
+                <div class="diqur">
+                    <div style="display: block">
+                        <a href="javascript:;" class="shanxin"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><p>上海2</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><p>上海3</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><p>上海4</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><p>上海5</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                    </div>
+                    <div>
+                        <a href="javascript:;"><p>上海6</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                        <a href="javascript:;"><p>天津</p></a>
+                        <a href="javascript:;"><p>河南</p></a>
+                        <a href="javascript:;"><p>郑州</p></a>
+                        <a href="javascript:;"><p>上海</p></a>
+                        <a href="javascript:;"><p>南京</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zbhy">
+            <a href="javascript:;" class="zbbxlx">
+                <p>不限行业</p>
+            </a>
+        </div>
+    </div>
+    <!--遮罩-->
+
+
+
+
+
+
+
+</div>
+<script>
+    $(document).ready(function () {
+//        放大镜点击消息
+        $(".sousouyac>input").on("click",function(){
+            $(".sousouyac>img").hide();
+        })
+//        放大镜点击消失
+
+//        头部tab切换
+
+        $(".zbtjsx>a").on("click",function(){
+            $(".zbzhezhao").show();/*遮罩显示*/
+            $(".zbtjsx>a>p").removeClass("daise");/*移除所有字体颜色*/
+            $(this).find("p").addClass("daise");/*点击的这个加上类名*/
+            $(".zbtjsx>a>i>img").attr("src","../images/own/daosanjiao.png"); /*替换所有图标为灰色*/
+            $(this).find("img").attr("src","../images/own/reddaosanjiao.png");/*替换点击的这个为红色*/
+            $(".zbzhezhao>div").hide().eq($(this).index()).show() /*所有的div消失 使点击对应的下标显示*/
+        })
+//        头部tab切换
+
+
+//        类型边框红色切换
+        $(".zblx>ul>li").on("click",function(){
+            $(".zblx>ul>li>a>span").removeClass("hongspan");
+            $(this).find("span").addClass("hongspan");
+            $(".topone>p").text($(this).find("p").text());/*上面的字变为点击的这个li*/
+        })
+//        类型边框红色切换
+
+//        阻止事件冒泡
+        $(".zbzhezhao").on("click",function(){
+            $(this).hide();
+        })
+
+        $('.zblx').on('click',function(e){
+            e.stopPropagation();
+        })
+        $('.zbdq').on('click',function(e){
+            e.stopPropagation();
+        })
+        $('.zbhy').on('click',function(e){
+            e.stopPropagation();
+        })
+//        阻止事件冒泡
+
+
+
+//        左右tab切换
+        $(".diqul>a").on("click",function(){
+            $(".diqul>a>span").removeClass("hongspan")
+            $(this).find("span").addClass("hongspan");
+            $(".diqur>div").hide().eq($(this).index()).show();
+            $(this).addClass("mayun").siblings().removeClass("mayun");
+        })
+
+        $(".diqur>div>a").on("click",function(){
+            $(this).addClass("shanxin").siblings().removeClass("shanxin");
+        })
+//        左右tab切换
+    })
+</script>
+</body>
+</html>

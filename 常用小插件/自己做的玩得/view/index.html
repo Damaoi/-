@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+<!-- saved from url=http://keyup.cn -->
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+
+<title>放烟花喽-前端开发知识</title>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/swiper.animate1.0.2.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/animate.min.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
+
+
+
+<style type="text/css">
+    .box{
+        width: 7.5rem;
+        margin: 2rem auto;
+    }
+    .simg{
+        width: 100%;
+        text-align: center;
+    }
+    .simg img{
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 1rem;
+    }
+
+
+
+html,body{height:100%;margin:0;padding:0}
+
+
+
+ul,li{text-indent:0;text-decoration:none;margin:0;padding:0}
+
+
+
+img{border:0}
+
+
+
+body{background-color:#000;color:#999;font:100%/18px helvetica, arial, sans-serif}
+
+
+
+canvas{cursor:crosshair;display:block;left:0;position:absolute;top:0;z-index:20}
+
+
+
+#header img{width:100%; height:20%;}
+
+
+
+#bg img{width:100%; height:80%;}
+
+
+
+#header,#bg{position:fixed;left:0;right:0;z-index:10}
+
+
+
+#header{top:0}
+
+
+
+#bg{position:fixed;z-index:1;}
+
+
+
+audio{position:fixed;display:none;bottom:0;left:0;right:0;width:100%;z-index:5}
+
+
+
+</style>
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="">
+
+
+
+<style type="text/css"></style><style id="style-1-cropbar-clipper">
+
+.en-markup-crop-options {
+
+    top: 18px !important;
+
+    left: 50% !important;
+
+    margin-left: -100px !important;
+
+    width: 200px !important;
+
+    border: 2px rgba(255,255,255,.38) solid !important;
+
+    border-radius: 4px !important;
+
+}
+
+
+
+.en-markup-crop-options div div:first-of-type {
+
+    margin-left: 0px !important;
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<div class="box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide simg">
+                <img src="../images/2.png" alt=""/>
+                <p style="font-size: .4rem;color: red;" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">hey hey hey 我是高siyu <span style="color: #27b680" class="ani" swiper-animate-effect="flash" swiper-animate-duration="1s" swiper-animate-delay="1s">↑↑↑</span></p>
+            </div>
+            <div class="swiper-slide simg">
+                <img src="../images/4.png" alt=""/>
+                <p style="font-size: .4rem;color: red;" class="ani" swiper-animate-effect="fadeInLeftBig" swiper-animate-duration="0.3s" swiper-animate-delay="0.2s">今天我来给大家说一段<span style="color: #c1e2b3" class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">freestyle</span>呦呦呦</p>
+            </div>
+            <div class="swiper-slide simg">
+                <img src="../images/3.png" alt=""/>
+                <p style="font-size: .4rem;color: red;" class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">来是come 去是go come come go go</p>
+            </div>
+            <div class="swiper-slide simg">
+                <img src="../images/5.png" alt=""/>
+                <p style="font-size: .4rem;color: red;" class="ani" swiper-animate-effect="flash" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">点头yes 摇头no yes yes no no</p>
+            </div>
+            <div class="swiper-slide simg">
+                <img src="../images/6.png" alt=""/>
+                <p style="font-size: .4rem;color: red;" class="ani" swiper-animate-effect="shake" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">见面问好说 Hello! Hello! Hello!</p>
+            </div>
+            <div class="swiper-slide simg">
+                <img src="../images/7.png" alt=""/>
+                <p style="font-size: .4rem;color: red;" class="ani" swiper-animate-effect="swing" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">熟人见面说声 Hi! Hi! Hi!</p>
+            </div>
+            <div class="swiper-slide simg">
+                <img src="../images/8.gif" alt=""/>
+                <p style="font-size: .4rem;color: red;" class="ani" swiper-animate-effect="tada" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">临走分手说Bye-bye! Bye-bye! Bye-bye!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot" style="position: fixed;bottom: .5rem;width: 7.5rem">
+        <p style="color: green;font-size: .4rem;text-align: center">上面是轮播图可左右滑动</p>
+    </div>
+</div>
+
+<script src="http://www.jq22.com/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+
+var Fireworks = function(){
+
+var self = this;
+
+var rand = function(rMi, rMa){return ~~((Math.random()*(rMa-rMi+1))+rMi);}
+
+var hitTest = function(x1, y1, w1, h1, x2, y2, w2, h2){return !(x1 + w1 < x2 || x2 + w2 < x1 || y1 + h1 < y2 || y2 + h2 < y1);};
+
+window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
+
+
+
+self.init = function(){
+
+self.canvas = document.createElement('canvas');
+
+self.canvas.width = self.cw = $(window).innerWidth();
+
+self.canvas.height = self.ch = $(window).innerHeight();
+
+self.particles = [];
+
+self.partCount = 150;
+
+self.fireworks = [];
+
+self.mx = self.cw/2;
+
+self.my = self.ch/2;
+
+self.currentHue = 30;
+
+self.partSpeed = 5;
+
+self.partSpeedVariance = 10;
+
+self.partWind = 50;
+
+self.partFriction = 5;
+
+self.partGravity = 1;
+
+self.hueMin = 0;
+
+self.hueMax = 360;
+
+self.fworkSpeed = 4;
+
+self.fworkAccel = 10;
+
+self.hueVariance = 30;
+
+self.flickerDensity = 25;
+
+self.showShockwave = true;
+
+self.showTarget = false;
+
+self.clearAlpha = 25;
+
+
+
+$(document.body).append(self.canvas);
+
+self.ctx = self.canvas.getContext('2d');
+
+self.ctx.lineCap = 'round';
+
+self.ctx.lineJoin = 'round';
+
+self.lineWidth = 1;
+
+self.bindEvents();
+
+self.canvasLoop();
+
+
+
+self.canvas.onselectstart = function() {
+
+return false;
+
+};
+
+};
+
+
+
+self.createParticles = function(x,y, hue){
+
+var countdown = self.partCount;
+
+while(countdown--){
+
+var newParticle = {
+
+    x: x,
+
+    y: y,
+
+    coordLast: [
+
+        {x: x, y: y},
+
+        {x: x, y: y},
+
+        {x: x, y: y}
+
+    ],
+
+    angle: rand(0, 360),
+
+    speed: rand(((self.partSpeed - self.partSpeedVariance) <= 0) ? 1 : self.partSpeed - self.partSpeedVariance, (self.partSpeed + self.partSpeedVariance)),
+
+    friction: 1 - self.partFriction/100,
+
+    gravity: self.partGravity/2,
+
+    hue: rand(hue-self.hueVariance, hue+self.hueVariance),
+
+    brightness: rand(50, 80),
+
+    alpha: rand(40,100)/100,
+
+    decay: rand(10, 50)/1000,
+
+    wind: (rand(0, self.partWind) - (self.partWind/2))/25,
+
+    lineWidth: self.lineWidth
+
+};
+
+self.particles.push(newParticle);
+
+}
+
+};
+
+
+
+
+
+self.updateParticles = function(){
+
+var i = self.particles.length;
+
+while(i--){
+
+var p = self.particles[i];
+
+var radians = p.angle * Math.PI / 180;
+
+var vx = Math.cos(radians) * p.speed;
+
+var vy = Math.sin(radians) * p.speed;
+
+p.speed *= p.friction;
+
+
+
+p.coordLast[2].x = p.coordLast[1].x;
+
+p.coordLast[2].y = p.coordLast[1].y;
+
+p.coordLast[1].x = p.coordLast[0].x;
+
+p.coordLast[1].y = p.coordLast[0].y;
+
+p.coordLast[0].x = p.x;
+
+p.coordLast[0].y = p.y;
+
+
+
+p.x += vx;
+
+p.y += vy;
+
+p.y += p.gravity;
+
+
+
+p.angle += p.wind;
+
+p.alpha -= p.decay;
+
+
+
+if(!hitTest(0,0,self.cw,self.ch,p.x-p.radius, p.y-p.radius, p.radius*2, p.radius*2) || p.alpha < .05){
+
+    self.particles.splice(i, 1);
+
+}
+
+};
+
+};
+
+
+
+self.drawParticles = function(){
+
+var i = self.particles.length;
+
+while(i--){
+
+var p = self.particles[i];
+
+
+
+var coordRand = (rand(1,3)-1);
+
+self.ctx.beginPath();
+
+self.ctx.moveTo(Math.round(p.coordLast[coordRand].x), Math.round(p.coordLast[coordRand].y));
+
+self.ctx.lineTo(Math.round(p.x), Math.round(p.y));
+
+self.ctx.closePath();
+
+self.ctx.strokeStyle = 'hsla('+p.hue+', 100%, '+p.brightness+'%, '+p.alpha+')';
+
+self.ctx.stroke();
+
+
+
+if(self.flickerDensity > 0){
+
+    var inverseDensity = 50 - self.flickerDensity;
+
+    if(rand(0, inverseDensity) === inverseDensity){
+
+        self.ctx.beginPath();
+
+        self.ctx.arc(Math.round(p.x), Math.round(p.y), rand(p.lineWidth,p.lineWidth+3)/2, 0, Math.PI*2, false)
+
+        self.ctx.closePath();
+
+        var randAlpha = rand(50,100)/100;
+
+        self.ctx.fillStyle = 'hsla('+p.hue+', 100%, '+p.brightness+'%, '+randAlpha+')';
+
+        self.ctx.fill();
+
+    }
+
+}
+
+};
+
+};
+
+
+
+
+
+self.createFireworks = function(startX, startY, targetX, targetY){
+
+var newFirework = {
+
+x: startX,
+
+y: startY,
+
+startX: startX,
+
+startY: startY,
+
+hitX: false,
+
+hitY: false,
+
+coordLast: [
+
+    {x: startX, y: startY},
+
+    {x: startX, y: startY},
+
+    {x: startX, y: startY}
+
+],
+
+targetX: targetX,
+
+targetY: targetY,
+
+speed: self.fworkSpeed,
+
+angle: Math.atan2(targetY - startY, targetX - startX),
+
+shockwaveAngle: Math.atan2(targetY - startY, targetX - startX)+(90*(Math.PI/180)),
+
+acceleration: self.fworkAccel/100,
+
+hue: self.currentHue,
+
+brightness: rand(50, 80),
+
+alpha: rand(50,100)/100,
+
+lineWidth: self.lineWidth
+
+};
+
+self.fireworks.push(newFirework);
+
+
+
+};
+
+
+
+
+
+self.updateFireworks = function(){
+
+var i = self.fireworks.length;
+
+
+
+while(i--){
+
+var f = self.fireworks[i];
+
+self.ctx.lineWidth = f.lineWidth;
+
+
+
+vx = Math.cos(f.angle) * f.speed,
+
+vy = Math.sin(f.angle) * f.speed;
+
+f.speed *= 1 + f.acceleration;
+
+f.coordLast[2].x = f.coordLast[1].x;
+
+f.coordLast[2].y = f.coordLast[1].y;
+
+f.coordLast[1].x = f.coordLast[0].x;
+
+f.coordLast[1].y = f.coordLast[0].y;
+
+f.coordLast[0].x = f.x;
+
+f.coordLast[0].y = f.y;
+
+
+
+if(f.startX >= f.targetX){
+
+    if(f.x + vx <= f.targetX){
+
+        f.x = f.targetX;
+
+        f.hitX = true;
+
+    } else {
+
+        f.x += vx;
+
+    }
+
+} else {
+
+    if(f.x + vx >= f.targetX){
+
+        f.x = f.targetX;
+
+        f.hitX = true;
+
+    } else {
+
+        f.x += vx;
+
+    }
+
+}
+
+
+
+if(f.startY >= f.targetY){
+
+    if(f.y + vy <= f.targetY){
+
+        f.y = f.targetY;
+
+        f.hitY = true;
+
+    } else {
+
+        f.y += vy;
+
+    }
+
+} else {
+
+    if(f.y + vy >= f.targetY){
+
+        f.y = f.targetY;
+
+        f.hitY = true;
+
+    } else {
+
+        f.y += vy;
+
+    }
+
+}
+
+
+
+if(f.hitX && f.hitY){
+
+    self.createParticles(f.targetX, f.targetY, f.hue);
+
+    self.fireworks.splice(i, 1);
+
+
+
+}
+
+};
+
+};
+
+
+
+self.drawFireworks = function(){
+
+var i = self.fireworks.length;
+
+self.ctx.globalCompositeOperation = 'lighter';
+
+while(i--){
+
+var f = self.fireworks[i];
+
+self.ctx.lineWidth = f.lineWidth;
+
+
+
+var coordRand = (rand(1,3)-1);
+
+self.ctx.beginPath();
+
+self.ctx.moveTo(Math.round(f.coordLast[coordRand].x), Math.round(f.coordLast[coordRand].y));
+
+self.ctx.lineTo(Math.round(f.x), Math.round(f.y));
+
+self.ctx.closePath();
+
+self.ctx.strokeStyle = 'hsla('+f.hue+', 100%, '+f.brightness+'%, '+f.alpha+')';
+
+self.ctx.stroke();
+
+
+
+if(self.showTarget){
+
+    self.ctx.save();
+
+    self.ctx.beginPath();
+
+    self.ctx.arc(Math.round(f.targetX), Math.round(f.targetY), rand(1,8), 0, Math.PI*2, false)
+
+    self.ctx.closePath();
+
+    self.ctx.lineWidth = 1;
+
+    self.ctx.stroke();
+
+    self.ctx.restore();
+
+}
+
+
+
+if(self.showShockwave){
+
+    self.ctx.save();
+
+    self.ctx.translate(Math.round(f.x), Math.round(f.y));
+
+    self.ctx.rotate(f.shockwaveAngle);
+
+    self.ctx.beginPath();
+
+    self.ctx.arc(0, 0, 1*(f.speed/5), 0, Math.PI, true);
+
+    self.ctx.strokeStyle = 'hsla('+f.hue+', 100%, '+f.brightness+'%, '+rand(25, 60)/100+')';
+
+    self.ctx.lineWidth = f.lineWidth;
+
+    self.ctx.stroke();
+
+    self.ctx.restore();
+
+}
+
+};
+
+};
+
+
+
+self.bindEvents = function(){
+
+$(window).on('resize', function(){
+
+clearTimeout(self.timeout);
+
+self.timeout = setTimeout(function() {
+
+    self.canvas.width = self.cw = $(window).innerWidth();
+
+    self.canvas.height = self.ch = $(window).innerHeight();
+
+    self.ctx.lineCap = 'round';
+
+    self.ctx.lineJoin = 'round';
+
+}, 100);
+
+});
+
+
+
+$(self.canvas).on('mousedown', function(e){
+
+self.mx = e.pageX - self.canvas.offsetLeft;
+
+self.my = e.pageY - self.canvas.offsetTop;
+
+self.currentHue = rand(self.hueMin, self.hueMax);
+
+self.createFireworks(self.cw/2, self.ch, self.mx, self.my);
+
+
+
+$(self.canvas).on('mousemove.fireworks', function(e){
+
+    self.mx = e.pageX - self.canvas.offsetLeft;
+
+    self.my = e.pageY - self.canvas.offsetTop;
+
+    self.currentHue = rand(self.hueMin, self.hueMax);
+
+    self.createFireworks(self.cw/2, self.ch, self.mx, self.my);
+
+});
+
+});
+
+
+
+$(self.canvas).on('mouseup', function(e){
+
+$(self.canvas).off('mousemove.fireworks');
+
+});
+
+
+
+}
+
+
+
+self.clear = function(){
+
+self.particles = [];
+
+self.fireworks = [];
+
+self.ctx.clearRect(0, 0, self.cw, self.ch);
+
+};
+
+
+
+
+
+self.canvasLoop = function(){
+
+requestAnimFrame(self.canvasLoop, self.canvas);
+
+self.ctx.globalCompositeOperation = 'destination-out';
+
+self.ctx.fillStyle = 'rgba(0,0,0,'+self.clearAlpha/100+')';
+
+self.ctx.fillRect(0,0,self.cw,self.ch);
+
+self.updateFireworks();
+
+self.updateParticles();
+
+self.drawFireworks();
+
+self.drawParticles();
+
+
+
+};
+
+
+
+self.init();
+
+
+
+}
+
+var fworks = new Fireworks();
+
+
+
+});
+
+
+var mySwiper = new Swiper ('.swiper-container', {
+    autoplay: 5000,//可选选项，自动滑动
+    effect : 'cube',
+    paginationCustomRender: function (swiper, current, total) {
+        return current + ' of ' + total;
+    },
+    onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+        swiperAnimateCache(swiper); //隐藏动画元素
+        swiperAnimate(swiper); //初始化完成开始动画
+    },
+    onSlideChangeEnd: function(swiper){
+        swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+    }
+})
+
+
+</script>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		setTimeout(function() {
+
+			$("#header").hide("slow");
+
+		},2000);
+
+	});
+
+</script>
+
+</body>
+
+</html>

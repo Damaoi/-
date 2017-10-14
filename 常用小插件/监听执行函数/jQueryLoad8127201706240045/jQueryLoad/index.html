@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{padding: 0;margin: 0;}
+			li{list-style: none;}
+			ul{width:1000px;margin: 0 auto;}
+			ul li{width: 490px;margin-top: 10px;}
+			ul li:nth-child(odd){
+				float: left;
+			}
+			ul li:nth-child(even){
+				float: right;
+			}
+			ul li img{width: 100%;}
+			ul:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+		</style>
+		<link rel="stylesheet" href="css/animate.min.css" />
+	</head>
+	<body>
+		<ul>
+			<li class="animated"><img src="img/a1.png"></li>
+			<li class="animated"><img src="img/a2.png"></li>
+		</ul>
+		<ul class="one">
+			<li class="animated"><img src="img/a3.png"></li>
+			<li class="animated"><img src="img/a4.png"></li>
+		</ul>
+		<ul class="two">
+			<li class="animated"><img src="img/a1.png"></li>
+			<li class="animated"><img src="img/a2.png"></li>
+		</ul>
+		<ul class="thr">
+			<li class="animated"><img src="img/a3.png"></li>
+			<li class="animated"><img src="img/a4.png"></li>
+		</ul>
+		<ul class="for">
+			<li class="animated"><img src="img/a1.png"></li>
+			<li class="animated"><img src="img/a2.png"></li>
+		</ul>
+		<ul class="fiv">
+			<li class="animated"><img src="img/a3.png"></li>
+			<li class="animated"><img src="img/a4.png"></li>
+		</ul>
+		<ul class="a1">
+			<li class="animated"><img src="img/a1.png"></li>
+			<li class="animated"><img src="img/a2.png"></li>
+		</ul>
+		<ul class="a2">
+			<li class="animated"><img src="img/a3.png"></li>
+			<li class="animated"><img src="img/a4.png"></li>
+		</ul>
+		<ul class="a3">
+			<li class="animated"><img src="img/a1.png"></li>
+			<li class="animated"><img src="img/a2.png"></li>
+		</ul>
+		<ul class="a4">
+			<li class="animated"><img src="img/a3.png"></li>
+			<li class="animated"><img src="img/a4.png"></li>
+		</ul>
+		<div class="ani">
+			<i class="animated" style="width: 200px;height: 200px;background-color: yellow;margin: 0 auto;display: block">
+		</i>
+		</div>
+		<i class="animated" style="width: 200px;height: 200px;background-color: yellow;margin: 0 auto;display: block">
+		</i>
+	</body>
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script>
+		function ani(claname,type1,type2){
+            if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+//					$("."+claname).find("li").eq(0).addClass(type1);
+//					$("."+claname).find("li").eq(1).addClass(type2);
+					$("."+claname).find("i").addClass(type1);
+			};
+			$(window).scroll(function(){
+				if(($("."+claname).offset().top - $(window).scrollTop())<$(window).height()){
+//					$("."+claname).find("li").eq(0).addClass(type1);
+//					$("."+claname).find("li").eq(1).addClass(type2);
+					$("."+claname).find("i").addClass(type1);
+				};
+			});
+		};
+		ani("one","bounceInLeft","bounceInRight");
+		ani("two","bounceIn","bounceIn");
+		ani("thr","fadeInDownBig","fadeInDownBig");
+		ani("for","bounceInUp","bounceInUp");
+		ani("fiv","rotateInDownLeft","rotateInDownRight");
+		ani("a1","zoomInLeft","zoomInRight");
+		ani("a2","bounceInUp","bounceInUp");
+		ani("a3","rotateInDownLeft","rotateInDownRight");
+		ani("a4","zoomInLeft","zoomInRight");
+		ani("ani","zoomInLeft");
+	</script>
+</html>

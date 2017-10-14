@@ -1,0 +1,33 @@
+﻿*{margin:0;padding:0;}
+
+/* container */
+#container{
+    width:945px;
+    height:34px;
+    position:relative;
+    overflow:hidden;
+    margin:auto;
+}
+#container li{
+    display:block;
+    float:left;
+    width:133px;
+    height:32px;
+    padding-right:2px;
+    line-height:32px;
+    list-style:none;
+}
+#container li a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    position:relative;
+    width:123px;
+    height:32px;
+    padding-right:10px;
+    font-size:14px;
+    font-weight:bold;
+    text-align:right;
+}
+
+#buoy{position:absolute;width:133px;height:2px;background:#122a8c;bottom:0px;left:-157px;}

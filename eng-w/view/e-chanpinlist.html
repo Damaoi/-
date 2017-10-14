@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>企业展厅</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/e-common.css"/>
+    <link rel="stylesheet" href="../css/shaixun2.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+    <script src="../js/jquery.dotdotdot.min.js"></script>
+    <script src="../js/base.js"></script>
+    <style>
+        .box {
+            max-width: 7.5rem;
+            padding-bottom: 2rem;
+            height: auto;
+            margin: 0 auto;
+            background-color: #eee;
+        }
+        #p{
+            width: 7.1rem;
+            height: .92rem;
+            line-height: .92rem;
+            margin: 0 auto;
+            border-bottom: .01rem solid #d8d8d8;
+            color: #333333;
+            font-size: .3rem;
+        }
+        .ul2>li{
+            margin-right: .2rem;
+        }
+        .select_green{
+            color: #122a8c;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <!--头部开始-->
+    <div class="gb-top">
+        <div class="gb-top-center">
+            <div class="tc-l">
+                <a href="{:url('index/index')}">
+                    <img src="../images/wangbohui.png" alt=""/>
+                </a>
+            </div>
+            <form id="search_form" action="{:url('company/index')}" method="get">
+                <div class="tc-r">
+                    <input type="text" placeholder="Search" name="keyword" id="keyword"/>
+                    <a href="javascript:;" id="fangdajings">
+                        <img src="../images/search.png" alt=""/>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--列表选项开始-->
+    <div class="listchoice" style="margin-bottom: .2rem">
+        <div class="listchoice-left">
+            <a {if condition="($sort eq '') or ($sort eq 'all')"}class="select_green"{/if} href="{:url('product/plist',array_merge($fitam,array('sort'=>'all')))}">
+            All sorts
+            </a>
+            <a {if condition="$sort eq 'click_num'"}class="select_green"{/if} href="{:url('product/plist',array_merge($fitam,array('sort'=>'click_num')))}">
+            Popularity
+            </a>
+            <a {if condition="$sort eq 'is_new'"}class="select_green"{/if} href="{:url('product/plist',array_merge($fitam,array('sort'=>'is_new')))}">
+            Newest
+            </a>
+        </div>
+        <div class="listchoice-right" id="click_open" style="width: 2rem;">
+            <a href="javascript:;">
+                Filter
+                <img src="../images/loudou.png" alt=""/>
+            </a>
+        </div>
+    </div>
+    <!--列表选项结束-->
+
+
+    <!--筛选-->
+    <div class="shaixuan2">
+        <!--行业列表-->
+        <div class="hy-list">
+            <p style="color: #c0211b;font-weight: bold;margin-right: .2rem" id="p";>please choose</p>
+            <div class="hy-list-c">
+                <ul class="ul1">
+                    <li>Structural metalwork</li>
+                    <li>Metal tools</li>
+                    <li>Container and metal packing container</li>
+                    <li>Safety metal products</li>
+                    <li>Boiler and prime mover</li>
+                    <li>Metal processing machinery</li>
+                    <li>Hoisting equipment</li>
+                    <li>Pumps, valves, compressors</li>
+                    <li>Bearings, gears, transmission and drive parts</li>
+                    <li>Ovens, furnaces and electric furnaces</li>
+                    <li>Fan, electronic scale, packing equipment, etc.</li>
+                    <li>General components</li>
+                </ul>
+                <ul class="ul2">
+                    <li>Boiler and prime mover</li>
+                    <li>Boiler and auxiliary equipment</li>
+                    <li>Internal combustion engines and accessories</li>
+                    <li>Steam turbine and auxiliaries</li>
+                    <li>Hydraulic turbines and auxiliaries</li>
+                    <li>Other prime movers</li>
+                </ul>
+            </div>
+        </div>
+        <!--行业列表-->
+    </div>
+    <!--筛选-->
+
+    <!--New arrival开始-->
+    <div class="e-neo">
+        <div class="e-neo-c">
+            <a href="javascript:;">
+                <div class="e-neo-cis">
+                    <div class="neo-t">
+                        <img src="../images/chanpin-1.png" alt=""/>
+                    </div>
+                    <div class="neo-b">
+                        <div class="neob-c">
+                            <p class="neobc-p1 dot-ellipsis dot-resize-update">
+                                Ultrasonic human body electronic scalebodyelectronic scale
+                            </p>
+                            <p class="neobc-p2">
+                                <span class="p2-span1">¥5500</span>
+                            <span class="p2-span2">
+                                <i>
+                                    <img src="../images/e-eye.png" alt=""/>
+                                </i>
+                                <em>366</em>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;">
+                <div class="e-neo-cis">
+                    <div class="neo-t">
+                        <img src="../images/chanpin-1.png" alt=""/>
+                    </div>
+                    <div class="neo-b">
+                        <div class="neob-c">
+                            <p class="neobc-p1 dot-ellipsis dot-resize-update">
+                                Ultrasonic human body electronic scalebodyelectronic scale
+                            </p>
+                            <p class="neobc-p2">
+                                <span class="p2-span1">¥5500</span>
+                            <span class="p2-span2">
+                                <i>
+                                    <img src="../images/e-eye.png" alt=""/>
+                                </i>
+                                <em>366</em>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;">
+                <div class="e-neo-cis">
+                    <div class="neo-t">
+                        <img src="../images/chanpin-1.png" alt=""/>
+                    </div>
+                    <div class="neo-b">
+                        <div class="neob-c">
+                            <p class="neobc-p1 dot-ellipsis dot-resize-update">
+                                Ultrasonic human body electronic scalebodyelectronic scale
+                            </p>
+                            <p class="neobc-p2">
+                                <span class="p2-span1">¥5500</span>
+                            <span class="p2-span2">
+                                <i>
+                                    <img src="../images/e-eye.png" alt=""/>
+                                </i>
+                                <em>366</em>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;">
+                <div class="e-neo-cis">
+                    <div class="neo-t">
+                        <img src="../images/chanpin-1.png" alt=""/>
+                    </div>
+                    <div class="neo-b">
+                        <div class="neob-c">
+                            <p class="neobc-p1 dot-ellipsis dot-resize-update">
+                                Ultrasonic human body electronic scalebodyelectronic scale
+                            </p>
+                            <p class="neobc-p2">
+                                <span class="p2-span1">¥5500</span>
+                            <span class="p2-span2">
+                                <i>
+                                    <img src="../images/e-eye.png" alt=""/>
+                                </i>
+                                <em>366</em>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;">
+                <div class="e-neo-cis">
+                    <div class="neo-t">
+                        <img src="../images/chanpin-1.png" alt=""/>
+                    </div>
+                    <div class="neo-b">
+                        <div class="neob-c">
+                            <p class="neobc-p1 dot-ellipsis dot-resize-update">
+                                Ultrasonic human body electronic scalebodyelectronic scale
+                            </p>
+                            <p class="neobc-p2">
+                                <span class="p2-span1">¥5500</span>
+                            <span class="p2-span2">
+                                <i>
+                                    <img src="../images/e-eye.png" alt=""/>
+                                </i>
+                                <em>366</em>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;">
+                <div class="e-neo-cis">
+                    <div class="neo-t">
+                        <img src="../images/chanpin-1.png" alt=""/>
+                    </div>
+                    <div class="neo-b">
+                        <div class="neob-c">
+                            <p class="neobc-p1 dot-ellipsis dot-resize-update">
+                                Ultrasonic human body electronic scalebodyelectronic scale
+                            </p>
+                            <p class="neobc-p2">
+                                <span class="p2-span1">¥5500</span>
+                            <span class="p2-span2">
+                                <i>
+                                    <img src="../images/e-eye.png" alt=""/>
+                                </i>
+                                <em>366</em>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--New arrival结束-->
+
+
+    <!--底部导航开始-->
+    <div class="foot">
+        <div class="foot-c">
+            <a href="{:url('index/index')}">
+                <i class="icon1"></i>
+                <span>COMPANY</span>
+            </a>
+            <a href="{:url('product/index')}">
+                <i class="icon21"></i>
+                <span class="green">PRODUCT</span>
+            </a>
+            <a href="{:url('product/index')}">
+                <i class="icon3"></i>
+                <span>COMMUNITY</span>
+            </a>
+            <a href="{:url('news/index')}">
+                <i class="icon4"></i>
+                <span>NEWS</span>
+            </a>
+            <a href="{:url('index/baoming')}" class="hondq">
+                <i class="icon5"></i>
+                <span>PERSONAL</span>
+                <time class="tt"></time>
+            </a>
+        </div>
+    </div>
+    <!--底部导航结束-->
+</div>
+<script>
+    $(document).ready(function(){
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000,//可选选项，自动滑动
+            pagination : '.swiper-pagination',
+            loop : true,
+        })
+        $("#click_open").click(function(){
+            $(".shaixuan2").show().siblings().hide();
+//            redArea(0,0);
+        })
+        $(".hy-list-c>ul").on('click','li',function(){
+            var index = $(this).parent().index()+1;
+            if(index==2){
+                $(".shaixuan2").hide().siblings().show();
+            }
+            $("#p").prepend($(this).text())
+            $(this).parent().hide();
+            var str = '0_'+$(this).index()+"_2";
+//            redArea(str,index);
+            $(this).parent().next().show();
+        })
+        // 遍历追加数据
+        function redArea(str,index){
+            var html='';
+            $.each(area.data[str], function(i, n) {
+                html += '<li v-id="'+i+'"><span>'+n+'</span></li>';
+            });
+            $('.hy-list-c').find('ul').eq(index).html(html);
+        };
+    })
+</script>
+</body>
+</html>

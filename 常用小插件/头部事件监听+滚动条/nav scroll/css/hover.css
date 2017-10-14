@@ -1,0 +1,199 @@
+.top {
+  width: 100%;
+  overflow: hidden; }
+  .top .top-c {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: pink; }
+    .top .top-c .top-l {
+      float: left;
+      width: 20%;
+      height: 500px;
+      background-color: red; }
+      .top .top-c .top-l a {
+        transition: all 1s;
+        color: #27b680;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        display: block;
+        width: 100%;
+        height: 10%; }
+    .top .top-c .top-r {
+      float: right;
+      width: 80%;
+      height: 100px;
+      background-color: yellow; }
+      .top .top-c .top-r .topr-t a {
+        transition: all 1s;
+        float: left;
+        display: block;
+        height: inherit;
+        width: 10%;
+        line-height: 100px;
+        text-align: center;
+        font-size: 16px;
+        color: blue; }
+      .top .top-c .top-r .topr-b {
+        width: 100%;
+        height: 400px; }
+        .top .top-c .top-r .topr-b div {
+          display: none;
+          width: 100%;
+          height: 400px;
+          background-color: #66512c;
+          margin-bottom: 2px;
+          line-height: 400px;
+          text-align: center;
+          font-size: 50px; }
+
+.lbox {
+  width: 500px;
+  height: 600px;
+  margin: 500px auto;
+  overflow: hidden; }
+  .lbox a {
+    display: block;
+    width: 500px;
+    height: 100px;
+    color: yellow;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    background-color: green; }
+  .lbox div {
+    text-align: center;
+    line-height: 400px;
+    color: pink;
+    font-size: 50px;
+    background-color: #007aff;
+    display: none;
+    width: 500px;
+    height: 400px; }
+
+.bb {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  transition: all 20s; }
+
+.icon p {
+  float: right;
+  display: block;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: red;
+  transition: all 2s; }
+.icon span {
+  float: left;
+  display: none;
+  background-color: red;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center; }
+
+.icon-c {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 150px;
+  height: 20px; }
+
+.xuanzhuan {
+  width: 200px;
+  height: 200px;
+  margin: 200px auto;
+  border: 20px solid #1e8f26;
+  border-radius: 50%;
+  transform: rotate(45deg); }
+  .xuanzhuan img {
+    width: 100%;
+    height: 100%;
+    transition: all 2s linear; }
+
+.xuanzhuan > img:hover {
+  transform: rotate(360deg); }
+
+.jd {
+  width: 500px;
+  height: 300px;
+  border: 10px solid #1e8f26;
+  margin: 200px auto;
+  overflow: hidden; }
+  .jd .jd-l {
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.4); }
+    .jd .jd-l p {
+      display: block;
+      width: 180px;
+      border-bottom: 2px solid #007aff;
+      margin: 120px auto;
+      text-align: center;
+      font-size: 20px;
+      color: red; }
+  .jd .jd-r {
+    z-index: 9;
+    float: right;
+    width: 300px;
+    height: 300px;
+    position: relative; }
+    .jd .jd-r img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 10px;
+      transition: all 1s; }
+    .jd .jd-r img:hover {
+      left: 0; }
+
+.fanzhuan {
+  width: 200px;
+  height: 200px;
+  border: 10px solid green;
+  margin: 200px auto; }
+  .fanzhuan img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s; }
+
+.fanzhuan img:hover {
+  transform: rotateY(180deg); }
+
+.zzb {
+  margin: 200px auto;
+  height: 200px; }
+  .zzb ul li {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-left: 20px;
+    float: left; }
+    .zzb ul li a {
+      display: block;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      line-height: 200px; }
+    .zzb ul li .zz {
+      position: absolute;
+      bottom: 0;
+      top: 200px;
+      display: none;
+      width: 200px;
+      background-color: yellow;
+      opacity: 0.9;
+      height: 200px;
+      text-align: center;
+      line-height: 200px;
+      transition: all 2s; }
+
+/*# sourceMappingURL=hover.css.map */

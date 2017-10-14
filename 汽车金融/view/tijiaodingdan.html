@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/tijiaodingdan.css"/>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/denglu.css"/>
+    <link rel="stylesheet" href="../css/public-1.css"/>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <script src="../js/base.js"></script>
+    <title>提交订单</title>
+    <style>
+        .lkji{
+            display: block;
+        }
+    </style>
+    <script>
+        $(function(){
+            $.divselect("#divselect","#inputselect");
+        });
+        $(function(){
+            $.divselect("#divselect1","#inputselect");
+        });
+        $(function(){
+            $.divselect("#divselect2","#inputselect");
+        });
+        $(function(){
+            $.divselect("#divselect3","#inputselect");
+        });
+    </script>
+</head>
+<body>
+    <div class="box">
+
+        <!--顶部开始-->
+        <div class="ys-4">
+            <div class="ys-4-center">
+                <a href="javascipt:;">
+                    <img src="../images/baisejiantou.png" alt=""/>
+                </a>
+                <p>快速车贷申请</p>
+            </div>
+        </div>
+        <!--顶部结束-->
+
+        <!--内容开始-->
+        <div class="cbtn">
+            <div class="cbtn-1">
+                <p><span>✱</span>车型 :&nbsp;</p>
+                <input type="text"/>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>车型 :&nbsp;</p>
+                <input type="text"/>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>分期期数 :&nbsp;</p>
+                <div id="divselect1">
+                    <cite>请选择分期期数</cite>
+                    <ul>
+                        <li><a href="javascript:;" selectid="1">12期</a></li>
+                        <li><a href="javascript:;" selectid="2">18期</a></li>
+                        <li><a href="javascript:;" selectid="3">24期</a></li>
+                        <li><a href="javascript:;" selectid="4">36期</a></li>
+                        <li><a href="javascript:;" selectid="5">48期</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>车型 :&nbsp;</p>
+                <input type="text"/>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>车型 :&nbsp;</p>
+                <input type="text"/>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>车型 :&nbsp;</p>
+                <input type="text"/>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>车型 :&nbsp;</p>
+                <input type="text"/>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>月收入 :&nbsp;</p>
+                <div id="divselect">
+                    <cite>请选择月收入</cite>
+                    <ul>
+                        <li><a href="javascript:;" selectid="1">3000元以下</a></li>
+                        <li><a href="javascript:;" selectid="2">3000-5000元</a></li>
+                        <li><a href="javascript:;" selectid="3">5000-8000元</a></li>
+                        <li><a href="javascript:;" selectid="4">8000-12000元</a></li>
+                        <li><a href="javascript:;" selectid="5">12000-20000元</a></li>
+                        <li><a href="javascript:;" selectid="5">20000以上</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>信用记录 :&nbsp;</p>
+                <div id="divselect2">
+                    <cite>请选择信用记录</cite>
+                    <ul>
+                        <li><a href="javascript:;" selectid="1">信用良好</a></li>
+                        <li><a href="javascript:;" selectid="2">少数逾期</a></li>
+                        <li><a href="javascript:;" selectid="3">多次逾期</a></li>
+                        <li><a href="javascript:;" selectid="4">无信用记录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cbtn-1">
+                <p><span>✱</span>租房状态 :&nbsp;</p>
+                <div id="divselect3">
+                    <cite>请选择住房状态</cite>
+                    <ul>
+                        <li><a href="javascript:;" selectid="1">自有全款</a></li>
+                        <li><a href="javascript:;" selectid="2">自有贷款</a></li>
+                        <li><a href="javascript:;" selectid="3">租赁</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="cbtn-1">
+                <p><span>✱</span>车型 :&nbsp;</p>
+                <div class="fan">
+                    <div class="shebao">
+                        <span>
+                        <img src="../images/duigou.png" alt=""/>
+                        </span>
+                        <p>有社保</p>
+                    </div>
+                    <div class="shebao">
+                        <span style="background-color: #eee;border: .01rem solid #989898;margin-left: 1.18rem" class="bnmc">
+                            <img src="../images/duigou.png" alt="" style="display: none" class="sjkh"/>
+                        </span>
+                        <p>无社保</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cbtn-1">
+                <p><span>✱</span>公积金 :&nbsp;</p>
+                <div class="fan">
+                    <span>
+                        <img src="../images/duigou.png" alt=""/>
+                    </span>
+                    <p>有公积金</p>
+                    <span style="background-color: #eee;border: .01rem solid #989898;margin-left: .91rem"></span>
+                    <p>无公积金</p>
+                </div>
+            </div>
+
+
+            <div class="cbtn-1">
+                <p><span>✱</span>身份证 :&nbsp;</p>
+                <div class="fan1">
+                    <div class="fangxing">
+                        <a href="javascript:;">
+                            <img src="../images/jiahao.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <span class="laji"></span>
+            <span class="sheji1">请上传身份证正反面照片</span>
+            <span class="laji"></span>
+            <div class="cbtn-1">
+                <p><span>✱</span>户口本 :&nbsp;</p>
+                <div class="fan1">
+                    <div class="fangxing">
+                        <a href="javascript:;">
+                            <img src="../images/jiahao.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <span class="laji"></span>
+            <span class="sheji1">请上传户口本照片</span>
+            <span class="laji"></span>
+
+
+
+            <div class="cbtn-1">
+                <p>备注 :&nbsp;</p>
+                <input type="text" class="fanfan111"/>
+            </div>
+        </div>
+        <!--内容结束-->
+
+        <!--提交开始-->
+        <a href="javascript:;">
+            <div class="tijiao">
+                <p>提交</p>
+            </div>
+        </a>
+        <!--提交结束-->
+
+
+    </div>
+    <script>
+        jQuery.divselect = function(divselectid,divselectid1,divselectid2,divselectid3,inputselectid) {
+            var inputselect = $(inputselectid);
+            $(divselectid+" cite").click(function(){
+                var ul = $(divselectid+" ul");
+                if(ul.css("display")=="none"){
+                    ul.slideDown("fast");
+                }else{
+                    ul.slideUp("fast");
+                }
+            });
+            $(divselectid+" ul li a").click(function(){
+                var txt = $(this).text();
+                $(divselectid+" cite").html(txt);
+                var value = $(this).attr("selectid");
+                inputselect.val(value);
+                $(divselectid+" ul").hide();
+
+            });
+            $(document).click(function(){
+                $(divselectid+" ul").hide();
+            });
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        p{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p>动画开始</p>
+</div>
+<button class="btn">向下滑动</button>
+<button class="btn1">逐步执行动画</button>
+
+<script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+
+//            $("p").animate({left: '250px',},3000,callback)  格式
+//            callback函数的好处就是在前面的代码执行完成之后在执行函数
+
+
+            $("p").animate({
+                left: '250px',
+                top:'250px',
+                width:'80px'
+            },3000,function(){
+                alert("简单");
+            })  /*3000毫秒执行完动画*/
+        })
+
+/*每条动画按照顺序执行*/
+        $(".btn1").click(function(){
+            var p = $("p");
+            p.animate({
+                height:'300px',opacity:'0.4'
+            },"slow");
+            p.animate({
+                width:'300px',opacity:'0.8'
+            },"slow");
+            p.animate({
+                height:'100px',opacity:'0.4'
+            },"slow");
+            p.animate({
+                width:'100px',opacity:'0.8'
+            },"slow");
+        });
+    })
+</script>
+</body>
+</html>

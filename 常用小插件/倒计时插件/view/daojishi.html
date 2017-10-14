@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>document</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <!--<link rel="stylesheet" href="../css/"/>-->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/leftTime.js"></script>
+    <style>
+        .box {
+            max-width: 7.5rem;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+        .btn1{
+            text-align: center;
+            padding: .5rem .5rem;
+            border-radius: .1rem;
+            background-color: #31b0d5;
+            color: red;
+            font-size: .3rem;
+            margin-bottom: .2rem;
+        }
+
+        .btn2 span{
+            color: #31b0d5;
+            padding: .2rem .2rem;
+            margin-right: .2rem;
+            background-color: #398439;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <!--秒数倒计时-->
+    <div class="btn1" id="dateBtn1">倒计时60秒</div>
+    <!--距离日期倒计时-->
+    <p style="margin-bottom: .3rem;color: #398439;font-size: .3rem">距2017/10/01 00:00:00倒计时</p>
+    <div class="btn2" id="dateShow1">
+        <span class="date-tiem-span d">00</span>天
+        <span class="date-tiem-span h">00</span>时
+        <span class="date-tiem-span m">00</span>分
+        <span class="date-tiem-span s">00</span>秒
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        //60秒倒计时
+        $("#dateBtn1").on("click",function(){
+            var _this=$(this);
+            if(!$(this).hasClass("on")){
+                $.leftTime(60,function(d){
+                    if(d.status){
+                        _this.addClass("on");
+                        _this.html((d.s=="00"?"60":d.s)+"秒后重新获取");
+                    }else{
+                        _this.removeClass("on");
+                        _this.html("获取验证码");
+                    }
+                });
+            }
+        });
+
+
+//        距离指定日期倒计时
+        $(function(){
+            $.leftTime("2017/10/1 00:00:00",function(d){
+                if(d.status){
+                    var $dateShow1=$("#dateShow1");
+                    $dateShow1.find(".d").html(d.d);
+                    $dateShow1.find(".h").html(d.h);
+                    $dateShow1.find(".m").html(d.m);
+                    $dateShow1.find(".s").html(d.s);
+                }
+            });
+        });
+
+
+
+    })
+</script>
+</body>
+</html>

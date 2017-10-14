@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>document</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <style>
+        span{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: #d8d8d8;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+<span id="redu">-</span>
+<input id="add" type="text" value="1" style="width:50px; text-align:center;"/>
+<span id="add1">+</span>
+<script>
+    $(document).ready(function (){
+        $(document).ready(function(){
+            $("#add1").click(function(){
+                var oldValue=parseInt($("#add").val()); //取出现在的值，并使用parseInt转为int类型数据
+                oldValue++   //自加1
+                if(oldValue>20){
+                    oldValue = 20;
+                }
+                console.log(oldValue);
+                $("#add").val(oldValue)  //将增加后的值付给控件
+            });
+            $("#redu").click(function(){
+                var oldValue = parseInt($("#add").val()); //取出现在的值，并使用parseInt转为int类型数据
+                oldValue--   //自减1
+                if(oldValue<0){
+                    oldValue = 0;
+                }
+                $("#add").val(oldValue)  //将增加后的值付给控件
+            });
+
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+.dwyxtz {
+  width: 7.5rem;
+  height: .85rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f8;
+  text-align: center;
+  line-height: .85rem;
+  color: #666666;
+  font-size: .26rem;
+  height: .85rem;
+  border-bottom: .01rem solid #e8e8e8; }
+  .dwyxtz .dwyxtzl {
+    width: 3.74rem;
+    height: .85rem;
+    background-color: #ffffff; }
+  .dwyxtz .dwyxtzr {
+    width: 3.74rem;
+    height: .85rem;
+    background-color: #ffffff; }
+  .dwyxtz .yinying {
+    border-bottom: .03rem solid #e83328; }
+
+.tzbox {
+  width: 7.5rem;
+  margin: 0 auto; }
+  .tzbox .tzboxc {
+    width: 7.14rem; }
+    .tzbox .tzboxc .yixiangbox {
+      display: none;
+      width: 7.14rem; }
+
+.tztitle {
+  width: 7.5rem;
+  margin: 0 auto;
+  background-color: #f4f4f4; }
+  .tztitle .tztitlec {
+    width: 7.14rem;
+    height: .8rem;
+    margin: 0 auto;
+    line-height: .8rem; }
+    .tztitle .tztitlec p {
+      color: #122a8c;
+      font-size: .3rem; }
+
+.tzneirong {
+  width: 7.5rem;
+  margin: 0 auto;
+  background-color: #ffffff; }
+  .tzneirong .tzneirongc {
+    width: 7.14rem;
+    margin: 0 auto; }
+    .tzneirong .tzneirongc .paoiu {
+      line-height: .5rem;
+      padding: .2rem 0 .2rem 0;
+      color: #333333;
+      font-size: .3rem; }
+
+.tzneirong2 {
+  width: 7.5rem;
+  margin: 0 auto;
+  background-color: #ffffff; }
+  .tzneirong2 a {
+    display: block;
+    width: 7.5rem;
+    height: .8rem;
+    border-bottom: .01rem solid #dddddd; }
+    .tzneirong2 a .ac {
+      display: flex;
+      line-height: .8rem;
+      width: 7.14rem;
+      margin: 0 auto;
+      height: .8rem; }
+      .tzneirong2 a .ac .spanl {
+        width: 2.25rem;
+        height: .8rem; }
+        .tzneirong2 a .ac .spanl p {
+          color: #666666;
+          font-size: .26rem; }
+      .tzneirong2 a .ac .divr {
+        width: 4.89rem;
+        height: .8rem; }
+        .tzneirong2 a .ac .divr p {
+          color: #333333;
+          font-size: .26rem; }
+          .tzneirong2 a .ac .divr p i {
+            color: #e83328;
+            font-size: .4rem; }
+        .tzneirong2 a .ac .divr span {
+          margin-right: .1rem;
+          padding: .05rem .1rem;
+          border: .01rem solid #d4d4d4;
+          border-radius: .08rem;
+          color: #666666;
+          font-size: .24rem; }
+
+.inner-therm span {
+  display: none !important; }
+
+.tshude {
+  align-items: center;
+  height: .8rem;
+  display: flex; }
+  .tshude b {
+    margin-left: .2rem;
+    font-size: .26rem;
+    color: #e83328; }
+  .tshude .b2 {
+    color: #122a8c; }
+
+.qtyh {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 7.5rem;
+  text-align: center;
+  height: .7rem;
+  background-color: #f4f4f4;
+  font-size: .24rem;
+  color: #666666;
+  line-height: .7rem; }
+  .qtyh span {
+    margin-left: .2rem;
+    margin-right: .2rem;
+    display: block;
+    width: 1rem;
+    height: .02rem;
+    background-color: #cccccc; }
+
+.chanpinbig {
+  margin: 0 auto;
+  width: 7.5rem;
+  height: 7.3rem;
+  border-bottom: .01rem solid #d4d4d4; }
+  .chanpinbig iframe {
+    height: 7rem; }
+
+.datuwenzi {
+  width: 7.5rem;
+  margin: 0 auto; }
+  .datuwenzi .datuwenzic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 7.14rem;
+    height: 1.8rem;
+    margin: 0 auto; }
+    .datuwenzi .datuwenzic p:nth-child(1) {
+      color: #101010;
+      font-size: .3rem; }
+    .datuwenzi .datuwenzic p:nth-child(2) {
+      margin-top: .25rem;
+      color: #999999;
+      font-size: .24rem; }
+
+.huadongtop {
+  height: .9rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .01rem solid #d4d4d4;
+  width: 7.5rem; }
+  .huadongtop a {
+    border-right: .03rem solid #f4f4f4;
+    text-align: center;
+    line-height: 0.9rem;
+    display: block;
+    width: 2.47rem;
+    height: .9rem;
+    color: #333333;
+    font-size: .27rem; }
+  .huadongtop span {
+    width: .03rem;
+    display: block;
+    background-color: #f4f4f4;
+    height: .9rem; }
+
+.yili {
+  width: 7.5rem;
+  overflow: hidden;
+  margin: 0 auto; }
+  .yili .yili1 {
+    width: 7.5rem;
+    margin: 0 auto; }
+    .yili .yili1 img {
+      width: 7.5rem;
+      height: 100%; }
+  .yili .yili2 {
+    width: 7.5rem; }
+    .yili .yili2 img {
+      width: 7.5rem;
+      height: 100%; }
+  .yili .yili3 {
+    width: 7.5rem; }
+
+.content-slide {
+  margin: 0 auto; }
+  .content-slide img {
+    width: 7.5rem; }
+
+.swiper-wrapper {
+  margin: 0 auto; }
+
+#tabs-container {
+  width: 7.5rem;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=touzi.css.map */

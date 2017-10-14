@@ -1,0 +1,1 @@
+(function(){if(!document.sogou_ads1_loaded){var a=new Image();a.src = "http://wb.brand.sogou.com/ct_pv?asid=444638&r=0a62bdc625bc54f4";document.wb_pb.push(a);}}())

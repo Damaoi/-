@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>直播列表</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/animate.min.css"/>
+    <link rel="stylesheet" href="../css/zhibo.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+    <script src="../js/echo.min.js"></script>
+    <script src="../js/echo.min.js"></script>
+    <style>
+        .active{
+            background-color: #ffffff;
+            color: #122a8c;
+        }
+        body{
+            padding-top: .8rem;
+            padding-bottom: .9rem;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <!--公共头部布局开始-->
+    <div class="header">
+        <div class="header-c">
+            <div class="hc-l">
+                <a href="index.html">
+                    <img src="../images/own/back.png" alt=""/>
+                </a>
+                <p>首页</p>
+            </div>
+            <div class="hc-c">
+                <div class="rltop3">
+                    <a href="havascript:;" class="active">直播</a>
+                    <a href="havascript:;">视频</a>
+                </div>
+            </div>
+            <div class="hc-r">
+                <a href="javascript:;" class="">
+                    <img src="../images/own/search.png" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--公共头部布局开始-->
+
+    <!--内容页tab-->
+    <div id="tabs-container" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="content-slide">
+
+                    <!--分类-->
+                    <div class="vcs">
+                        <a href="javascript:;" class="vsca">
+                            <p>最新</p>
+                        </a>
+                        <a href="javascript:;">
+                            <p>热门</p>
+                        </a>
+                        <a href="javascript:;">
+                            <p>预告</p>
+                        </a>
+                    </div>
+                    <!--分类-->
+
+                    <!--分类内容-->
+                    <div class="vcsbox">
+                        <div class="vbox1">
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/zb.png" alt=""/>
+                                        </a>
+                                        <p>1583观看</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <span>
+                                                <i class="yugao">
+                                                    <img src="../images/own/yugao.png" alt=""/>
+                                                </i>
+                                                <p>&nbsp;10:58</p>
+                                            </span>
+                                            <span>
+                                                <i>
+                                                    <img src="../images/own/position.png" alt=""/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/zb.png" alt=""/>
+                                        </a>
+                                        <p>1583观看</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <span>
+                                                <i class="yugao">
+                                                    <img src="../images/own/yugao.png" alt=""/>
+                                                </i>
+                                                <p>&nbsp;10:58</p>
+                                            </span>
+                                            <span>
+                                                <i>
+                                                    <img src="../images/own/position.png" alt=""/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/hf.png" alt=""/>
+                                        </a>
+                                        <p>1583观看</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <span>
+                                                <i class="yugao">
+                                                    <img src="../images/own/yugao.png" alt=""/>
+                                                </i>
+                                                <p>&nbsp;10:58</p>
+                                            </span>
+                                            <span>
+                                                <i>
+                                                    <img src="../images/own/position.png" alt=""/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+
+                            <div class="zb">
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/haima.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/zb.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">海马汽车新闻发布会</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/haima.png"/>
+                                                </i>
+                                                <p>&nbsp;海马汽车</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/timg2.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/zb.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">大国工匠 李万君</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;李万君</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/nengyuan.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/hf.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">第六届新能源高峰论坛</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;王自立</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/timg.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/hf.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">我们的工人最敬工人最敬业!</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;王柳霞</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="vbox2" style="display: none">
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/zb.png" alt=""/>
+                                        </a>
+                                        <p>1583观看</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <i class="yugao">
+                                                <img src="../images/own/ryugao.png" alt=""/>
+                                            </i>
+                                            <p class="mmpd">01-15 10:58 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/zb.png" alt=""/>
+                                        </a>
+                                        <p>1583观看</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <i class="yugao">
+                                                <img src="../images/own/ryugao.png" alt=""/>
+                                            </i>
+                                            <p class="mmpd">01-15 10:58 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/zb.png" alt=""/>
+                                        </a>
+                                        <p>1583观看</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <i class="yugao">
+                                                <img src="../images/own/ryugao.png" alt=""/>
+                                            </i>
+                                            <p class="mmpd">01-15 10:58 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+                            <div class="zb">
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/haima.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/zb.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">海马汽车新闻发布会</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/haima.png"/>
+                                                </i>
+                                                <p>&nbsp;海马汽车</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/timg2.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/zb.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">大国工匠 李万君</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;李万君</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/nengyuan.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/hf.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">第六届新能源高峰论坛</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;王自立</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/timg.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/hf.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">我们的工人最敬工人最敬业!</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;王柳霞</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vbox3" style="display: none">
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/yugaode.png" alt=""/>
+                                        </a>
+                                        <p>1583关注</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <i class="yugao">
+                                                <img src="../images/own/ryugao.png" alt=""/>
+                                            </i>
+                                            <p class="rmmpd">01-15 10:58 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/yugaode.png" alt=""/>
+                                        </a>
+                                        <p>1583关注</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <i class="yugao">
+                                                <img src="../images/own/ryugao.png" alt=""/>
+                                            </i>
+                                            <p class="rmmpd">01-15 10:58 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+                            <a href="javascript:;">
+                                <div class="vboxt">
+                                    <div class="zbt">
+                                        <a href="javascript:;" class="iiimg">
+                                            <img src="../images/own/yugaode.png" alt=""/>
+                                        </a>
+                                        <p>1583关注</p>
+                                    </div>
+                                    <img src="../images/own/zhibo.png" alt="" style="width: 7.5rem;height: 100%"/>
+                                </div>
+                                <div class="vboxb">
+                                    <div class="vboxbc">
+                                        <div class="vboxbcl">
+                                            <a href="javascript:;">
+                                                <img src="../images/own/tx.png" alt=""/>
+                                            </a>
+                                        </div>
+                                        <div class="vboxbcc">
+                                            <p>WNS燃油燃气锅炉结构演示直播</p>
+                                            <p>郑州锅炉股份有限公司</p>
+                                        </div>
+                                        <div class="vboxbcr">
+                                            <i class="yugao">
+                                                <img src="../images/own/ryugao.png" alt=""/>
+                                            </i>
+                                            <p class="rmmpd">01-15 10:58 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div style="width: 7.5rem;height: .2rem;background-color: #f4f4f4;margin: 0 auto"></div>
+                            <div class="zb">
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/haima.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/zb.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">海马汽车新闻发布会</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/haima.png"/>
+                                                </i>
+                                                <p>&nbsp;海马汽车</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/timg2.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/zb.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">大国工匠 李万君</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;李万君</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/nengyuan.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/hf.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">第六届新能源高峰论坛</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;王自立</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zbb">
+                                    <a href="javascript:;" class="zbb-t">
+                                        <img src="" alt="" data-echo="../images/own/timg.png"/>
+                                        <div class="jianbian2">
+                                            <div class="live">
+                                                <div class="live-l">
+                                                    <img src="" alt="" data-echo="../images/own/hf.png"/>
+                                                </div>
+                                                <div class="live-r">
+                                                    <p>555观看</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="zbb-f">
+                                        <p class="zbbfp">我们的工人最敬工人最敬业!</p>
+                                        <div class="zbbff">
+                                            <div class="zbbff-l">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/ren.png"/>
+                                                </i>
+                                                <p>&nbsp;王柳霞</p>
+                                            </div>
+                                            <div class="zbbff-r">
+                                                <i>
+                                                    <img src="" alt="" data-echo="../images/own/position.png"/>
+                                                </i>
+                                                <p>&nbsp;郑州</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--分类内容-->
+
+
+
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="content-slide" style="position: relative">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--内容页tab-->
+
+
+    <!--更多-->
+    <div class="fabuleixing">
+        <div class="fabu">
+            <p class="ptoptil">请选择您要发布的类型</p>
+            <div class="ttrpo">
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/tuwen.png" alt=""/>
+                    </i>
+                    <p>图文</p>
+                </a>
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/lianjie.png" alt=""/>
+                    </i>
+                    <p>链接</p>
+                </a>
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/shipin.png" alt=""/>
+                    </i>
+                    <p>视频</p>
+                </a>
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/zhibo.png" alt=""/>
+                    </i>
+                    <p>直播</p>
+                </a>
+            </div>
+            <div class="chafoot">
+                <a href="javascript:;">
+                    <img src="../images/own/cha.png" alt=""/>
+                </a>
+                <p>取消</p>
+            </div>
+        </div>
+    </div>
+    <!--更多-->
+
+
+
+
+
+
+
+    <!--底部导航开始-->
+    <div class="foot">
+        <div class="foot-c">
+            <div class="fc-l">
+                <a href="index.html">
+                    <i>
+                        <img src="../images/nav/home.png" alt=""/>
+                    </i>
+                    <p class="redp">首页</p>
+                </a>
+                <a href="messagelist.html" class="ms">
+                    <i>
+                        <img src="../images/nav/message.png" alt=""/>
+                    </i>
+                    <p>消息</p>
+                    <i class="h">
+                        <img src="../images/own/hongdian.png" alt=""/>
+                    </i>
+                </a>
+            </div>
+            <div class="fc-c1">
+
+            </div>
+            <div class="fc-c">
+                <a href="javascript:;">
+                    <img src="../images/nav/fabu.png" alt="" class="fabuimg"/>
+                </a>
+                <p>发布</p>
+            </div>
+            <div class="fc-l">
+                <a href="faxian.html">
+                    <i>
+                        <img src="../images/nav/faxian.png" alt=""/>
+                    </i>
+                    <p>发现</p>
+                </a>
+                <a href="my.html">
+                    <i>
+                        <img src="../images/nav/my.png" alt=""/>
+                    </i>
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--底部导航结束-->
+
+</div>
+<script src="../js/zy.media.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".swiper-wrapper").height($(".swiper-wrapper .swiper-slide").eq(0).find(".content-slide").height())
+        var tabsSwiper = new Swiper('#tabs-container',{
+            speed:500,
+            onSlideChangeStart: function(){
+                console.log($(".swiper-wrapper .swiper-slide").eq(tabsSwiper.activeIndex).find(".content-slide").height())
+                $(".swiper-wrapper").height($(".swiper-wrapper .swiper-slide").eq(tabsSwiper.activeIndex).find(".content-slide").height())
+                $(".rltop3 .active").removeClass('active')
+                $(".rltop3 a").eq(tabsSwiper.activeIndex).addClass('active')
+            }
+        })
+        $(".rltop3 a").on('touchstart mousedown',function(e){
+            e.preventDefault()
+            $(".rltop3 .active").removeClass('active')
+            $(this).addClass('active')
+            tabsSwiper.slideTo( $(this).index() )
+        })
+        $(".rltop3 a").click(function(e){
+            e.preventDefault()
+        })
+
+//        发布
+
+        $(".fabuimg").on("click",function(){
+            $(".fabuleixing").show()
+            $(".ttrpo>a").addClass("animated bounceInUp")
+        })
+
+        $(".chafoot").on("click",function(){
+            $(".fabuleixing").hide()
+        })
+
+        $(".fabuleixing").on("click",function(){
+            $(".fabuleixing").hide()
+        })
+        $('.fabu').on('click',function(e){
+            e.stopPropagation();
+        })
+
+        $(".eos").on("click",function(){
+            $(this).find($(".hongdian>img")).hide()
+        })
+        //        发布
+
+//        直播
+        $(".vcs>a").on("click",function(){
+            $(this).addClass("vsca").siblings().removeClass("vsca");
+            $(".vcsbox>div").hide().eq($(this).index()).show()
+        })
+
+//        直播
+
+
+//        延迟加载
+        echo.init({
+            offset: 100,
+            throttle: 250,
+            unload: false,
+            callback: function (element, op) {
+                console.log('loaded ok.');
+            }
+        });
+//        延迟加载
+
+    })
+</script>
+</body>
+</html>

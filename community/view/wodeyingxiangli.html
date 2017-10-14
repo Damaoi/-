@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>我的影响力</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/style4.css"/>
+    <link rel="stylesheet" href="../css/yuanxingjindu.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/circleChart.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/jquery.animateNumber.js"></script>
+    <style>
+        body{
+            padding-bottom: 1.5rem;
+        }
+        .box {
+            max-width: 7.5rem;
+            background-color: #eee;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <!--头部开始-->
+    <div class="zl-top">
+        <div class="zlt-c">
+            <div class="zltc-l">
+                <a href="javascript:;">
+                    <img src="../images/huisejiantou.png" alt="" onclick="javascript:history.back(-1);"/>
+                </a>
+            </div>
+            <div class="zltc-c">
+                <p>我的知名度</p>
+            </div>
+            <div class="zltc-r">
+                <a href="javascript:;">
+                    排行榜
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--圆形进度-->
+    <div class="circle-jd">
+        <div class="circleChart" id="circle1"></div>
+        <p>高于<span id="target">0%</span>用户</p>
+        <a href="javascript:;">如何提升知名度?</a>
+    </div>
+    <!--圆形进度-->
+
+
+    <!--曲线图-->
+    <div class="qxt">
+        <div class="qxt-c">
+
+        </div>
+    </div>
+    <!--曲线图-->
+
+
+    <!--分享-->
+    <div class="fenxiang">
+        <div class="fenxiang-c">
+            <a href="javascript:;">分享到朋友圈</a>
+        </div>
+    </div>
+    <!--分享-->
+</div>
+<script>
+    $(document).ready(function () {
+        $(".circleChart").circleChart({
+            value: 29.11,
+            color: "#122a8c",
+            background: true,
+            backgroundColor: "#eee", // 进度条之外颜色
+            size: "200",
+            startAngle: 0, // 进度条起点
+            animate: true,
+            text: "",
+            onDraw: function(el, circle) {
+                circle.text(circle.value.toFixed(2)+"<br>"+"<span>知名度</span>"); // 根据value修改text
+            }
+        });
+
+
+//       数字增加
+        $('#target').animateNumber(
+                {
+                    number: 29.22,
+                    color: 'green',
+                    easing: 'easeInQuad',
+                    numberStep: function(now, tween) {
+                        var floored_number = (now).toFixed(2),
+                                target = $(tween.elem);
+                        target.text(floored_number +' %');
+                    }
+                },
+                1800
+        );
+    })
+</script>
+</body>
+</html>

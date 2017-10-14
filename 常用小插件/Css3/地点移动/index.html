@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>地点移动</title>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <style>
+        #canvasmap{
+            width: 500px;
+            height: 500px;
+            border: 1px solid gray;
+            margin: 200px auto;
+            background-image: url("img/未标题-1.png");
+        }
+        body{
+            position: relative;
+        }
+        p{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: yellow;
+            position: absolute;
+            top: 240px;
+            left: 240px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvasmap">
+
+    </canvas>
+    <p></p>
+    <script>
+        var c = document.getElementById("canvasmap");
+        var ctx=c.getContext("2d");
+        ctx.moveTo(150,15);
+        ctx.lineTo(150,35);
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.stroke();
+        ctx.moveTo(150,35);
+        ctx.lineTo(270,35);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.moveTo(270,35);
+        ctx.lineTo(270,70);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.moveTo(270,70);
+        ctx.lineTo(30,70);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.moveTo(30,70);
+        ctx.lineTo(30,102);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.moveTo(30,102);
+        ctx.lineTo(110,102);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.moveTo(110,102);
+        ctx.lineTo(110,125);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.moveTo(110,125);
+        ctx.lineTo(50,125);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        ctx.moveTo(50,125);
+        ctx.lineTo(50,132);
+        ctx.strokeStyle = 'rgba(255,0,0,0.5)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+        $(document).ready(function(){
+            var p = $("p");
+            p.animate({
+                "top":"305px"
+            },3000);
+            p.animate({
+                "left":"440px"
+            },5000);
+            p.animate({
+                "top":"420px"
+            },5000);
+            p.animate({
+                "left":"40px"
+            },8000)
+            p.animate({
+                "top":"530px"
+            },5000)
+            p.animate({
+                "left":"172px"
+            },5000)
+            p.animate({
+                "top":"605px"
+            },5000)
+            p.animate({
+                "left":"75px"
+            },5000)
+            p.animate({
+                "top":"630px"
+            },3000)
+        })
+    </script>
+</body>
+</html>

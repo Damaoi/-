@@ -1,0 +1,136 @@
+.box {
+  max-width: 7.5rem;
+  background-color: #eee;
+  overflow: hidden;
+  height: 100%; }
+
+.t-img {
+  position: relative;
+  margin-bottom: .3rem; }
+  .t-img p {
+    position: absolute;
+    top: .2rem;
+    width: 7.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: .36rem; }
+  .t-img img {
+    width: 7.5rem;
+    height: 5.21rem; }
+
+.sq-list {
+  width: 7.5rem;
+  background-color: #eee; }
+  .sq-list ul {
+    width: 7.5rem; }
+    .sq-list ul li {
+      height: .88rem;
+      line-height: .88rem;
+      background-color: #fff;
+      margin-bottom: .06rem; }
+      .sq-list ul li a {
+        width: 7.1rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between; }
+        .sq-list ul li a .sq-p1 {
+          font-size: .30rem;
+          color: #4f4f4f; }
+        .sq-list ul li a .sq-p2 {
+          color: #ababab;
+          font-size: .28rem; }
+        .sq-list ul li a input {
+          width: 1.9rem;
+          padding-right: .25rem; }
+        .sq-list ul li a input::-webkit-input-placeholder {
+          text-align: right; }
+        .sq-list ul li a button {
+          width: 2.84rem;
+          color: #eee;
+          background-color: #223c8b;
+          font-size: .28rem; }
+        .sq-list ul li a img {
+          width: .14rem;
+          height: .24rem; }
+
+.btn {
+  width: 7.5rem;
+  height: .88rem;
+  background-color: #223c8b;
+  font-size: .32rem;
+  color: #fff;
+  margin-top: 0.24rem; }
+
+.ln {
+  width: 7.5rem;
+  height: .88rem;
+  position: relative; }
+  .ln i {
+    display: inline-block;
+    width: 3.2rem;
+    height: .44rem;
+    margin-left: 2.15rem;
+    border-bottom: .01rem solid #7d7d7d; }
+  .ln span {
+    width: 1.85rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: .22rem;
+    left: 2.825rem;
+    background-color: #eee;
+    color: #353535;
+    font-size: .3rem; }
+  .ln img {
+    width: .39rem;
+    height: .34rem; }
+
+.cdlc {
+  width: 7.5rem;
+  height: 1.82rem;
+  background-color: #fff; }
+  .cdlc .cdlc-center {
+    width: 7.1rem;
+    background-color: #fff;
+    margin: 0 auto; }
+    .cdlc .cdlc-center ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .cdlc .cdlc-center ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .cdlc .cdlc-center ul li img {
+          width: .6rem;
+          height: .6rem;
+          margin-top: .35rem; }
+        .cdlc .cdlc-center ul li p {
+          margin-top: .2rem;
+          color: #3a3a3a;
+          font-size: .3rem; }
+
+.foot-line {
+  width: 7.5rem;
+  height: .88rem;
+  position: relative; }
+  .foot-line i {
+    display: inline-block;
+    width: 7.1rem;
+    height: .44rem;
+    margin-left: .2rem;
+    border-bottom: .01rem solid #dcdcdc; }
+  .foot-line span {
+    width: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: .22rem;
+    left: 2.5rem;
+    background-color: #eee;
+    color: #353535;
+    font-size: .3rem; }
+
+/*# sourceMappingURL=chedidai-shenqing.css.map */

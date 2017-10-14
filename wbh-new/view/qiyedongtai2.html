@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>企业动态</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="../css/zy.media.min.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/swipebox.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+    <script src="../js/echo.min.js"></script>
+    <script src="../js/jquery.swipebox.js"></script>
+    <style>
+        /*html{*/
+            /*overflow: hidden;*/
+            /*height: 100%;*/
+        /*}*/
+        .box {
+            min-width: 7.5rem;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+        #buoy{
+            position:absolute;
+            width: 1.6rem;
+            height: .05rem;
+            /*bottom: -0.05rem!important;*/
+            background: #122a8c;
+            /*left: -9.1rem;*/
+        }
+        body{
+            background-color: #ffffff;
+            /*padding-top: 1.7rem;*/
+            padding-bottom: .9rem;
+        }
+
+
+        .fixednav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+
+        .mui-ellipsis-3 {
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal!important;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .guanzhu{
+            width: 1.1rem;
+            height: .45rem;
+            display: block;
+            border: .01rem solid #e83328;
+            color: #e83328;
+            font-size: .24rem;
+            text-align: center;
+            line-height: .45rem;
+            border-radius: .3rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        #slide1{
+            width: 1rem!important;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+
+
+
+
+
+    <!--公共头部布局开始-->
+        <div class="zstop">
+            <div class="zstopc">
+                <div class="zstopct">
+                    <div class="zstopctl">
+                        <a href="javascript:history.back();">
+                            <img src="../images/own/back.png" alt=""/>
+                        </a>
+                        <p>返回</p>
+                    </div>
+                    <div class="zstopctr">
+                        <a href="javascript:;" class="fenxiang">
+                            <img src="../images/own/fenxiang.png" alt=""/>
+                        </a>
+                        <a href="javascript:;" class="sandian">
+                            <img src="../images/own/sandian.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="zstopcf">
+                    <div class="zstopcfl">
+                        <i>
+                            <img src="../images/company/yutong.png" alt=""/>
+                        </i>
+                    </div>
+                    <div class="zstopcfr">
+                       <div class="zsname">
+                           <p>郑州宇通客车股份有限公司</p>
+                           <i>
+                               <img src="../images/own/lu.png" alt=""/>
+                           </i>
+                           <i>
+                               <img src="../images/own/zheng.png" alt=""/>
+                           </i>
+                       </div>
+                        <div class="zsglinfo">
+                            <div>
+                                <i>
+                                    <img src="../images/own/eye.png" alt=""/>
+                                </i>
+                                <p>26890</p>
+                            </div>
+                            <div>
+                                <i>
+                                    <img src="../images/own/starp.png" alt=""/>
+                                </i>
+                                <p>5555</p>
+                            </div>
+                            <div>
+                                <i>
+                                    <img src="../images/own/message1.png" alt=""/>
+                                </i>
+                                <p>3698</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--公共头部布局开始-->
+
+
+    <!--导航-->
+    <div class="shover">
+        <div style="display: flex;
+  justify-content: space-between;background-color: #ffffff">
+            <nav class="nav" style="overflow-x: hidden">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide onlyc s1" id="slide1">
+                            动态
+                        </div>
+                        <div class="swiper-slide slide s2" id="slide1">
+                            供应
+                        </div>
+                        <div class="swiper-slide slide s3" id="slide1">
+                            采购
+                        </div>
+                        <div class="swiper-slide slide s4" id="slide1">
+                            闲置
+                        </div>
+                        <div class="swiper-slide slide s5" id="slide1">
+                            活动
+                        </div>
+                        <div class="swiper-slide slide s6" id="slide1">
+                            招聘
+                        </div>
+                        <div class="swiper-slide slide s7" id="slide1">
+                            业务负责人
+                        </div>
+                        <div class="swiper-slide slide s8" id="slide1">
+                            企业动态
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hamburger" id="hamburger-1">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="yincang">
+            <div class="yincang-c">
+                <div class="yincangct">
+                    <p>快速选择</p>
+                </div>
+                <div class="yincangcf">
+                    <a href="javascript:;" class="s11">动态</a>
+                    <a href="javascript:;" class="s22">供应</a>
+                    <a href="javascript:;" class="s33">采购</a>
+                    <a href="javascript:;" class="s44">闲置</a>
+                    <a href="javascript:;" class="s55">活动</a>
+                    <a href="javascript:;" class="s66">招聘</a>
+                    <a href="javascript:;" class="s77">业务负责人</a>
+                    <a href="javascript:;" class="s88">企业动态</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--导航-->
+    <div style="height: .2rem;width: 7.5rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+
+
+
+
+
+    <!--企业动态-->
+
+    <div class="gongying ppqy">
+        <div class="gyc">
+            <div class="gyc1">
+                <a href="mingpian.html" class="tx">
+                    <img src="" alt="" data-echo="../images/own/tx.png"/>
+                </a>
+                <p>
+                    <a href="javascript:;">李霄霄-壳牌润滑油</a>
+                    <span>一小时前</span>
+                    <i class="guanzhu"> + 关注</i>
+                </p>
+            </div>
+            <div class="gyc2">
+                <a href="qiyedongtaixiangqing.html">
+                    <p>
+                        供应【壳牌】发电机组润滑油、压缩机润滑油、齿轮
+                        油、传动油等多种润滑油品种，延长设备使用寿命以
+                        及减少停机时间，从而为您显著节约成本。
+                    </p>
+                </a>
+            </div>
+            <div class="gyc3">
+                <a href="../images/own/chanpin.png" class="swipebox1 more3" title="My Caption">
+                    <img src="" alt="" data-echo="../images/own/chanpin.png">
+                </a>
+                <a href="../images/own/chanpin.png" class="swipebox1 more3" title="My Caption">
+                    <img src="" alt="" data-echo="../images/own/chanpin.png">
+                </a>
+                <a href="../images/own/chanpin.png" class="swipebox1 more3" title="My Caption">
+                    <img src="" alt="" data-echo="../images/own/chanpin.png">
+                </a>
+            </div>
+            <div class="pp-4">
+                <div class="pp4-l">
+                    <div class="picture">
+                        <i class="position">
+                            <img src="../images/own/position.png" alt=""/>
+                        </i>
+                        <span>河南 郑州</span>
+                    </div>
+                    <div class="picture">
+                        <i class="eye">
+                            <img src="../images/own/eye.png" alt=""/>
+                        </i>
+                        <span>300</span>
+                    </div>
+                </div>
+                <div class="pp4-r">
+                    <a href="javascript:;" class="circle">
+                        <i class="hand">
+                            <img src="../images/own/hand.png" alt="" class="polik"/>
+                        </i>
+                        <span>9025</span>
+                    </a>
+                    <a href="pinglunxiangqing.html" class="circle">
+                        <i class="message">
+                            <img src="../images/own/message.png" alt=""/>
+                        </i>
+                        <span>555</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: .2rem;width: 7.5rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+
+    <div class="gongying ppqy">
+        <div class="gyc">
+            <div class="gyc1">
+                <a href="mingpian.html" class="tx">
+                    <img src="" alt="" data-echo="../images/own/tx.png"/>
+                </a>
+                <p>
+                    <a href="javascript:;">李霄霄-壳牌润滑油</a>
+                    <span>一小时前</span>
+                </p>
+                <i class="guanzhu"> + 关注</i>
+            </div>
+            <div class="gyc2">
+                <a href="qiyedongtaixiangqing.html">
+                    <p>供应【壳牌】发电机组润滑油、压缩机润滑油、齿轮
+                        油、传动油等多种润滑油品种，延长设备使用寿命以
+                        及减少停机时间，从而为您显著节约成本。
+                    </p>
+                </a>
+            </div>
+            <div class="playvideo">
+                <div class="zy_media">
+                    <video poster="../images/nav/banner1.png" data-config='{"mediaTitle": "测试视频--视频"}'>
+                        <source src="../images/mv/1.mp4" type="video/mp4">
+                        您的浏览器不支持HTML5视频
+                    </video>
+                </div>
+                <!--<div id="modelView">&nbsp;</div>-->
+            </div>
+            <div class="pp-4">
+                <div class="pp4-l">
+                    <div class="picture">
+                        <i class="position">
+                            <img src="../images/own/position.png" alt=""/>
+                        </i>
+                        <span>河南 郑州</span>
+                    </div>
+                    <div class="picture">
+                        <i class="eye">
+                            <img src="../images/own/eye.png" alt=""/>
+                        </i>
+                        <span>300</span>
+                    </div>
+                </div>
+                <div class="pp4-r">
+                    <a href="javascript:;" class="circle">
+                        <i class="hand">
+                            <img src="../images/own/hand.png" alt="" class="polik"/>
+                        </i>
+                        <span>9025</span>
+                    </a>
+                    <a href="pinglunxiangqing.html" class="circle">
+                        <i class="message">
+                            <img src="../images/own/message.png" alt=""/>
+                        </i>
+                        <span>555</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: .2rem;width: 7.5rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+    <div class="gongying ppqy">
+        <div class="gyc">
+            <div class="gyc1">
+                <a href="javascript:;" class="tx">
+                    <img src="" alt="" data-echo="../images/own/guanfang.png"/>
+                </a>
+                <p>
+                    <a href="javascript:;">网博会官方</a>
+                    <span>一小时前</span>
+                </p>
+                <p style="position: absolute;right: 0;color: #b0b0b0;font-size: .23rem">广告</p>
+            </div>
+            <div class="gyc2">
+                <p>2018年中国(国际)装备制造业网上博览会邀您来参展！
+                    展示实力、节省成本、精准营销、绿色环保
+                </p>
+            </div>
+            <div class="gyc3">
+                <i class="more1">
+                    <img src="" alt="" data-echo="../images/own/gg.png"/>
+                </i>
+            </div>
+            <div class="pp-4">
+                <div class="pp4-l">
+                    <div class="picture">
+                        <i class="position">
+                            <img src="../images/own/position.png" alt=""/>
+                        </i>
+                        <span>河南 郑州</span>
+                    </div>
+                    <div class="picture">
+                        <i class="eye">
+                            <img src="../images/own/eye.png" alt=""/>
+                        </i>
+                        <span>300</span>
+                    </div>
+                </div>
+                <div class="pp4-r">
+                    <a href="javascript:;" class="circle">
+                        <i class="hand">
+                            <img src="../images/own/hand.png" alt="" class="polik"/>
+                        </i>
+                        <span>9025</span>
+                    </a>
+                    <a href="javascript:;" class="circle">
+                        <i class="message">
+                            <img src="../images/own/message.png" alt=""/>
+                        </i>
+                        <span>555</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--企业动态-->
+    <div style="height: .2rem;width: 7.5rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+
+    <div style="height: .2rem;width: 7.5rem;background-color: #f4f4f4;margin: 0 auto"></div>
+    <!--底部开始-->
+    <div class="footthree">
+        <div class="footthreel">
+            <i>
+                <img src="../images/own/star.png" alt=""/>
+            </i>
+            <p>收藏</p>
+        </div>
+        <div class="footthreec">
+            <div class="renicon">
+                <i>
+                    <img src="../images/own/fzr.png" alt=""/>
+                </i>
+                <i>
+                    <img src="../images/own/fzr.png" alt=""/>
+                </i>
+                <i>
+                    <img src="../images/own/fzr.png" alt=""/>
+                </i>
+            </div>
+            <div>
+                <p><span>99+</span>负责人可联系</p>
+                <p><span>1</span>个电话可拨打</p>
+            </div>
+        </div>
+        <div class="footthreer">
+            <p>联系企业</p>
+        </div>
+    </div>
+    <!--底部开始-->
+
+
+    <!--隐藏模板-->
+    <div class="ycmb" style="display: none">
+        <div class="ycmbc">
+            <div class="ycmbc-c">
+                <div class="ycmbc-ct">
+                    <p>郑州宇通客车有限公司</p>
+                </div>
+                <div style="height: .8rem"></div>
+                <div class="ycmbc-cc">
+                    <div class="tishiyu">
+                        <div class="tishiyuc">
+                            <p>电话(3) <span>以下电话均来自企业或个人主动公开</span></p>
+                        </div>
+                    </div>
+                    <div class="phonelist">
+                        <div class="phone">
+                            <div class="phnoenum">
+                                <div class="phonel">
+                                    <i>
+                                        <img src="../images/own/phonenum.png" alt=""/>
+                                    </i>
+                                </div>
+                                <div class="phonec">
+                                    <p>1853658****</p>
+                                    <p>丁杰</p>
+                                </div>
+                                <div class="phoner">
+                                    <p>查看号码</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <div class="phnoenum">
+                                <div class="phonel">
+                                    <i>
+                                        <img src="../images/own/phonenum.png" alt=""/>
+                                    </i>
+                                </div>
+                                <div class="phonec">
+                                    <p>1853658****</p>
+                                    <p>丁杰</p>
+                                </div>
+                                <div class="phoner">
+                                    <p>查看号码</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone">
+                            <div class="phnoenum">
+                                <div class="phonel">
+                                    <i>
+                                        <img src="../images/own/phonenum.png" alt=""/>
+                                    </i>
+                                </div>
+                                <div class="phonec">
+                                    <p>1853658****</p>
+                                    <p>丁杰</p>
+                                </div>
+                                <div class="phoner">
+                                    <p>查看号码</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tishiyu">
+                        <div class="tishiyuc">
+                            <p>公司员工(99)</p>
+                        </div>
+                    </div>
+                    <div class="yuangong">
+                        <a href="javascript:;" class="yuangonglist">
+                            <div class="yuangongl">
+                                <i>
+                                    <img src="../images/own/leida.png" alt=""/>
+                                </i>
+                            </div>
+                            <div class="yuangongr">
+                                <p>通讯录雷达</p>
+                                <p>看看通讯录里哪些人认识这家公司</p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="yuangonglist">
+                            <div class="yuangongl">
+                                <i>
+                                    <img src="../images/own/tx.png" alt=""/>
+                                </i>
+                            </div>
+                            <div class="yuangongr">
+                                <p>***
+                                    <i>
+                                        <img src="../images/own/vip.png" alt=""/>
+                                    </i>
+                                </p>
+                                <p>看看通讯录里哪些人认识这家公司</p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="yuangonglist">
+                            <div class="yuangongl">
+                                <i>
+                                    <img src="../images/own/tx.png" alt=""/>
+                                </i>
+                            </div>
+                            <div class="yuangongr">
+                                <p>***
+                                    <i>
+                                        <img src="../images/own/vip.png" alt=""/>
+                                    </i>
+                                </p>
+                                <p>看看通讯录里哪些人认识这家公司</p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="checkmore">
+                            <p>查看更多</p>
+                        </a>
+                    </div>
+                    <div class="tishiyu">
+                        <div class="tishiyuc">
+                            <p>其他(99)</p>
+                        </div>
+                    </div>
+                    <div class="qitainfo">
+                        <a href="javascript:;" class="qitainfolist">
+                            <div class="qitainfol">
+                                <i>
+                                    <img src="../images/own/xiaoyoujian.png" alt=""/>
+                                </i>
+                            </div>
+                            <div class="qitainfor">
+                                <p>1030504010@qq.com</p>
+                                <p>来自晚报</p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="qitainfolist">
+                            <div class="qitainfol">
+                                <i>
+                                    <img src="../images/own/xiaoyoujian.png" alt=""/>
+                                </i>
+                            </div>
+                            <div class="qitainfor">
+                                <p>597092554@qq.com</p>
+                                <p>公司邮箱</p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="qitainfolist">
+                            <div class="qitainfol">
+                                <i>
+                                    <img src="../images/own/xiaodizhi.png" alt=""/>
+                                </i>
+                            </div>
+                            <div class="qitainfor">
+                                <p>河南省郑州市管城回族区十八里河宇通路宇通工业园</p>
+                                <p></p>
+                            </div>
+                        </a>
+                        <a href="javascript:;" class="checkmore">
+                            <p>查看更多</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div style="height: 1rem"></div>
+                <div class="ycmbc-cf">
+                    <p>取消</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--隐藏模板-->
+
+</div>
+
+
+<script src="../js/zy.media.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            loopedSlides: 8,
+        })
+
+        $(".slide").on("click",function(){
+            $(this).css({
+                "borderBottom" : ".05rem solid #122a8c",
+                "color" : "#122a8c",
+            }).siblings().css({
+                "color" : "#666666",
+                "borderBottom" : "none",
+            })
+        })
+
+
+
+        $(".circle").on("click",function(){
+            $(this).find(".polik").attr("src","../images/own/handb.png")
+        })
+
+
+
+//       按钮
+
+        $(".hamburger").click(function(){
+            $(this).toggleClass("is-active");
+            $(".yincang").toggle();
+            $(".hamburger").toggleClass("ppop")
+        });
+
+//        按钮
+
+//        $("#chakanmore").on("click",function(){
+//            $("#showfont").show()
+//            $(this).hide()
+//        })
+
+
+        //        延迟加载
+        echo.init({
+            offset: 100,
+            throttle: 250,
+            unload: false,
+            callback: function (element, op) {
+                console.log('loaded ok.');
+            }
+        });
+//        延迟加载
+
+
+        //        视频
+        zymedia('video',{autoplay: false});
+//        视频
+
+
+
+
+
+        $('#chakanmore').on("click",function(){
+            $(".mui-ellipsis-3").removeClass('mui-ellipsis-3');
+            $(this).hide()
+        });
+
+
+
+        var nav=$(".shover"); //得到导航对象
+        var win=$(window); //得到窗口对象
+        var sc=$(document);//得到document文档对象。
+        win.scroll(function(){
+            if(sc.scrollTop()>=100){
+                nav.addClass("fixednav");
+                $(".navTmp").fadeIn();
+            }else{
+                nav.removeClass("fixednav");
+                $(".navTmp").fadeOut();
+            }
+        })
+
+
+
+
+        $(".footthreec").on("click",function(){
+            $(".ycmb").show()
+            $("html,body,.box").css({
+                "height" : "100%!important",
+                "overflow" : "hidden",
+            })
+            $(".ycmb").css({
+                "height" : "100%!important",
+                "overflow" : "hidden",
+            })
+        })
+
+        $(".ycmbc-cf").on("click",function(){
+            $(".ycmb").hide();
+            $("html,body,.box").css({
+                "height" : "",
+                "overflow" : "",
+            })
+        })
+
+
+
+
+
+
+        $(".footthreel").on("click",function(){
+            $(".footthreel>i>img").attr("src","../images/own/star1.png")
+        })
+
+
+        $(".guanzhu").on("click",function(){
+            $(this).html("已关注")
+            $(this).css({
+                "border" : "none",
+                "color" : "#888888"
+            })
+        })
+
+//        灯箱
+        $(".swipebox1").swipebox();
+
+
+    })
+</script>
+</body>
+</html>

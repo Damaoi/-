@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+        }
+        .box a{
+            display: inline-block;
+            width: 180px;
+            height: 180px;
+            border: 1px solid gray;
+            margin: 10px 10px;
+        }
+        .box a i{
+            margin: 15px 10px;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray;
+            text-align: center;
+            line-height: 150px;
+            font-style: normal;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+        }
+        .box2 ul{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 25px 25px;
+            list-style: none;
+            border: 1px solid gray;
+        }
+        .box2 ul li{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 25px 25px;
+            border: 1px solid gray;
+        }
+        .box2 ul li a{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid gray;
+            margin: 25px 25px;
+        }
+        .box2 ul li a i{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            border: 1px solid gray;
+            margin: 10px 10px;
+            font-style: normal;
+            text-align: center;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <a href="javascript:;">
+        <i>这是i标签</i>
+    </a>
+</div>
+<div class="box2">
+    <ul>
+        <li>
+            <a href="javascript:;">
+                <i class="i">i</i>
+            </a>
+        </li>
+    </ul>
+</div>
+<button class="btn">parent</button>
+<button class="btn1">parents</button>
+<button class="btn2">parentsUntil</button>
+<script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $("i").parent().css("background","red");  /*直接父元素 就是第一个父元素*/
+        })
+        $(".btn1").click(function(){
+            $("i").parents().css("background","yellow");    /*所有的父元素*/
+        })
+        $(".btn2").click(function(){
+            $("i").parents().css("background","");
+            $(".i").parentsUntil("ul").css("background","red");   /*i到ul之间的所有父元素*/
+        })
+    })
+</script>
+</body>
+</html>

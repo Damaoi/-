@@ -1,0 +1,62 @@
+#sym_body{min-height:620px!important;position:relative;background:url(../images/symbg.jpg) 0 0 no-repeat}
+#desktops{width:900px;height:570px;position:absolute;top:50%;left:50%;margin:-285px 0 0 -450px}
+.cells{z-index:1}
+.mark_section{position:relative;width:330px;height:145px;padding:15px 15px 20px;background:url(../images/bg_widget.png) no-repeat;background-size:100% 100%;z-index:222}
+.desktops .cell{position:absolute;width:90px;height:90px;cursor:pointer;background:url(../images/empty_sym.png) 0 0 no-repeat}
+.desktops .cell:hover{background-position:-90px 0}
+.desktops .cell.selected{background-position:-180px 0}
+.smark-color-white{background-position:5px 5px}
+.smark-color-red{background-position:5px -85px}
+.smark-color-orange{background-position:5px -175px}
+.smark-color-blue{background-position:5px -265px}
+.smark-color-black{background-position:-85px 5px}
+.smark-color-pink{background-position:-85px -85px}
+.smark-color-green{background-position:-85px -175px}
+.smark-color-brown{background-position:-85px -265px}
+.smark-color-yellow{background-position:-85px -445px}
+.smark-color-gray{background-position:5px -445px}
+.smark-color-cyan{background-position:5px -355px}
+.smark-color-purple{background-position:-85px -355px}
+.smark{color:#fff;font:9px "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,sans-serif;line-height:9px;padding:55px 5px 0;height:35px;text-decoration:none;width:80px;text-align:center;background:url(../images/tiles.png) no-repeat;background-position:5px 5px;position:absolute;cursor:pointer;display:block;-webkit-tap-highlight-color:transparent;-webkit-user-select:none!important;border-radius:10px}
+.desktops .row0{top:0}
+.desktops .row1{top:90px}
+.desktops .row2{top:180px}
+.desktops .row3{top:270px}
+.desktops .row4{top:360px}
+.desktops .row5{top:450px}
+.desktops .row6{top:540px}
+.desktops .row7{top:630px}
+.desktops .row8{top:720px}
+.desktops .row9{top:810px}
+.desktops .row10{top:900px}
+.desktops .col0{left:0}
+.desktops .col1{left:90px}
+.desktops .col2{left:180px}
+.desktops .col3{left:270px}
+.desktops .col4{left:360px}
+.desktops .col5{left:450px}
+.desktops .col6{left:540px}
+.desktops .col7{left:630px}
+.desktops .col8{left:720px}
+.desktops .col9{left:810px}
+.desktops .col10{left:900px}
+.desktops .col11{left:990px}
+.desktops .col12{left:1080px}
+.desktops .col13{left:1170px}
+.desktops .col14{left:1260px}
+.desktops .col15{left:1350px}
+.desktops .col16{left:1440px}
+.desktops .col17{left:1530px}
+.desktops .col18{left:1620px}
+.desktops .col19{left:1710px}
+.desktops .col20{left:1800px}
+.desktops .col21{left:1890px}
+.desktops .col22{left:1980px}
+.desktops .col23{left:2070px}
+.desktops .col24{left:2160px}
+.desktops .col25{left:2250px}
+.desktops .col26{left:2340px}
+.desktops .col27{left:2430px}
+.desktops .col28{left:2520px}
+.desktops .col29{left:2610px}
+.desktops .col30{left:2700px}

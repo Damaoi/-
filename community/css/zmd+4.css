@@ -1,0 +1,22 @@
+.zmd {
+  width: 7.5rem; }
+  .zmd .zmd-c {
+    width: 7.1rem;
+    margin: 0 auto; }
+    .zmd .zmd-c .zmd-p1 {
+      color: #333333;
+      font-size: .34rem;
+      margin-top: .45rem; }
+    .zmd .zmd-c .zmd-p2, .zmd .zmd-c .zmd-p3 {
+      line-height: .4rem;
+      color: #646464;
+      font-size: .28rem;
+      margin-top: .25rem; }
+    .zmd .zmd-c ul li {
+      color: #646464;
+      font-size: .28rem;
+      margin-top: .25rem; }
+      .zmd .zmd-c ul li a {
+        color: #122a8c; }
+
+/*# sourceMappingURL=zmd+4.css.map */

@@ -1,0 +1,340 @@
+.box{
+    max-width: 7.5rem;
+    background-color: #eee;
+    overflow: hidden;
+}
+/*内容开始*/
+.cbtn-1{
+    width: 7.1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: .12rem;
+}
+.cbtn-1 input{
+    width: 5.6rem;
+    height: .8rem;
+    border: .01rem solid #989898!important;
+    border-radius: .1rem;
+}
+.cbtn-1 p{
+    color: #333333;
+    font-size: .26rem;
+}
+.cbtn-1 span{
+    color: #db4640;
+}
+.sel{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .12rem;
+    width: 7.1rem;
+    margin: 0 auto;
+    margin-top: .12rem;
+    align-items: center;
+}
+.sect{
+    width: 5.6rem;
+    height: .8rem;
+    border-radius: .1rem;
+}
+.sel p{
+    color: #333333;
+    font-size: .26rem;
+}
+.sel span{
+    color: #db4640;
+}
+.sect option{
+    display: inline-block;
+    height: .2rem;
+    min-height: 5rem!important;
+}
+
+
+/*下拉菜单开始*/
+#divselect{
+    width:5.6rem;
+    position:relative;
+    z-index:10000;
+}
+#divselect cite{
+    /*width:5.6rem;*/
+    height:.8rem;
+    line-height:.8rem;
+    display:block;
+    color: #807a62;
+    cursor:pointer;
+    font-style:normal;
+    padding-left:.2rem;
+    padding-right:.03rem;
+    border:.01rem solid #989898!important;
+    border-radius: .1rem;
+    background:url("../images/xjt.png") no-repeat right center;
+    background-color: #fff;
+}
+#divselect ul{
+    width:5.55rem;
+    border:0.01rem solid #989898;
+    border-radius: .1rem;
+    background-color: #ffffff;
+    position:absolute;
+    z-index:20000;
+    margin-top:-0.01rem;
+    display:none;
+}
+#divselect ul li{
+    height:.8rem;
+    line-height:.8rem;
+}
+#divselect ul li a{
+    display:block;
+    height: .8rem;
+    color: #494949;
+    text-decoration:none;
+    padding-left:.2rem;
+    padding-right:10px;
+}
+#divselect ul li a:hover{
+    background-color:#CCC;
+}
+
+
+
+
+
+
+
+
+#divselect1{
+    width:5.6rem;
+    position:relative;
+    z-index:10000;
+}
+#divselect1 cite{
+    /*width:5.6rem;*/
+    height:.8rem;
+    line-height:.8rem;
+    display:block;
+    color: #807a62;
+    cursor:pointer;
+    font-style:normal;
+    padding-left:.2rem;
+    padding-right:.03rem;
+    border:.01rem solid #989898!important;
+    border-radius: .1rem;
+    background:url("../images/xjt.png") no-repeat right center;
+    background-color: #fff;
+}
+#divselect1 ul{
+    width:5.55rem;
+    border:0.01rem solid #989898;
+    border-radius: .1rem;
+    background-color: #ffffff;
+    position:absolute;
+    z-index:20000;
+    margin-top:-0.01rem;
+    display:none;
+}
+#divselect1 ul li{
+    height:.8rem;
+    line-height:.8rem;
+}
+#divselect1 ul li a{
+    display:block;
+    height: .8rem;
+    color: #494949;
+    text-decoration:none;
+    padding-left:.2rem;
+    padding-right:10px;
+}
+#divselect1 ul li a:hover{
+    background-color:#CCC;
+}
+
+
+
+
+#divselect2{
+    width:5.6rem;
+    position:relative;
+    /*z-index:100000;*/
+}
+#divselect2 cite{
+    /*width:5.6rem;*/
+    height:.8rem;
+    line-height:.8rem;
+    display:block;
+    color: #807a62;
+    cursor:pointer;
+    font-style:normal;
+    padding-left:.2rem;
+    padding-right:.03rem;
+    border:.01rem solid #989898!important;
+    border-radius: .1rem;
+    background:url("../images/xjt.png") no-repeat right center;
+    background-color: #fff;
+}
+#divselect2 ul{
+    width:5.55rem;
+    border:0.01rem solid #989898;
+    border-radius: .1rem;
+    background-color: #ffffff;
+    position:absolute;
+    z-index:20000;
+    margin-top:-0.01rem;
+    display:none;
+}
+#divselect2 ul li{
+    height:.8rem;
+    line-height:.8rem;
+}
+#divselect2 ul li a{
+    display:block;
+    height: .8rem;
+    color: #494949;
+    text-decoration:none;
+    padding-left:.2rem;
+    padding-right:10px;
+}
+#divselect2 ul li a:hover{
+    background-color:#CCC;
+}
+
+
+
+
+
+
+
+#divselect3{
+    width:5.6rem;
+    position:relative;
+    /*z-index:10000;*/
+}
+#divselect3 cite{
+    /*width:5.6rem;*/
+    height:.8rem;
+    line-height:.8rem;
+    display:block;
+    color: #807a62;
+    cursor:pointer;
+    font-style:normal;
+    padding-left:.2rem;
+    padding-right:.03rem;
+    border:.01rem solid #989898!important;
+    border-radius: .1rem;
+    background:url("../images/xjt.png") no-repeat right center;
+    background-color: #fff;
+}
+#divselect3 ul{
+    width:5.55rem;
+    border:0.01rem solid #989898;
+    border-radius: .1rem;
+    background-color: #ffffff;
+    position:absolute;
+    /*z-index:20000;*/
+    margin-top:-0.01rem;
+    display:none;
+}
+#divselect3 ul li{
+    height:.8rem;
+    line-height:.8rem;
+}
+#divselect3 ul li a{
+    display:block;
+    height: .8rem;
+    color: #494949;
+    text-decoration:none;
+    padding-left:.2rem;
+    padding-right:10px;
+}
+#divselect3 ul li a:hover{
+    background-color:#CCC;
+}
+/*下拉菜单结束*/
+
+
+.fan{
+    display: flex;
+    align-items: center;
+}
+.fan{
+    width: 5.6rem;
+    height: .8rem;
+    /*border: .01rem solid #989898!important;*/
+    /*border-radius: .1rem;*/
+}
+.fan span{
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    background-color: #3275c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: .2rem;
+}
+.fan span img{
+    width: .21rem;
+    height: .17rem;
+}
+.fan1{
+    width: 5.6rem;
+    height: 1.4rem;
+}
+.fangxing img{
+    width: .7rem;
+    height: .7rem;
+    /*margin-top: .2rem;*/
+    /*margin-left: .08rem;*/
+}
+.laji{
+    display: inline-block;
+    width: 7.1rem;
+    height: .1rem;
+}
+.fangxing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: .01rem solid #989898!important;
+    /*margin-bottom: .2rem!important;*/
+}
+.sheji1{
+    margin-top: .2rem;
+    margin-left: 1.68rem;
+    color: #adadad;
+    font-size: .24rem;
+}
+.fanfan111{
+    display: inline-block;
+    width: 5.6rem;
+    height: 1.72rem!important;
+    border-radius: .01rem;
+}
+.shebao{
+    display: flex;
+    justify-content: flex-start;
+}
+/*内容结束*/
+
+
+/*提交开始*/
+.tijiao{
+    width: 7.5rem;
+    height: .92rem;
+    background: #223c8b;
+    margin-top: .8rem;
+}
+.tijiao p{
+    text-align: center;
+    line-height: .92rem;
+    color: #fff;
+    font-size: .26rem;
+}
+/*提交结束*/

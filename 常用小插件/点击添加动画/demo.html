@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="animate.css"/>
+    <script src="jquery-2.1.4.min.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .b-c {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="b-c">
+
+    </div>
+</div>
+<button>dianji</button>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $(".b-c").addClass("animated flip")
+        })
+    })
+</script>
+</body>
+</html>

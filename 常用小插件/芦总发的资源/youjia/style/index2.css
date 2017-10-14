@@ -1,0 +1,57 @@
+body{ margin: 0; padding: 0;}
+.logobox{width:200px; position: absolute; left:50%; margin-left: -100px; top:20%;}
+.logo{width:100px; height: 109px; margin:auto;}
+.logo a{ display: block; text-align: center; line-height: 116px;}
+.logo a img{ display: inline; vertical-align: middle; width:60px; height: 60px;}
+.logo_bo{ text-align: center;}
+.logo_bo img{ display: inline; vertical-align: middle; width:186px;}
+
+.bodybox .bgimg{ width:100%; height: 100%; }
+.bodyb{ height: 100%; width:100%; position: relative; left:0; top:0; z-index: 50;}
+.bodyb .imgbg{ width:100%; height: 100%}
+
+.bodybox{max-width: 100%; margin: auto;padding-top: 1em;}
+/*搜索*/
+.search{ width:90%; margin:0 auto; border-radius:30px 30px;background: rgba(255,255,255,0.4);height:30px; margin-top: 5px;}
+.search .searchk{ background: none; line-height: 25px; padding-top:2px; padding-bottom: 2px; border:none;
+width:94%; background: url(../images/search.png) no-repeat 10px center;
+margin-bottom: 0; height: 25px; font-size: 16px; color:#fff; text-indent: 35px;}
+
+/*时间*/
+.time{text-align: center; margin-top: 1.5em;}
+.time p{ display: block; text-align: center; font-size: 16px; color:#fff; line-height: 42px;}
+.time  .time_top{ font-size: 60px; color:#fff; font-weight: 100;}
+/*#zm li{ width:100%;}
+.icon{width:100%; margin-top: 10px; margin-bottom: 10px;}*/
+.icon .iconn{ overflow: hidden; width:25%; margin:auto; margin-top:0.2em; margin-bottom: 0.2em; float: left;}
+.icon{ position: relative;}
+.iconn{ float: left; width:25%;}
+.iconn span{ display: block;width:50px;height: 50px; padding: 5px; border-radius: 10px 10px; background: rgba(255,255,255,0.4); margin:auto; overflow: hidden;}
+.iconn span a{ display: block; float: left; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px;;}
+.iconn a img{width:12px; height: 12px;}
+.iconn .shuoming{ text-align: center; color:#fff; margin-top:2px; font-size: 12px; background: none; width:60px; height:auto;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis; padding: 2px;}
+ .tempWrap{}
+ 
+ /*大图标*/
+.promptu-menu01 .bigicon span{width:60px; height:60px; background:none; padding: 0;}
+.promptu-menu01 .bigicon .shuoming{ height: auto; margin-top: 6px;}
+.promptu-menu01 .bigicon span a{width:60px;border-radius: 8px 8px; margin: 0;}
+.promptu-menu01 .bigicon span a img{width:60px; height: 60px; border-radius: 8px 8px;}
+ 
+ /*底部*/
+.bonav{background: rgba(255,255,255,0.6);width:100%; margin: auto; overflow: hidden; position: absolute; left:0; bottom:0;}
+.bonav span{ display: block; float: left; width:25%;}
+.bonav span a{display: block; text-align: center; width:60px; height: 60px; padding: 5px; border-radius: 8px 8px; margin:auto;}
+.bonav span .shuoming{text-align: center; color:#fff; margin-top:-8px; font-size: 12px; background: none; width:60px; height:auto;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+ .bonav span a img{width:60px; height: 60px; border-radius: 8px 8px;}
+
+
+
+/*测试*/
+
+.icon{ width:25%;}
+.icon a{ display: block; width:50px; height: 50px; padding: 5px;}
+.icon a img{ width:50px; height: 50px;}
+

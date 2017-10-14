@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.box {
+  max-height: 7.5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between; }
+  .box .p1 {
+    width: 2.5rem;
+    height: 2rem;
+    background-color: aqua; }
+    .box .p1 .p1-t {
+      width: 0;
+      height: 0;
+      border-left: 1.25rem solid transparent;
+      border-right: 1.25rem solid transparent;
+      border-bottom: 1rem solid red;
+      margin: 0 auto; }
+    .box .p1 .p1-f {
+      width: 0;
+      height: 0;
+      border-left: 1.25rem solid transparent;
+      border-right: 1.25rem solid transparent;
+      border-bottom: 1rem solid red;
+      transform: rotate(180deg);
+      margin: 0 auto; }
+  .box .p2 {
+    width: 2.5rem;
+    height: 2rem;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .box .p2 .p2-t {
+      width: 2.5rem;
+      height: 1rem;
+      background-color: chartreuse; }
+    .box .p2 .p2-f {
+      width: 2.5rem;
+      height: 1rem;
+      background-color: deeppink; }
+  .box .p3 {
+    width: 2.5rem;
+    height: 2rem;
+    background-color: green; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>荣誉资质</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="../css/zy.media.min.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+    <script src="../js/echo.min.js"></script>
+    <style>
+        .box {
+            min-width: 7.5rem;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        body {
+            background-color: #ffffff;
+            /*padding-top: 1.7rem;*/
+            padding-bottom: .9rem;
+        }
+
+
+        .morecar a{
+            margin-top: 0rem;
+            margin-bottom: .05rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box">
+
+    <!--公共头部布局开始-->
+    <div class="zstop">
+        <div class="zstopc">
+            <div class="zstopct">
+                <div class="zstopctl">
+                    <a href="javascript:history.back();">
+                        <img src="../images/own/back.png" alt=""/>
+                    </a>
+
+                    <p>返回</p>
+                </div>
+                <div class="zstopctr">
+                    <a href="javascript:;" class="fenxiang">
+                        <img src="../images/own/fenxiang.png" alt=""/>
+                    </a>
+                    <a href="javascript:;" class="sandian">
+                        <img src="../images/own/sandian.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="zstopcf">
+                <div class="zstopcfl">
+                    <i>
+                        <img src="../images/company/yutong.png" alt=""/>
+                    </i>
+                </div>
+                <div class="zstopcfr">
+                    <div class="zsname">
+                        <p>郑州宇通客车股份有限公司</p>
+                        <i>
+                            <img src="../images/own/lu.png" alt=""/>
+                        </i>
+                        <i>
+                            <img src="../images/own/zheng.png" alt=""/>
+                        </i>
+                    </div>
+                    <div class="zsglinfo">
+                        <div>
+                            <i>
+                                <img src="../images/own/eye.png" alt=""/>
+                            </i>
+
+                            <p>26890</p>
+                        </div>
+                        <div>
+                            <i>
+                                <img src="../images/own/starp.png" alt=""/>
+                            </i>
+
+                            <p>5555</p>
+                        </div>
+                        <div>
+                            <i>
+                                <img src="../images/own/message1.png" alt=""/>
+                            </i>
+
+                            <p>3698</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--公共头部布局开始-->
+
+
+
+    <!--版块介绍-->
+    <div class="bkjs">
+        <div class="bkjsa">
+            <div class="bkjsac">
+                <div class="bkjsacl">
+                    <p>荣誉资质(36)</p>
+                </div>
+                <!--<div class="bkjsacr">-->
+                    <!--<a href="http://vr.cneme.cn/tour/f0c6f241776462df">点击进入</a>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <div style="height: .1rem;width: 7.5rem;background-color: #f4f4f4;margin: 0 auto"></div>
+
+    <div class="morecar">
+        <a href="javascript:;">
+            <span class="cart">
+                <img src="../images/company/zizhi.png" alt=""/>
+            </span>
+            <p>
+                宇通客车启动LCC工程——2013中国客车行业十大新闻
+            </p>
+        </a>
+        <a href="javascript:;">
+            <span class="cart">
+                <img src="../images/company/zizhi2.png" alt=""/>
+            </span>
+            <p>
+                中国企业500强 第433名
+            </p>
+        </a>
+        <a href="javascript:;">
+            <span class="cart">
+                <img src="../images/company/zizhi2.png" alt=""/>
+            </span>
+            <p>
+                中国企业500强 第433名
+            </p>
+        </a>
+        <a href="javascript:;">
+            <span class="cart">
+                <img src="../images/company/zizhi2.png" alt=""/>
+            </span>
+            <p>
+                中国企业500强 第433名
+            </p>
+        </a>
+        <a href="javascript:;">
+            <span class="cart">
+                <img src="../images/company/zizhi2.png" alt=""/>
+            </span>
+            <p>
+                中国企业500强 第433名
+            </p>
+        </a>
+        <a href="javascript:;">
+            <span class="cart">
+                <img src="../images/company/zizhi2.png" alt=""/>
+            </span>
+            <p>
+                中国企业500强 第433名
+            </p>
+        </a>
+    </div>
+</div>
+
+
+<script src="../js/zy.media.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        //        延迟加载
+        echo.init({
+            offset: 100,
+            throttle: 250,
+            unload: false,
+            callback: function (element, op) {
+                console.log('loaded ok.');
+            }
+        });
+//        延迟加载
+
+
+
+        $(".fenleitopcr").on("click", function () {
+            $(".chanpinlrr").toggleClass("hide");
+            $(".chanpinlrl").toggleClass("hide2");
+
+
+            if ($(this).find("img").attr("src") == "../images/own/da.png") {
+                $(this).find("img").attr("src", "../images/own/xiao.png");
+            }
+            else {
+                $(this).find("img").attr("src", "../images/own/da.png");
+            }
+        })
+
+
+    })
+</script>
+</body>
+</html>

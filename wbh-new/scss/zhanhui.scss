@@ -1,0 +1,150 @@
+.zhanhuilist{
+  width: 7.5rem;
+  margin: 0 auto;
+  .zhanhuilistc{
+    border-bottom: .01rem solid #ebebeb;
+    width: 7.14rem;
+    display: block;
+    height: 4.8rem;
+    margin: 0 auto;
+    .zhanhuidatu{
+      padding-top: .15rem;
+      display: block;
+      width: 7.14rem;
+      height: 3rem;
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    .ptitle{
+      margin-top: .15rem;
+      color: #333333;
+      font-size: .32rem;
+    }
+    .timeinfo{
+      margin-top: .1rem;
+      display: flex;
+      align-items: center;
+      color: #999999;
+      font-size: .24rem;
+      i{
+        margin-right: .1rem;
+        display: block;
+        width: .22rem;
+        height: .22rem;
+        img{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+    .positioninfo{
+      margin-top: .1rem;
+      display: flex;
+      align-items: center;
+      color: #999999;
+      font-size: .24rem;
+      i{
+        margin-right: .1rem;
+        display: block;
+        width: .18rem;
+        height: .26rem;
+        img{
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+.zhanhuiinfo{
+  p{
+    line-height: .85rem;
+    height: .85rem;
+    background-color: #ffffff;
+    border-bottom: .01rem solid #ebebeb;
+    padding-left: .18rem;
+    color: #666666;
+    font-size: .26rem;
+    i{
+      margin-right: .35rem;
+      font-weight: bold;
+      color: #000000;
+      font-size: .26rem;
+    }
+    span{
+      font-weight: bold;
+      color: #e83328;
+      font-size: .26rem;
+    }
+  }
+  p:nth-child(1){
+    font-weight: bold;
+    color: #333333;
+    font-size: .32rem;
+  }
+  div{
+    height: .15rem;
+    width: 7.5rem;
+    background-color: #f4f4f4;
+  }
+}
+
+.zhanhuilti{
+  width: 7.5rem;
+  height: .85rem;
+  line-height: .85rem;
+  border-bottom: .01rem solid #ebebeb;
+  margin: 0 auto;
+  p{
+    padding-left: .18rem;
+    color: #122a8c;
+    font-size: .32rem;
+  }
+}
+.seemore{
+  width: 7.5rem;
+  margin: 0 auto;
+  .seemorec{
+    width: 7.14rem;
+    margin: 0 auto;
+    p{
+      margin-bottom: .5rem;
+      padding-top: .2rem;
+      color: #333333;
+      font-size: .3rem;
+      text-indent: 2em;
+      line-height: .5rem;
+    }
+    .mui-ellipsis-3{
+      display: -webkit-box;
+      overflow: hidden;
+      white-space: normal!important;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+    }
+    a{
+      margin: 0 auto;
+      margin-bottom: .3rem;
+      text-align: center;
+      line-height: .75rem;
+      color: #122a8c;
+      font-size: .32rem;
+      display: block;
+      width: 3.05rem;
+      height: .75rem;
+      border-radius: .5rem;
+      border: .01rem solid #122a8c;
+    }
+  }
+}
+
+

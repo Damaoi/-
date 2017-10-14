@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- saved from url=http://keyup.cn -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no"
+          name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>放烟花喽-前端开发知识</title>
+    <style type="text/css">
+        body {
+            background-color: #000;
+            color: #999;
+            font: 100%/18px helvetica, arial, sans-serif;
+        }
+        canvas {
+            cursor: crosshair;
+            display: block;
+            left: 0;
+            position: absolute;
+            top: 0;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body>
+<script src="jquery-2.1.4.min.js"></script>
+<script src="yanhua.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        setTimeout(function () {
+            $("#header").hide("slow");
+        }, 2000);
+    });
+</script>
+
+</body>
+
+</html>

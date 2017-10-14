@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="{:sysconf('site_keys')}" />
+    <meta name="description" content="{:sysconf('site_desc')}" />
+    <link rel="stylesheet" href="__CSS__/baoming.css"/>
+    <link rel="stylesheet" href="__CSS__/reset.css"/>
+    <link rel="stylesheet" href="__CSS__/style2.css"/>
+    <link rel="stylesheet" href="__CSS__/qiyezhanting.css"/>
+    <script src="__JS__/jquery-2.1.4.min.js"></script>
+    <script src="__JS__/jquery.min.js"></script>
+    <script src="__JS__/layer_mobile/layer.js"></script>
+    <script src="__JS__/jquery.fadethis.js"></script>
+    <script src="__JS__/bootstrap.min.js"></script>
+    <script src="http://libs.codeboy.me/js/rotate/1.0/rotate.js"></script>
+    <link rel="stylesheet" href="__CSS__/animate.css"/>
+    <!--<link rel="stylesheet" href="../css/wz-bm.css"/>-->
+    <script src="__JS__/base.js"></script>
+    <title>{:sysconf('site_name')}-我要参展</title>
+    <script>
+        $(document).ready(function () {
+            //$("#img").click(function () {
+            $(".canyuan").rotate();
+            // });
+        });
+    </script>
+    <script>
+        $(function(){
+            $("#form_submit").click(function(){
+                var realname=$("#realname").val();
+                var phone=$("#phone").val();
+                var address=$("#address").val();
+                if(realname =='')
+                {
+                    layer.open({
+                        content: '请输入您的姓名'
+                        ,skin: 'footer'
+                    });
+                    return false;
+                }
+                if(phone =='')
+                {
+                    layer.open({
+                        content: '请输入您的手机号'
+                        ,skin: 'footer'
+                    });
+                    return false;
+                }
+                if(address =='')
+                {
+                    layer.open({
+                        content: '请输入您的地址'
+                        ,skin: 'footer'
+                    });
+                    return false;
+                }
+
+                var url=$("#form_f").attr("action");
+
+                $.post(url,$("#form_f").serialize(),function(data){
+                    if(data.status == 1)
+                    {
+                        layer.open({
+                            content: data.msg
+                            ,btn: ['确定']
+                            ,yes: function(index){
+                                location.reload();
+                                layer.close(index);
+                            }
+                        })
+                    }else{
+                        layer.open({
+                            content: data.msg
+                            ,skin: 'footer'
+                        });
+                    }
+                },'json');
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="box">
+        <!--头部开始-->
+        <div class="gb-top">
+            <div class="gb-top-center">
+                <div class="tc-l">
+                    <a href="{:url('index/index')}">
+                        <img src="{$domain_data.d_logo|default='__IMAGE__/wangbohui.png'}" alt=""/>
+                    </a>
+                </div>
+                <form id="search_form" action="{:url('product/plist')}" method="get">
+                    <div class="tc-r">
+                        <input type="text" placeholder="搜你想搜的" name="keyword" id="keyword"/>
+                        <a href="javascript:;">
+                            <img src="__IMAGE__/search.png" alt=""/>
+                     </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--头部结束-->
+
+        <!--720全景展示开始-->
+        <div class="qj720" style="position: relative;width: 100%;">
+            <iframe height="420px" width="100%" src="http://bbs.720think.com/index.php?g=think720&m=home&a=panoview&vkey=926204010&id=65&hmat=1081&vmat=19&fmat=108.91917364059056" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <!--720全景展示结束-->
+
+
+
+        <!--关于微展网头部开始-->
+        <div class="gywz">
+            <p class="gz-p1">关于网博会</p>
+            <p class="gz-p2"></p>
+            <p class="gz-p3"></p>
+            <p class="gz-p4">ABOUT US</p>
+        </div>
+        <!--关于微展网头部结束-->
+
+
+
+
+        <!--微展网介绍开始-->
+        <div class="wzjs">
+            <div class="wzjs-center">
+                <p style="text-indent: 25px">
+                    中国（国际）装备制造业网上博览会（简称网博会）是运用最新的VR全景、AR、3D等高新技术，建立网上虚拟展馆和展位，以装备制造业虚拟展会为主线，基于供应链和产业链的角度，通过一体化整合，实现行业供应链对接，形成以平台为核心，连接整个产业链的“工业互联网+展会+新技术”服务平台。
+                </p>
+            </div>
+        </div>
+        <!--微展网介绍结束-->
+
+
+        <!--合作前景开始-->
+        <div class="hzqj navbar-example">
+            <div class="hzqj-center">
+                <p class="hzqj-p1 animated bounceIn">和我们合作 , <span>相当于您拥有了</span></p>
+                <div class="slide-left" data-plugin-options='{"speed":600, "distance":200}'>
+                    <img src="__IMAGE__/no1.png" alt=""/>
+                    <p>一个 <span>可移动的、</span> 永不谢幕的线上 <span>展馆</span></p>
+                </div>
+                <div class="slide-left" data-plugin-options='{"speed":800, "distance":200}'>
+                    <img src="__IMAGE__/no2.png" alt=""/>
+                    <p>一套优质的 <span>供应链</span> 助企业无缝 <span>对接</span></p>
+
+                </div>
+                <div class="slide-left" data-plugin-options='{"speed":900, "distance":200}'>
+                    <img src="__IMAGE__/no3.png" alt=""/>
+                    <p>一个工业行业 <span>专家团队,</span> 免除企业后顾之忧</p>
+                </div>
+            </div>
+        </div>
+        <!--合作前景结束-->
+
+
+
+        <!--合作图片开始-->
+        <div class="hztp">
+            <div class="hztp-center">
+                <i class="slide-top" data-plugin-options='{"speed":600, "distance":100}'>
+                    <img src="__IMAGE__/noimg1.png" alt=""/>
+                </i>
+                <i class="slide-bottom" data-plugin-options='{"speed":600, "distance":50}'>
+                    <img src="__IMAGE__/noimg2.png" alt=""/>
+                </i>
+                <i class="slide-top" data-plugin-options='{"speed":600, "distance":100}'>
+                    <img src="__IMAGE__/noimg3.png" alt=""/>
+                </i>
+            </div>
+        </div>
+        <!--合作图片结束-->
+
+
+        <!--制作流程开始-->
+        <div class="zzlc">
+            <div class="zzlc-center">
+                <img src="__IMAGE__/dmqj.png" alt="" class="animated flipInY no7"/>
+                <img src="__IMAGE__/hpqj.png" alt="" class="animated flipInY no8"/>
+                <img src="__IMAGE__/3dzs.png" alt="" class="animated flipInY no9"/>
+                <img src="__IMAGE__/qjsp.png" alt="" class="animated flipInY no10"/>
+            </div>
+        </div>
+        <!--制作流程结束-->
+
+
+        <!--全景展示优势开始-->
+        <div class="gywz">
+            <p class="gz-p1">平台优势</p>
+            <p class="gz-p2"></p>
+            <p class="gz-p3"></p>
+            <p class="gz-p4">PLATFORM ADVANTAGE</p>
+        </div>
+        <!--全景展示优势结束-->
+
+
+        <!--优势列表开始-->
+        <div class="yslist">
+            <div class="yslist-center">
+                <div class="clist">
+                    <div class="slide-left" style="display: flex;justify-content: space-between">
+                        <div class="clist-l">
+                            <img src="__IMAGE__/canyuan.png" alt="" class="canyuan"/>
+                            <p>01</p>
+                        </div>
+                        <div class="clist-r">
+                            <p class="clist-p1">绿色环保</p>
+                            <p class="clist-p2"></p>
+                            <p class="clist-p3">相较传统展会,网博会更加绿色,省去展台搭建及场地租赁,大大减少了垃圾的产生。</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="clist">
+                    <div class="slide-right" style="display: flex;justify-content: space-between">
+                        <div class="clist-l">
+                            <img src="__IMAGE__/canyuan.png" alt="" class="canyuan"/>
+                            <p>02</p>
+                        </div>
+                        <div class="clist-r">
+                            <p class="clist-p1">方式新颖</p>
+                            <p class="clist-p2"></p>
+                            <p class="clist-p3">成本低、效率高,贸易机会多,观众面广泛,展出时间长,展出空间无限,经营规模不受场地限制,反馈及时等优点。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clist">
+                    <div class="slide-left" style="display: flex;justify-content: space-between">
+                        <div class="clist-l">
+                            <img src="__IMAGE__/canyuan.png" alt="" class="canyuan"/>
+                            <p>03</p>
+                        </div>
+                        <div class="clist-r">
+                            <p class="clist-p1">特色供应链对接</p>
+                            <p class="clist-p2"></p>
+                            <p class="clist-p3">全行业供应链对接,以企业经济效益为中心,降低成本、提高竞争力,拓展更大利润空间。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clist">
+                    <div class="slide-right" style="display: flex;justify-content: space-between">
+                        <div class="clist-l">
+                            <img src="__IMAGE__/canyuan.png" alt="" class="canyuan"/>
+                            <p>04</p>
+                        </div>
+                        <div class="clist-r">
+                            <p class="clist-p1">资源共享</p>
+                            <p class="clist-p2"></p>
+                            <p class="clist-p3">会员资料统一整理,通过多种方式实现行业分享,起到交流、合作、发展的目的。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--优势列表结束-->
+
+
+        <!--参展流程开始-->
+        <div class="gywz">
+            <p class="gz-p1">参展流程</p>
+            <p class="gz-p2"></p>
+            <p class="gz-p3"></p>
+            <p class="gz-p4">TECHNOLOGICAL PROCESS</p>
+        </div>
+        <!--参展流程结束-->
+
+
+        <!--流程开始-->
+        <div class="bm-toM-item">
+            <ul class="cz-liuChe">
+                <li>
+                    <a href="">
+                        <div class="map fx-you">
+                            <div class="map-m ico1"></div>
+                            <div class="map-m2"></div>
+                        </div>
+                        <p>预约申请</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="map">
+                            <div class="map-m2"></div>
+                            <div class="map-m ico2"></div>
+                            <div class="map-m2"></div>
+                        </div>
+                        <p>取景拍照</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="map">
+                            <div class="map-m2"></div>
+                            <div class="map-m ico3"></div>
+                            <div class="map-m2"></div>
+                        </div>
+                        <p>加工制作</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="map">
+                            <div class="map-m2"></div>
+                            <div class="map-m ico4"></div>
+
+                        </div>
+                        <p>参展成功</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--流程结束-->
+
+
+        <!--报名预约开始-->
+        <div class="gywz">
+            <p class="gz-p1">报名预约</p>
+            <p class="gz-p2"></p>
+            <p class="gz-p3"></p>
+            <p class="gz-p4">REGISTRATION APPOINTMENT</p>
+        </div>
+        <!--报名预约结束-->
+
+        <!--报名开始-->
+        <div class="bm-m">
+            <form id="form_f" action="{:url('index/ajax_baoming')}" onSubmit="return false;">
+                <input type="text" name="realname" id="realname" placeholder="请输入您的姓名" style="margin-top: .66rem"/>
+                <input type="text" name="phone" id="phone" placeholder="请输入您的联系电话"/>
+                <input type="text" name="address" id="address" placeholder="请输入您的联系地址"/>
+                <input type="submit"  value="提交" class="btn-subm ft30" id="form_submit"/>
+            </form>
+        </div>
+        <!--报名结束-->
+
+
+        <!--底部开始-->
+        <div class="foot">
+            <a href="{:url('index/index')}">
+                <i class="icon1"></i>
+                <span>企业展厅</span>
+            </a>
+            <a href="{:url('product/index')}">
+                <i class="icon2"></i>
+                <span>产品展厅</span>
+            </a>
+            <a href="{:url('news/index')}">
+                <i class="icon3"></i>
+                <span>新闻资讯</span>
+            </a>
+            <a href="{:url('index/baoming')}">
+                <i class="icon4 icon41"></i>
+                <span class="green">我要参展</span>
+            </a>
+        </div>
+        <!-- 底部结束-->
+    </div>
+    <script>
+    $(window).fadeThis();
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+.chanpinlr {
+  margin: 0 auto;
+  width: 7.5rem;
+  overflow: hidden; }
+  .chanpinlr .chanpinlrl {
+    width: 7.5rem; }
+    .chanpinlr .chanpinlrl a {
+      background-color: #ffffff;
+      display: inline-block;
+      margin: 0 auto;
+      width: 7.5rem;
+      height: 2rem; }
+      .chanpinlr .chanpinlrl a .lista {
+        display: flex;
+        justify-content: space-between;
+        width: 7.14rem;
+        margin: 0 auto;
+        height: 2rem; }
+        .chanpinlr .chanpinlrl a .lista .listal {
+          position: relative;
+          width: 2.04rem;
+          height: 2rem; }
+          .chanpinlr .chanpinlrl a .lista .listal i {
+            width: 2.04rem;
+            height: 2rem;
+            display: block; }
+            .chanpinlr .chanpinlrl a .lista .listal i img {
+              width: 100%;
+              height: 100%;
+              display: block; }
+          .chanpinlr .chanpinlrl a .lista .listal .sanliulin {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: .4rem;
+            height: .39rem;
+            display: block; }
+            .chanpinlr .chanpinlrl a .lista .listal .sanliulin img {
+              display: block;
+              width: 100%;
+              height: 100%; }
+        .chanpinlr .chanpinlrl a .lista .listar {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 4.9rem;
+          height: 2rem; }
+          .chanpinlr .chanpinlrl a .lista .listar p:nth-child(1) {
+            color: #333333;
+            font-size: .26rem; }
+          .chanpinlr .chanpinlrl a .lista .listar p:nth-child(2) {
+            margin-top: .3rem;
+            color: #878787;
+            font-size: .26rem; }
+            .chanpinlr .chanpinlrl a .lista .listar p:nth-child(2) span {
+              color: #e83328; }
+  .chanpinlr .chanpinlrr {
+    display: none;
+    background-color: yellow;
+    width: 7.5rem; }
+
+.fenleitop {
+  background-color: #ffffff;
+  width: 7.5rem;
+  margin: 0 auto; }
+  .fenleitop .fenleitopc {
+    height: .9rem;
+    width: 7.14rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .fenleitop .fenleitopc .fenleitopcl {
+      display: flex;
+      align-items: center;
+      width: .67rem;
+      height: .9rem; }
+      .fenleitop .fenleitopc .fenleitopcl a {
+        display: block;
+        width: .42rem;
+        height: .49rem; }
+        .fenleitop .fenleitopc .fenleitopcl a img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+    .fenleitop .fenleitopc .fenleitopcc {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 5.8rem;
+      height: .9rem; }
+      .fenleitop .fenleitopc .fenleitopcc input {
+        background-color: #f1f1f1;
+        padding-left: .2rem;
+        border-radius: .3rem;
+        outline: none;
+        width: 5.8rem;
+        height: .6rem; }
+      .fenleitop .fenleitopc .fenleitopcc img {
+        position: absolute;
+        left: .2rem;
+        display: block;
+        width: .3rem;
+        height: .3rem; }
+    .fenleitop .fenleitopc .fenleitopcr {
+      width: .67rem;
+      height: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .fenleitop .fenleitopc .fenleitopcr a {
+        width: .42rem;
+        height: .42rem;
+        display: block; }
+        .fenleitop .fenleitopc .fenleitopcr a img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+
+/*# sourceMappingURL=chanpinmoshi.css.map */

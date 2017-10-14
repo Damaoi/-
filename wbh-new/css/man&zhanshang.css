@@ -1,0 +1,131 @@
+.manseach {
+  width: 7.5rem;
+  height: 1rem;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .manseach input {
+    width: 6.95rem;
+    height: .65rem;
+    display: block;
+    border-radius: .1rem; }
+
+.footmessage {
+  width: 7.5rem;
+  height: .5rem;
+  text-align: center;
+  line-height: .5rem;
+  color: #a4a4a4;
+  font-size: .2rem; }
+
+.zslist {
+  width: 7.5rem;
+  height: .7rem; }
+  .zslist .zslist-c {
+    width: 7.14rem;
+    margin: 0 auto;
+    height: .7rem;
+    line-height: .7rem; }
+    .zslist .zslist-c p {
+      color: #000000;
+      font-size: .28rem; }
+
+.zslist2 {
+  width: 7.5rem; }
+  .zslist2 .zslist-c2 {
+    position: relative;
+    width: 7.4rem; }
+    .zslist2 .zslist-c2 a {
+      margin: 0 auto;
+      display: flex;
+      border-bottom: .01rem solid #d8d8d8;
+      justify-content: space-between;
+      width: 7.14rem;
+      height: 3.05rem; }
+      .zslist2 .zslist-c2 a .zslogo {
+        display: block;
+        width: 1.2rem;
+        height: 3.05rem; }
+        .zslist2 .zslist-c2 a .zslogo i {
+          border: .01rem solid #d8d8d8;
+          border-radius: 50%;
+          margin-top: .3rem;
+          width: 1.2rem;
+          height: 1.2rem;
+          display: block; }
+          .zslist2 .zslist-c2 a .zslogo i img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            display: block; }
+      .zslist2 .zslist-c2 a .zsinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 5.75rem;
+        height: 3.05rem; }
+        .zslist2 .zslist-c2 a .zsinfo .zsinfot {
+          width: 5.75rem;
+          height: 2.15rem; }
+          .zslist2 .zslist-c2 a .zsinfo .zsinfot .zsp1 {
+            padding-top: .25rem;
+            font-size: .3rem;
+            color: #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .zslist2 .zslist-c2 a .zsinfo .zsinfot .zsp2 {
+            font-size: .24rem;
+            color: #999999;
+            margin-top: .1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          .zslist2 .zslist-c2 a .zsinfo .zsinfot span {
+            margin-top: .15rem;
+            display: flex; }
+            .zslist2 .zslist-c2 a .zsinfo .zsinfot span p {
+              padding: .05rem .2rem;
+              border: .01rem solid #d8d8d8;
+              color: #7d7d7d;
+              font-size: .24rem;
+              border-radius: .1rem;
+              margin-right: .1rem; }
+        .zslist2 .zslist-c2 a .zsinfo .zsinfof {
+          border-top: .01rem solid #d8d8d8;
+          width: 5.75rem;
+          height: .7rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+          .zslist2 .zslist-c2 a .zsinfo .zsinfof i {
+            margin-right: .1rem;
+            width: .44rem;
+            height: .44rem;
+            display: block; }
+            .zslist2 .zslist-c2 a .zsinfo .zsinfof i img {
+              width: 100%;
+              height: 100%;
+              display: block; }
+          .zslist2 .zslist-c2 a .zsinfo .zsinfof p {
+            color: #333333;
+            font-size: .24rem; }
+            .zslist2 .zslist-c2 a .zsinfo .zsinfof p span {
+              color: #e83328; }
+    .zslist2 .zslist-c2 .tg {
+      width: .83rem;
+      height: .32rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #e83328;
+      color: #ffffff;
+      font-size: .24rem;
+      text-align: center;
+      line-height: .32rem;
+      border-bottom-left-radius: .15rem; }
+  .zslist2 .xixixi {
+    border: .05rem solid #e83328; }
+
+/*# sourceMappingURL=man&zhanshang.css.map */

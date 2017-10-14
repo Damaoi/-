@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <a href="javascript:;">1a</a>
+    <a href="javascript:;">a标签</a>
+    <p>1p</p>
+    <p>2p</p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+</div>
+<button class="btn">某个标签下第一个元素first()</button>
+<button class="btn1">某个标签下最后一个元素last()</button>
+<button class="btn2">eq选指定元素</button>
+<button class="btn3">在某两个标签之间的同胞元素</button>
+<script>
+
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $(".box a").first().css("color","red");   /*某个标签下第一个元素first()*/
+        })
+        $(".btn1").click(function(){
+            $(".box h5").last().css("color","red");     /*某个标签下最后一个元素last()*/
+        })
+        $(".btn2").click(function(){
+            $("p").eq(1).css("color","red");         /* 索引号从 0 开始，因此首个元素的索引号是 0 而不是 1 选取第二个 <p> 元素（索引号 1）*/
+        })
+        $(".btn3").click(function(){
+            $("h1").nextUntil("h5").css("color","red");         /*h1到h5之间的同胞元素不包括h1和h5*/
+        })
+    })
+</script>
+</body>
+</html>

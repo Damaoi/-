@@ -1,0 +1,68 @@
+.box {
+  width: 7.5rem;
+  height: auto;
+  background-color: #f4f4f4;
+  padding-bottom: 1.5rem;
+  margin: 0 auto; }
+
+.zltc-r a i {
+  display: inline-block;
+  width: .32rem;
+  height: .32rem; }
+  .zltc-r a i img {
+    width: 100%;
+    height: 100%; }
+
+.wsee {
+  width: 7.5rem;
+  margin-bottom: .2rem;
+  background-color: #fff; }
+  .wsee .wsee-c {
+    width: 7.1rem;
+    margin: 0 auto;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between; }
+    .wsee .wsee-c .wseec-l {
+      /*width: 3.51rem;*/
+      height: 1rem;
+      display: flex;
+      align-items: center; }
+      .wsee .wsee-c .wseec-l i {
+        display: inline-block;
+        width: .4rem;
+        height: .4rem;
+        margin-right: .13rem; }
+        .wsee .wsee-c .wseec-l i img {
+          width: 100%;
+          height: 100%; }
+      .wsee .wsee-c .wseec-l p {
+        color: #646464;
+        font-size: .3rem;
+        white-space: nowrap;
+        margin-right: .15rem; }
+      .wsee .wsee-c .wseec-l span {
+        display: inline-block;
+        text-align: center;
+        font-size: .22rem;
+        width: .7rem;
+        height: .3rem;
+        line-height: .3rem;
+        background-color: #e73227;
+        color: #fff;
+        border-radius: .6rem; }
+    .wsee .wsee-c .wseec-r {
+      width: 3.51rem;
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .wsee .wsee-c .wseec-r a {
+        display: inline-block;
+        width: .14rem;
+        height: .24rem; }
+        .wsee .wsee-c .wseec-r a img {
+          width: 100%;
+          height: 100%; }
+
+/*# sourceMappingURL=haoyou-list.css.map */

@@ -1,0 +1,17 @@
+①WS sass环境配置：
+
+
+1、Arguments:
+
+--no-cache --update --sourcemap --watch $FileName$:$FileParentDir$\css\$FileNameWithoutExtension$.css
+
+
+2、Output paths to refresh:
+
+改成这样:$FileNameWithoutExtension$.css:$FileNameWithoutExtension$.css.map
+
+②安装sass方法：
+查看镜像：gem sources -l
+卸载自带镜像：gem sources --remove https://rubygems.org/
+安装淘宝镜像：gem sources -a https://gems.ruby-china.org/   报错去掉http后面的s
+

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>新的朋友</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/zhanhui.css"/>
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+    <style>
+        .box {
+            overflow: hidden;
+            max-width: 7.5rem;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+        .active{
+            background-color: #ffffff;
+            color: #122a8c;
+        }
+        body{
+            padding-top: .8rem;
+            padding-bottom: 1rem;
+        }
+
+
+
+        .session-box {
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% + 1.5rem);
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .session-content {
+            width: calc(100% - 1.5rem);
+        }
+
+        .del-btn {
+            width: 1.5rem;
+            height: 1.45rem;
+            line-height: 1.45rem;
+            text-align: center;
+            background-color: #e83328;
+            color: #FFFFFF;
+            font-size: .24rem;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <!--公共头部布局开始-->
+    <div class="header">
+        <div class="header-c">
+            <div class="hc-l">
+                <a href="javascript:history.back();">
+                    <img src="../images/own/back.png" alt=""/>
+                </a>
+                <p>返回</p>
+            </div>
+            <div class="hc-c">
+                <p>新的朋友</p>
+            </div>
+            <div class="hc-r">
+                <a href="javascript:;" class="search">
+                    <img src="../images/nav/jia.png" alt=""/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--公共头部布局开始-->
+
+
+    <!--检索联系人-->
+    <div class="jiansuo">
+        <div class="jiansuoc">
+            <div class="input">
+                <i>
+                    <img src="../images/own/fangdajing2.png" alt=""/>
+                </i>
+                <p>搜索联系人</p>
+            </div>
+        </div>
+    </div>
+    <!--检索联系人-->
+
+
+    <!--添加好友-->
+    <a href="tianjiahaoyou.html">
+        <div class="tianjiani">
+            <i>
+                <img src="../images/nav/lv.png" alt=""/>
+            </i>
+            <p>添加好友</p>
+
+        </div>
+    </a>
+    <div class="zm1">好友通知</div>
+
+    <!--添加好友-->
+
+    <div class="eos session-box">
+        <span class="eosc session-content">
+            <a href="javascript:;" class="eoscl">
+                <i>
+                    <img src="../images/own/tx.png" alt=""/>
+                </i>
+            </a>
+            <div class="eoscc">
+                <p>蔡红霞--(汇隆精密仪器)</p>
+                <span>请求添加你为好友</span>
+            </div>
+            <div class="eoscr2">
+                <a href="javascript:;" class="tianjia">添加</a>
+            </div>
+        </span>
+        <a href="javascript:;" class="del-btn">删除</a>
+    </div>
+
+    <div class="eos session-box">
+        <span class="eosc session-content">
+            <a href="javascript:;" class="eoscl">
+                <i>
+                    <img src="../images/own/tx.png" alt=""/>
+                </i>
+            </a>
+            <div class="eoscc">
+                <p>蔡红霞--(汇隆精密仪器)</p>
+                <span>请求添加你为好友</span>
+            </div>
+            <div class="eoscr2">
+                <a href="javascript:;" class="tianjia">添加</a>
+            </div>
+        </span>
+        <a href="javascript:;" class="del-btn">删除</a>
+    </div>
+
+
+    <div class="eos session-box">
+        <span class="eosc session-content">
+            <a href="javascript:;" class="eoscl">
+                <i>
+                    <img src="../images/own/tx.png" alt=""/>
+                </i>
+            </a>
+            <div class="eoscc">
+                <p>蔡红霞--(汇隆精密仪器)</p>
+                <span>请求添加你为好友</span>
+            </div>
+            <div class="eoscr2">
+                <p>等待验证</p>
+            </div>
+        </span>
+        <a href="javascript:;" class="del-btn">删除</a>
+    </div>
+
+    <div class="eos session-box">
+        <span class="eosc session-content">
+            <a href="javascript:;" class="eoscl">
+                <i>
+                    <img src="../images/own/tx.png" alt=""/>
+                </i>
+            </a>
+            <div class="eoscc">
+                <p>蔡红霞--(汇隆精密仪器)</p>
+                <span>请求添加你为好友</span>
+            </div>
+            <div class="eoscr2">
+                <p>已添加</p>
+            </div>
+        </span>
+        <a href="javascript:;" class="del-btn">删除</a>
+    </div>
+
+    <div class="eos session-box">
+        <span class="eosc session-content">
+            <a href="javascript:;" class="eoscl">
+                <i>
+                    <img src="../images/own/tx.png" alt=""/>
+                </i>
+            </a>
+            <div class="eoscc">
+                <p>蔡红霞--(汇隆精密仪器)</p>
+                <span>请求添加你为好友</span>
+            </div>
+            <div class="eoscr2">
+                <p>已过期</p>
+            </div>
+        </span>
+        <a href="javascript:;" class="del-btn">删除</a>
+    </div>
+
+    <div class="eos session-box">
+        <span class="eosc session-content">
+            <a href="javascript:;" class="eoscl">
+                <i>
+                    <img src="../images/own/tx.png" alt=""/>
+                </i>
+            </a>
+            <div class="eoscc">
+                <p>蔡红霞--(汇隆精密仪器)</p>
+                <span>请求添加你为好友</span>
+            </div>
+            <div class="eoscr2">
+                <p>已过期</p>
+            </div>
+        </span>
+        <a href="javascript:;" class="del-btn">删除</a>
+    </div>
+</div>
+
+
+<script src="../js/hammer.min.js"></script>
+<script src="../js/slide2del.js"></script>
+<script>
+    $(document).ready(function () {
+
+//        轮播
+        var mySwiper = new Swiper('.swiper-container', {
+            autoplay: 5000,//可选选项，自动滑动
+            pagination : '.swiper-pagination',
+        })
+//        轮播
+
+
+//        文本折叠
+        $(".seemorea").on("click",function(){
+            $(this).siblings("p").removeClass('mui-ellipsis-3');
+            $(this).hide();
+        });
+//        文本折叠
+
+//        收藏
+        $(".footmpl").on("click",function(){
+            $(".footmpl>i>img").attr("src","../images/own/star1.png")
+        })
+//        收藏
+
+
+//删除
+        $(".session-box").slide2del({
+            sItemClass: ".session-box",
+            sDelBtnClass: ".del-btn",
+            delHandler: function (target) {
+
+                var text = target.find('.session-content').text();
+
+                target.remove();
+
+            },
+            itemClickHandler: function (target) {
+                console.log("你点击了选项：" + target.text());
+            }
+        });
+//删除
+    })
+</script>
+</body>
+</html>

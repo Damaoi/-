@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* 
+			舞台是box
+				perspective: 500px;
+
+			ul整个立方体
+				想要旋转立方体，就要直接旋转ul
+				transform: rotateY(45deg);
+				transform-style: preserve-3d;
+			li是立方体中六个面
+				六个li根据不同面进行不同的操作，将其放在指定的位置
+
+
+
+			
+		 */
+		.box{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			margin: 200px auto;
+			perspective: 500px;
+			
+		}
+		ul{
+			transform: rotateY(45deg);
+			transform-style: preserve-3d;
+			height: 200px;
+			transition: all 2s;
+		}
+		li{
+			font-size: 36px;
+			line-height: 200px;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			background: rgba(0,0,0,0.4);
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: white;
+			transition: all 2s;
+			list-style: none;
+		}
+		li:nth-child(1){
+			transform: translateZ(100px);
+			background: rgba(48,123,85,0.5);
+		}
+		li:nth-child(2){
+			transform: rotateY(180deg) translateZ(100px);
+			background: rgba(148,223,85,0.5);
+		}
+		li:nth-child(3){
+			transform: rotateY(-90deg) translateZ(100px);
+			background: rgba(248,12,8,0.5);
+		}
+		li:nth-child(4){
+			transform: rotateY(90deg) translateZ(100px);
+			background: rgba(48,4,185,0.5);
+		}
+		li:nth-child(5){
+			transform: rotateX(90deg) translateZ(100px);
+			background: rgba(4,123,185,0.5);
+		}
+		li:nth-child(6){
+			transform: rotateX(-90deg) translateZ(100px);
+			background: rgba(4,13,5,0.5);
+		}
+		ul:hover{
+			transform: rotateX(180deg) rotateY(180deg);
+		}
+		ul:hover li:nth-child(1){
+			transform: translateZ(200px);
+			background: rgba(48,123,85,0.5);
+		}
+		ul:hover li:nth-child(2){
+			transform: rotateY(180deg) translateZ(200px);
+			background: rgba(148,223,85,0.5);
+		}
+		ul:hover li:nth-child(3){
+			transform: rotateY(-90deg) translateZ(200px);
+			background: rgba(248,12,8,0.5);
+		}
+		ul:hover li:nth-child(4){
+			transform: rotateY(90deg) translateZ(200px);
+			background: rgba(48,4,185,0.5);
+		}
+		ul:hover li:nth-child(5){
+			transform: rotateX(90deg) translateZ(200px);
+			background: rgba(4,123,185,0.5);
+		}
+		ul:hover li:nth-child(6){
+			transform: rotateX(-90deg) translateZ(200px);
+			background: rgba(4,13,5,0.5);
+		}
+	</style>
+</head>
+<body>
+	<!-- 
+		原理： 利用了3D转换
+			将留个元素按照一定的规则进行转换
+			将其变成立方体不同的面
+	 -->
+	<div class="box">
+		<ul>
+			<li>前</li>
+			<li>后</li>
+			<li>左</li>
+			<li>右</li>
+			<li>上</li>
+			<li>下</li>
+		</ul>
+	</div>
+</body>
+</html>

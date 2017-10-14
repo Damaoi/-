@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条插件</title>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="jqmeter.min.js"></script>
+</head>
+<body>
+
+    <!--建立一个空的div id为jqmeter-container-->
+    <div id="jqmeter-container"></div>
+    <script>
+        /*页面加载完毕调用插件*/
+        $(document).ready(function(){
+            $('#jqmeter-container').jQMeter({
+                goal:'$1000',
+                raised:'$300',
+                orientation:'vertical',
+                width:'500px',
+                height:'50px'
+            });
+        });
+    </script>
+
+<!--
+配置参数
+
+参数	类型	默认值	描述
+
+goal	string	无默认值，必填参数	进度条的总长度。可以设置为字符串，如"$9000"，或整数，如:"9000"
+
+raised	string	无默认值，必填参数	进度条的当前进度。可以设置为字符串，如"$5000"，或整数，如:"5000"
+
+width	string	100%-水平宽度。（在水平进度条中必须设置）	设置进度条的水平宽度。可以设置为百分比或像素值
+
+height	string	50px。（在垂直进度条中必须设置）	设置进度条的垂直高度。可以设置为百分比或像素值
+
+bgColor	string	#444	进度条的背景颜色。支持hex、rgba和颜色关键字。
+
+barColor	string	#bfd255	进度条的颜色。支持hex、rgba和颜色关键字。
+
+orientation	string	horizontal	进度条的方向，可设置为： 'horizontal' 或 'vertical'。如果设置为垂直进度条，该参数必须设置。
+
+displayTotal	boolean	true	是否显示进度条完成的百分比数。
+
+animationSpeed	integer	2000	进度条动画时间，单位毫秒
+
+counterSpeed	integer	2000	进度条计数的时间，单位毫秒
+-->
+</body>
+</html>

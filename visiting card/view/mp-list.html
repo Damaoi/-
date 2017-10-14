@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>mp-list</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/style2.css"/>
+    <link rel="stylesheet" href="../css/chanpinliebiao.css"/>
+    <link rel="stylesheet" href="../css/shaixun2.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <style>
+        .box{
+            width: 7.5rem;
+            height: auto;
+            margin: 0 auto;
+            background-color: #eee;
+            padding-bottom: 2rem;
+        }
+        #p{
+            width: 7.02rem;
+            height: .92rem;
+            line-height: .92rem;
+            margin: 0 auto;
+            border-bottom: .01rem solid #d8d8d8;
+            color: #333333;
+            font-size: .3rem;
+        }
+        .ul2>li{
+            margin-right: .2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!--头部开始-->
+        <div class="gb-top">
+            <div class="gb-top-center">
+                <div class="tc-l">
+                    <a href="{:url('index/index')}">
+                        <img src="../images/wangbohui.png" alt=""/>
+                    </a>
+                </div>
+                <form id="search_form" action="{:url('product/plist')}" method="get">
+                    <div class="tc-r">
+                        <input type="text" placeholder="搜你想搜的" name="keyword" id="keyword"/>
+                        <a href="javascript:;">
+                            <img src="../images/search.png" alt=""/>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--头部结束-->
+
+
+        <!--列表选项开始-->
+        <div class="listchoice" style="margin-bottom: .2rem">
+            <div class="listchoice-left">
+                <a {if condition="($sort eq '') or ($sort eq 'all')"}class="select_green"{/if} href="{:url('product/plist',array_merge($fitam,array('sort'=>'all')))}">
+                综合排序
+                </a>
+                <a {if condition="$sort eq 'click_num'"}class="select_green"{/if} href="{:url('product/plist',array_merge($fitam,array('sort'=>'click_num')))}">
+                热度
+                </a>
+                <a {if condition="$sort eq 'is_new'"}class="select_green"{/if} href="{:url('product/plist',array_merge($fitam,array('sort'=>'is_new')))}">
+                最新
+                </a>
+            </div>
+            <div class="listchoice-right" id="click_open">
+                <a href="javascript:;">
+                    筛选
+                    <img src="../images/loudou.png" alt=""/>
+                </a>
+            </div>
+        </div>
+        <!--列表选项结束-->
+
+
+        <!--筛选-->
+        <div class="shaixuan2">
+            <!--头部开始-->
+            <div class="zl-top">
+                <div class="zlt-c">
+                    <div class="zltc-l">
+                        <a href="javascript:;">
+                            <img src="../images/huisejiantou.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="zltc-c">
+                        <p>全部行业</p>
+                    </div>
+                    <div class="zltc-r">
+
+                    </div>
+                </div>
+            </div>
+            <!--头部结束-->
+            <!--行业列表-->
+            <div class="hy-list">
+            	<p style="color: #c0211b;font-weight: bold;margin-right: .2rem" id="p";>请选择</p>
+                <div class="hy-list-c">
+                    <ul class="ul1">
+                        <li>结构性金属制品</li>
+                        <li>金属工具</li>
+                        <li>集装箱及金属包装容器</li>
+                        <li>安全用金属制品</li>
+                        <li>锅炉及原动机</li>
+                        <li>金属加工机械</li>
+                        <li>起重运输设备</li>
+                        <li>泵、阀门、压缩机类</li>
+                        <li>轴承、齿轮、传动和驱动部件</li>
+                        <li>烘炉、熔炉及电炉</li>
+                        <li>风机、衡器、包装设备等通用设备</li>
+                        <li>通用零部件</li>
+                        <li>通用零部件</li>
+                        <li>通用零部件</li>
+                        <li>通用零部件</li>
+                    </ul>
+                    <ul class="ul2">
+                        <li>2结构性金属制品</li>
+                        <li>金属工具</li>
+                        <li>集装箱及金属包装容器</li>
+                        <li>安全用金属制品</li>
+                        <li>锅炉及原动机</li>
+                        <li>金属加工机械</li>
+                        <li>起重运输设备</li>
+                        <li>泵、阀门、压缩机类</li>
+                        <li>轴承、齿轮、传动和驱动部件</li>
+                        <li>烘炉、熔炉及电炉</li>
+                        <li>风机、衡器、包装设备等通用设备</li>
+                        <li>通用零部件</li>
+                        <li>通用零部件</li>
+                        <li>通用零部件</li>
+                        <li>通用零部件</li>
+                    </ul>
+                </div>
+            </div>
+            <!--行业列表-->
+        </div>
+         <!--筛选-->
+
+
+
+        <!--&lt;!&ndash;请求列表开始&ndash;&gt;-->
+        <!--<div class="qqlb">-->
+            <!--<div class="qqlb-c">-->
+                <!--<ul>-->
+                    <!--<li>-->
+                        <!--<div class="qq">-->
+                            <!--<div class="qq-t">-->
+                                <!--<a href="javascript:;">-->
+                                    <!--<div class="qqt-l">-->
+                                        <!--<i>-->
+                                            <!--<img src="../images/qq-tx.png" alt="" style="display: none"/>-->
+                                            <!--<span>陈</span>-->
+                                        <!--</i>-->
+                                    <!--</div>-->
+                                    <!--<div class="qqt-c">-->
+                                        <!--<em>-->
+                                            <!--<p>陈娜</p>-->
+                                            <!--<span>市场总监</span>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>手机:17737719495</h3>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>河南尼伯特数特数特数控工具控工控工有限公司</h3>-->
+                                        <!--</em>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<div class="qqt-r">-->
+                                    <!--&lt;!&ndash;<time>06-23 09:35</time>&ndash;&gt;-->
+                                    <!--<em>-->
+                                        <!--<button class="btn2">+ 好友</button>-->
+                                    <!--</em>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="qq-f">-->
+                                <!--<span class="zhuying">主营: 刀具、机械、数控</span>-->
+                        <!--<span class="whoeye">-->
+                            <!--<i>-->
+                                <!--<img src="../images/eye.png" alt=""/>-->
+                            <!--</i>-->
+                            <!--<p>122</p>-->
+                        <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<div class="qq">-->
+                            <!--<div class="qq-t">-->
+                                <!--<a href="javascript:;">-->
+                                    <!--<div class="qqt-l">-->
+                                        <!--<i>-->
+                                            <!--<img src="../images/qq-tx.png" alt="" style="display: none"/>-->
+                                            <!--<span>陈</span>-->
+                                        <!--</i>-->
+                                    <!--</div>-->
+                                    <!--<div class="qqt-c">-->
+                                        <!--<em>-->
+                                            <!--<p>陈娜</p>-->
+                                            <!--<span>市场总监</span>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>手机:17737719495</h3>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>河南尼伯特数特数特数控工具控工控工有限公司</h3>-->
+                                        <!--</em>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<div class="qqt-r">-->
+                                    <!--&lt;!&ndash;<time>06-23 09:35</time>&ndash;&gt;-->
+                                    <!--<em>-->
+                                        <!--<button class="btn2">+ 好友</button>-->
+                                    <!--</em>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="qq-f">-->
+                                <!--<span class="zhuying">主营: 刀具、机械、数控</span>-->
+                        <!--<span class="whoeye">-->
+                            <!--<i>-->
+                                <!--<img src="../images/eye.png" alt=""/>-->
+                            <!--</i>-->
+                            <!--<p>122</p>-->
+                        <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<div class="qq">-->
+                            <!--<div class="qq-t">-->
+                                <!--<a href="javascript:;">-->
+                                    <!--<div class="qqt-l">-->
+                                        <!--<i>-->
+                                            <!--<img src="../images/qq-tx.png" alt="" style="display: none"/>-->
+                                            <!--<span>陈</span>-->
+                                        <!--</i>-->
+                                    <!--</div>-->
+                                    <!--<div class="qqt-c">-->
+                                        <!--<em>-->
+                                            <!--<p>陈娜</p>-->
+                                            <!--<span>市场总监</span>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>手机:17737719495</h3>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>河南尼伯特数特数特数控工具控工控工有限公司</h3>-->
+                                        <!--</em>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<div class="qqt-r">-->
+                                    <!--&lt;!&ndash;<time>06-23 09:35</time>&ndash;&gt;-->
+                                    <!--<em>-->
+                                        <!--<button class="btn2">+ 好友</button>-->
+                                    <!--</em>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="qq-f">-->
+                                <!--<span class="zhuying">主营: 刀具、机械、数控</span>-->
+                        <!--<span class="whoeye">-->
+                            <!--<i>-->
+                                <!--<img src="../images/eye.png" alt=""/>-->
+                            <!--</i>-->
+                            <!--<p>122</p>-->
+                        <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<div class="qq">-->
+                            <!--<div class="qq-t">-->
+                                <!--<a href="javascript:;">-->
+                                    <!--<div class="qqt-l">-->
+                                        <!--<i>-->
+                                            <!--<img src="../images/qq-tx.png" alt="" style="display: none"/>-->
+                                            <!--<span>陈</span>-->
+                                        <!--</i>-->
+                                    <!--</div>-->
+                                    <!--<div class="qqt-c">-->
+                                        <!--<em>-->
+                                            <!--<p>陈娜</p>-->
+                                            <!--<span>市场总监</span>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>手机:17737719495</h3>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>河南尼伯特数特数特数控工具控工控工有限公司</h3>-->
+                                        <!--</em>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<div class="qqt-r">-->
+                                    <!--&lt;!&ndash;<time>06-23 09:35</time>&ndash;&gt;-->
+                                    <!--<em>-->
+                                        <!--<button class="btn2">+ 好友</button>-->
+                                    <!--</em>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="qq-f">-->
+                                <!--<span class="zhuying">主营: 刀具、机械、数控</span>-->
+                        <!--<span class="whoeye">-->
+                            <!--<i>-->
+                                <!--<img src="../images/eye.png" alt=""/>-->
+                            <!--</i>-->
+                            <!--<p>122</p>-->
+                        <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<div class="qq">-->
+                            <!--<div class="qq-t">-->
+                                <!--<a href="javascript:;">-->
+                                    <!--<div class="qqt-l">-->
+                                        <!--<i>-->
+                                            <!--<img src="../images/qq-tx.png" alt="" style="display: none"/>-->
+                                            <!--<span>陈</span>-->
+                                        <!--</i>-->
+                                    <!--</div>-->
+                                    <!--<div class="qqt-c">-->
+                                        <!--<em>-->
+                                            <!--<p>陈娜</p>-->
+                                            <!--<span>市场总监</span>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>手机:17737719495</h3>-->
+                                        <!--</em>-->
+                                        <!--<em>-->
+                                            <!--<h3>河南尼伯特数特数特数控工具控工控工有限公司</h3>-->
+                                        <!--</em>-->
+                                    <!--</div>-->
+                                <!--</a>-->
+                                <!--<div class="qqt-r">-->
+                                    <!--&lt;!&ndash;<time>06-23 09:35</time>&ndash;&gt;-->
+                                    <!--<em>-->
+                                        <!--<span>已发送请求</span>-->
+                                    <!--</em>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="qq-f">-->
+                                <!--<span class="zhuying">主营: 刀具、机械、数控</span>-->
+                        <!--<span class="whoeye">-->
+                            <!--<i>-->
+                                <!--<img src="../images/eye.png" alt=""/>-->
+                            <!--</i>-->
+                            <!--<p>122</p>-->
+                        <!--</span>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;请求列表结束&ndash;&gt;-->
+
+
+
+
+        <!--无动态状态开始-->
+        <div class="wzt">
+            <div class="wzt-c">
+                <i>
+                    <img src="../images/wushuju.png" alt=""/>
+                </i>
+            </div>
+        </div>
+        <!--无动态状态结束-->
+
+        <!--底部导航开始-->
+        <div class="foot">
+            <div class="foot-c">
+                <a href="{:url('index/index')}">
+                    <i class="icon1"></i>
+                    <span>企业展厅</span>
+                </a>
+                <a href="{:url('product/index')}">
+                    <i class="icon2"></i>
+                    <span>产品展厅</span>
+                </a>
+                <a href="{:url('product/index')}">
+                    <i class="icon31"></i>
+                    <span class="green">通讯大厅</span>
+                </a>
+                <a href="{:url('news/index')}">
+                    <i class="icon4"></i>
+                    <span>新闻资讯</span>
+                </a>
+                <a href="{:url('index/baoming')}" class="hondq">
+                    <i class="icon5"></i>
+                    <span>个人中心</span>
+                    <time class="tt"></time>
+                </a>
+            </div>
+        </div>
+        <!--底部导航结束-->
+    </div>
+    <!--<script src="../js/area.js"></script>-->
+    <script>
+        $(document).ready(function(){
+            $("#click_open").click(function(){
+                $(".shaixuan2").show().siblings().hide();
+                redArea(0,0);
+            })
+            $(".hy-list-c>ul").on('click','li',function(){
+            	var index = $(this).parent().index()+1;
+            	if(index==2){
+            		$(".shaixuan2").hide().siblings().show();
+            	}
+            	$("#p").prepend($(this).text())
+                $(this).parent().hide();
+                var str = '0_'+$(this).index()+"_2";             
+                redArea(str,index);
+                $(this).parent().next().show();
+            })
+            // 遍历追加数据
+			function redArea(str,index){
+				var html='';			
+				$.each(area.data[str], function(i, n) {
+					html += '<li v-id="'+i+'"><span>'+n+'</span></li>';
+				});
+				$('.hy-list-c').find('ul').eq(index).html(html);
+			};
+        })
+    </script>
+</body>
+</html>

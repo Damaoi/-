@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>document</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vue-router.js"></script>
+    <script src="../js/base.js"></script>
+    <style>
+        .box {
+            max-width: 7.5rem;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <!--声明式渲染-->
+    <div id="app">
+        {{message}}
+    </div>
+
+
+    <div id="app-2">
+  <span v-bind:title="message">
+    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+  </span>
+    </div>
+    <!--声明式渲染-->
+
+    <!--条件与循环-->
+    <div id="app-3">
+        <p v-if="88">你看得到我</p>
+    </div>
+
+    <div id="app-4">
+        <p v-for="todo in todos">
+            {{ todo.text }}
+        </p>
+    </div>
+
+    <!--条件与循环-->
+
+<script>
+    $(document).ready(function(){
+        var app = new Vue({
+            el: "#app",
+            data:{
+                message:"nihao"
+            }
+        })
+
+        var app2 = new Vue({
+            el: '#app-2',
+            data: {
+                message: '页面加载于 ' + new Date()
+            }
+        })
+        var app3 = new Vue({
+            el : "#app-3",
+            data:{
+                88: true,
+            }
+        })
+
+
+        var app4 = new Vue({
+            el : "#app-4",
+            data:{
+                todos:[
+                    {text:"nikan"},
+                    {text:"nikan2"},
+                    {text:"nikan3"}
+                ]
+            }
+        })
+    })
+</script>
+</body>
+</html>

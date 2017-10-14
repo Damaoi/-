@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="jquery.js"></script>
+    <script src="base.js"></script>
+    <link rel="stylesheet" href="reset.css"/>
+    <title>下拉列表</title>
+    <style>
+        #divselect{
+            width:5.6rem;
+            position:relative;
+            /*z-index:10000;*/
+        }
+        #divselect cite{
+            /*width:5.6rem;*/
+            height:.8rem;
+            line-height:.8rem;
+            display:block;
+            color: #807a62;
+            cursor:pointer;
+            font-style:normal;
+            padding-left:.2rem;
+            padding-right:.03rem;
+            border:.01rem solid #989898!important;
+            border-radius: .1rem;
+            background:url("xjt.png") no-repeat right center;
+        }
+        #divselect ul{
+            width:5.55rem;
+            border:0.01rem solid #989898;
+            border-radius: .1rem;
+            background-color: #ffffff;
+            position:absolute;
+            /*z-index:20000;*/
+            margin-top:-0.01rem;
+            display:none;
+        }
+        #divselect ul li{
+            height:.8rem;
+            line-height:.8rem;
+        }
+        #divselect ul li a{
+            display:block;
+            height: .8rem;
+            color: #494949;
+            text-decoration:none;
+            padding-left:.2rem;
+            padding-right:10px;
+        }
+        #divselect ul li a:hover{
+            background-color:#CCC;
+        }
+    </style>
+    <script>
+        $(function(){
+            $.divselect("#divselect","#inputselect");
+        });
+    </script>
+</head>
+<body>
+<form action="" method="post">
+    <div class="cbtn-1">
+        <p><span>✱</span>下拉菜单 :&nbsp;</p>
+        <div id="divselect">
+            <cite>请选择选项</cite>
+            <ul>
+                <li><a href="javascript:;" selectid="1">选项一</a></li>
+                <li><a href="javascript:;" selectid="2">选项二</a></li>
+                <li><a href="javascript:;" selectid="3">选项三</a></li>
+                <li><a href="javascript:;" selectid="4">选项四</a></li>
+                <li><a href="javascript:;" selectid="5">选项五</a></li>
+                <li><a href="javascript:;" selectid="5">选项六</a></li>
+            </ul>
+        </div>
+    </div>
+</form>
+<script>
+    jQuery.divselect = function(divselectid,inputselectid) {
+        var inputselect = $(inputselectid);
+        $(divselectid+" cite").click(function(){
+            var ul = $(divselectid+" ul");
+            if(ul.css("display")=="none"){
+                ul.slideDown("fast");
+            }else{
+                ul.slideUp("fast");
+            }
+        });
+        $(divselectid+" ul li a").click(function(){
+            var txt = $(this).text();
+            $(divselectid+" cite").html(txt);
+            var value = $(this).attr("selectid");
+            inputselect.val(value);
+            $(divselectid+" ul").hide();
+
+        });
+        $(document).click(function(){
+            $(divselectid+" ul").hide();
+        });
+    };
+</script>
+</body>
+</html>

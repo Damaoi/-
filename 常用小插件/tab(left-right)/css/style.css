@@ -1,0 +1,46 @@
+.box {
+  width: 7.5rem;
+  height: auto;
+  background-color: #eee;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.li {
+  background-color: yellow; }
+
+.box-l {
+  width: 2rem;
+  height: 5rem;
+  background-color: red;
+  overflow-y: scroll }
+.box-l::-webkit-scrollbar {
+  display: none;
+}
+  .box-l ul {
+    list-style: none; }
+    .box-l ul li {
+      width: 2rem;
+      height: 1rem;
+      text-align: center;
+      line-height: 1rem;
+      color: #ffffff;
+      font-size: .3rem; }
+
+.box-r {
+  width: 5.5rem;
+  height: auto;
+  background-color: yellow;
+  overflow-y: scroll}
+.box-r::-webkit-scrollbar {
+  display: none;
+}
+  .box-r div {
+    display: none;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem; }
+
+/*# sourceMappingURL=style.css.map */

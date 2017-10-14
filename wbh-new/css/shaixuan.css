@@ -1,0 +1,363 @@
+.pxtab {
+  margin: 0 auto;
+  background-color: #ffffff;
+  z-index: 999;
+  position: fixed;
+  top: .8rem;
+  left: 0;
+  right: 0;
+  width: 7.5rem; }
+  .pxtab .pxtab-t {
+    border-bottom: .01rem solid #e8e8e8;
+    width: 7.5rem;
+    display: flex;
+    justify-content: space-between; }
+    .pxtab .pxtab-t .pxt-l {
+      border-right: .01rem solid #e8e8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.75rem;
+      height: .8rem; }
+      .pxtab .pxtab-t .pxt-l p {
+        margin-right: .09rem;
+        color: #333333;
+        font-size: .28rem; }
+      .pxtab .pxtab-t .pxt-l a {
+        display: block;
+        width: .16rem;
+        height: .09rem; }
+        .pxtab .pxtab-t .pxt-l a img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+    .pxtab .pxtab-t .pxt-r {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.75rem;
+      height: .8rem; }
+      .pxtab .pxtab-t .pxt-r p {
+        margin-right: .09rem;
+        color: #333333;
+        font-size: .28rem; }
+      .pxtab .pxtab-t .pxt-r a {
+        display: block;
+        width: .21rem;
+        height: .22rem; }
+        .pxtab .pxtab-t .pxt-r a img {
+          display: block;
+          width: 100%;
+          height: 100%; }
+
+.shadow {
+  z-index: 99999;
+  display: none;
+  width: 7.5rem;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 1.58rem;
+  left: 0;
+  right: 0; }
+  .shadow .pxtab-b {
+    background-color: yellow;
+    margin: 0 auto;
+    width: 7.5rem;
+    height: 9.45rem;
+    overflow: hidden; }
+    .shadow .pxtab-b .alllx {
+      display: block;
+      width: 7.5rem;
+      height: .75rem;
+      border-top: .01rem solid #e8e8e8;
+      border-bottom: .01rem solid #e8e8e8;
+      text-align: center;
+      line-height: .75rem;
+      background-color: #ffffff; }
+      .shadow .pxtab-b .alllx p {
+        color: #e83328;
+        font-size: .28rem; }
+    .shadow .pxtab-b .fenping {
+      width: 7.5rem;
+      height: 8.75rem; }
+      .shadow .pxtab-b .fenping .zglx {
+        width: 7.5rem;
+        height: 8.75rem;
+        justify-content: space-between;
+        display: flex;
+        background-color: #ffffff; }
+        .shadow .pxtab-b .fenping .zglx .zglx-l {
+          width: 2.5rem;
+          height: 8.75rem;
+          background-color: #f0f0f0; }
+          .shadow .pxtab-b .fenping .zglx .zglx-l a {
+            outline: none;
+            position: relative;
+            display: block;
+            width: 2.5rem;
+            height: .85rem;
+            text-align: center;
+            line-height: .85rem;
+            color: #333333;
+            background-color: #f0f0f0;
+            font-size: .28rem;
+            border-bottom: .01rem solid #d2d2d2; }
+            .shadow .pxtab-b .fenping .zglx .zglx-l a .redline {
+              height: .85rem;
+              width: .09rem;
+              background-color: #e83328;
+              display: inline-block;
+              position: absolute;
+              top: 0;
+              left: 0; }
+        .shadow .pxtab-b .fenping .zglx .zglx-r {
+          width: 4.5rem;
+          height: 8.75rem;
+          overflow: hidden; }
+          .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr {
+            width: 4.5rem;
+            height: 8.75rem; }
+            .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr .ztitle {
+              color: #999999;
+              font-size: .24rem;
+              width: 4.5rem;
+              height: .85rem;
+              line-height: .85rem; }
+            .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr .tjzsimg {
+              width: 4.5rem;
+              display: flex;
+              justify-content: space-between; }
+              .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr .tjzsimg a {
+                border: .02rem solid #d2d2d2;
+                display: block;
+                width: 2.15rem;
+                height: 1.5rem; }
+                .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr .tjzsimg a img {
+                  width: 100%;
+                  height: 100%;
+                  display: block; }
+            .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr table {
+              margin-top: .2rem; }
+              .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr table tr td {
+                width: 2.2rem;
+                text-align: center;
+                line-height: .85rem; }
+                .shadow .pxtab-b .fenping .zglx .zglx-r .zglxr table tr td a {
+                  display: block;
+                  width: 2.2rem;
+                  height: .85rem;
+                  color: #333333;
+                  font-size: .26rem; }
+      .shadow .pxtab-b .fenping .hysx {
+        width: 7.5rem;
+        height: 8.75rem;
+        background-color: green; }
+
+.footjs {
+  z-index: 9;
+  position: fixed;
+  bottom: -7.4rem;
+  width: 7.5rem;
+  margin: 0 auto;
+  height: 8.3rem; }
+  .footjs .footjs-t {
+    width: 7.5rem;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    height: .9rem;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 1rem; }
+    .footjs .footjs-t p {
+      color: #000000;
+      font-size: .3rem; }
+      .footjs .footjs-t p span {
+        color: #e83328; }
+    .footjs .footjs-t i {
+      position: absolute;
+      border-radius: .2rem;
+      top: .15rem;
+      left: 45%;
+      display: block;
+      width: .85rem;
+      height: .06rem;
+      background-color: #e7e7e7; }
+  .footjs .footjs-f {
+    width: 7.5rem;
+    height: 7.2rem;
+    background-color: #ffffff;
+    overflow-y: scroll; }
+    .footjs .footjs-f .redtg {
+      width: 7.44rem;
+      height: 1.74rem;
+      border: .03rem solid red; }
+    .footjs .footjs-f a {
+      display: block;
+      position: relative;
+      width: 7.5rem;
+      height: 1.8rem;
+      border-top: .01rem solid #d2d2d2;
+      background-color: #ffffff; }
+      .footjs .footjs-f a .chuishi {
+        width: 7.14rem;
+        height: 1.8rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between; }
+        .footjs .footjs-f a .chuishi .tuip {
+          top: 0;
+          right: 0;
+          display: block;
+          background-color: red;
+          position: absolute;
+          width: .85rem;
+          height: .33rem;
+          text-align: center;
+          line-height: .33rem;
+          color: #ffffff;
+          font-size: .24rem;
+          border-bottom-left-radius: .1rem; }
+        .footjs .footjs-f a .chuishi .csl {
+          display: flex;
+          align-items: center;
+          width: 1.4rem;
+          height: 1.8rem; }
+          .footjs .footjs-f a .chuishi .csl i {
+            border-radius: 50%;
+            border: .01rem solid #d2d2d2;
+            width: 1.2rem;
+            height: 1.2rem;
+            display: block; }
+            .footjs .footjs-f a .chuishi .csl i img {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              display: block; }
+        .footjs .footjs-f a .chuishi .csc {
+          width: 3.94rem;
+          height: 1.8rem; }
+          .footjs .footjs-f a .chuishi .csc .cscp1 {
+            margin-top: 0.3rem;
+            color: #e83328;
+            font-size: .3rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+          .footjs .footjs-f a .chuishi .csc .cscpp1 {
+            color: #000000;
+            margin-top: 0.3rem;
+            font-size: .3rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+          .footjs .footjs-f a .chuishi .csc .cscp2 {
+            margin-top: .1rem;
+            margin-bottom: .05rem;
+            color: #666666;
+            font-size: .24rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+          .footjs .footjs-f a .chuishi .csc .cscp3 {
+            color: #666666;
+            font-size: .24rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; }
+        .footjs .footjs-f a .chuishi .csr {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          width: 1.8rem;
+          height: 1.8rem; }
+          .footjs .footjs-f a .chuishi .csr p {
+            color: #999999;
+            font-size: .2rem; }
+          .footjs .footjs-f a .chuishi .csr i {
+            margin-left: .15rem;
+            width: .23rem;
+            height: .38rem;
+            display: block; }
+            .footjs .footjs-f a .chuishi .csr i img {
+              width: 100%;
+              height: 100%;
+              display: block; }
+  .footjs .footjs-f::-webkit-scrollbar {
+    display: none; }
+
+.twoinfo {
+  display: none;
+  z-index: 92;
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  right: 0;
+  width: 7.5rem;
+  height: 1.8rem;
+  background-color: #ffffff; }
+  .twoinfo .twoinfo-c {
+    display: flex;
+    justify-content: space-between;
+    width: 7.14rem;
+    height: 1.8rem;
+    margin: 0 auto; }
+    .twoinfo .twoinfo-c .twoinfocl {
+      display: flex;
+      align-items: center;
+      width: 1.4rem;
+      height: 1.8rem; }
+      .twoinfo .twoinfo-c .twoinfocl i {
+        border-radius: 50%;
+        border: .01rem solid #d2d2d2;
+        width: 1.2rem;
+        height: 1.2rem;
+        display: block; }
+        .twoinfo .twoinfo-c .twoinfocl i img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          display: block; }
+    .twoinfo .twoinfo-c .twoinfocc {
+      width: 3.94rem;
+      height: 1.8rem; }
+      .twoinfo .twoinfo-c .twoinfocc .cscpp1 {
+        color: #000000;
+        margin-top: 0.3rem;
+        font-size: .3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .twoinfo .twoinfo-c .twoinfocc .cscp2 {
+        margin-top: .1rem;
+        margin-bottom: .05rem;
+        color: #666666;
+        font-size: .24rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .twoinfo .twoinfo-c .twoinfocc .cscp3 {
+        color: #666666;
+        font-size: .24rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+    .twoinfo .twoinfo-c .twoinfocr {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 1.8rem;
+      height: 1.8rem; }
+      .twoinfo .twoinfo-c .twoinfocr p {
+        color: #999999;
+        font-size: .2rem; }
+      .twoinfo .twoinfo-c .twoinfocr i {
+        margin-left: .15rem;
+        width: .23rem;
+        height: .38rem;
+        display: block; }
+        .twoinfo .twoinfo-c .twoinfocr i img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+
+/*# sourceMappingURL=shaixuan.css.map */

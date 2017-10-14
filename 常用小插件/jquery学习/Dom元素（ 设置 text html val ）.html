@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<p class="p1">这是第一个按钮获取到的text</p>
+<p class="p2"><br/>这是第二个按钮获取到的html</p>
+<input type="text" class="input" value="don't"/>
+<button class="btn">改变text()</button>
+<button class="btn1">改变html()</button>
+<button class="btn2">改变val()</button>
+
+<script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $(".p1").text("第一个按钮改变的内容");
+        })
+        $(".btn1").click(function(){
+            $(".p2").html("第二个按钮<i>改变的内<i>容");
+        })
+        $(".btn2").click(function(){
+            $(".input").val("fuck");
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 600px;
+            height: 200px;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p style="background-color: yellow">点我消失</p>
+    <p style="background-color: red">点我会消失</p>
+    <p style="background-color: pink">显示真的会消失</p>
+</div>
+<button>点击消失</button>
+<button class="btn1">点击显示</button>
+<button class="btn2">点击切换toggle</button>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").hide(1000,function(){
+                $(".btn1").text("显示过了");
+            });   /*点击隐藏*/
+        })
+        $(".btn1").click(function(){
+            $("p").show(1000);    /*点击显示*/
+        })
+        $(".btn2").click(function(){
+            $("p").toggle(1200);  /*切换显示隐藏*/
+        })
+    })
+</script>
+</body>
+</html>

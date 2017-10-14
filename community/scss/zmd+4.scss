@@ -1,0 +1,28 @@
+.zmd{
+  width: 7.5rem;
+  .zmd-c{
+    width: 7.1rem;
+    margin: 0 auto;
+    .zmd-p1{
+      color: #333333;
+      font-size: .34rem;
+      margin-top: .45rem;
+    }
+    .zmd-p2,.zmd-p3{
+      line-height: .4rem;
+      color: #646464;
+      font-size: .28rem;
+      margin-top: .25rem;
+    }
+    ul{
+      li{
+        color: #646464;
+        font-size: .28rem;
+        margin-top: .25rem;
+        a{
+          color: #122a8c;
+        }
+      }
+    }
+  }
+}

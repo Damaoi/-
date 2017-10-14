@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 201px;
+            background-color: red;
+            line-height: 100px;
+            text-align: center;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box2 p{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            padding-top: 20px;
+            padding-left: 50px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    jq的尺寸有如下几种
+    width()         返回元素的宽
+    height()        返回元素的高
+    innerWidth()    返回元素的宽度包括内边距
+    innerHeight()   返回元素的高度包括内边距
+    outerWidth()    返回元素的宽度包括内外边距
+    outerHeight()   返回元素的高度包括内外边距
+    -->
+
+    <div class="box">
+
+    </div>
+    <div class="box2">
+        <p class="p1">
+            box2
+        </p>
+    </div>
+    <div class="box3">
+
+    </div>
+    <button class="btn">点击显示宽高</button>
+    <button class="btn1">点击inner显示宽高</button>
+    <button class="btn2">点击out显示宽高</button>
+<script>
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            var txt = "";
+            txt += "宽是:"+$(".box").width()+"px"+"<br/>";
+            txt += "高是:"+$(".box").height()+"px";
+            $(".box").html(txt);
+        })
+        $(".btn1").click(function(){
+            var text = "";
+            text += "innerwidth:"+ $(".box2").innerWidth() + "px"+"<br/>";
+            text += "innerwidth:"+ $(".box2").innerHeight() + "px";
+            $(".p1").html(text);
+        })
+        $(".btn2").click(function(){
+            var text = "";
+            text += "innerwidth:"+ $(".box2").outerWidth() + "px"+"<br/>";
+            text += "innerwidth:"+ $(".box2").outerHeight() + "px";
+            $(".box3").html(text);
+        })
+    })
+</script>
+</body>
+</html>

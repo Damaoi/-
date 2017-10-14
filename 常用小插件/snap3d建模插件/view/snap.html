@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/snap.svg.js"></script>
+    <style>
+        #button{
+            display: inline-block;
+            padding: .5em 1em;
+            height: 50px;
+            box-shadow: 1px 1px #a0b3d6, 2px 2px #a0b3d6, 3px 3px #a0b3d6, 4px 4px #a0b3d6;
+            border: none;
+            transition: all .1s;
+            outline: none;
+            border-radius: .2rem;
+            font-size: .24rem;
+        }
+        .anbox{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: yellow;
+            border: none;
+            outline: none;
+            /*animation: color 5s infinite;*/
+
+        }
+        @keyframes color {
+            0%{
+                width: 0px;
+                height: 0px;
+                border-radius: 50%;
+            }
+            25%{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            50%{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            75%{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+            }
+            100%{
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+            }
+        }
+        .ll{
+            width: 20px;
+            border: 2px solid red;
+            stroke-dasharray: 200;
+        }
+    </style>
+    <link rel="stylesheet" href="../../zixun.css">
+</head>
+<body>
+<svg id="svg" width="200" height="100"></svg>
+<svg id="svg2" width="100" height="100"></svg>
+<p>
+    <input id="button" type="button" value="点击改变圈圈的顺序">
+</p>
+<div>
+
+</div>
+
+<div class="anbox">
+    <p></p>
+    <p></p>
+</div>
+
+
+
+
+<div class="ll"></div>
+<script>
+    $(document).ready(function(){
+        var svg = Snap("#svg"),svg2 = Snap("#svg2");
+        var c1 = svg.paper.circle(50, 50, 40).attr({
+            fill: "#f00"	// 红色
+        });
+        var c2 = svg.paper.circle(50, 20, 20).attr({
+            fill: "#00f"	// 蓝色
+        });
+
+// 事件
+        document.querySelector("#button").addEventListener("click", function() {
+            var button = this;
+            c1.animate({
+                fill: "#00f",	// 蓝色
+            }, 1500, function() {
+                button.value = "变成蓝色妖姬了~";
+            });
+        });
+        $(".anbox").on("click",function(){
+            $(".anbox").css({
+                "animation":"color 1s",
+            });
+        })
+    })
+</script>
+</body>
+</html>

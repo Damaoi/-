@@ -1,0 +1,14 @@
+<div id="tabs-container" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="content-slide">
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="content-slide">
+
+                </div>
+            </div>
+        </div>
+    </div>

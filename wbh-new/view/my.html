@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>document</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/animate.min.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+    <style>
+        .box {
+            max-width: 7.5rem;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+
+
+
+
+    <!--更多-->
+    <div class="fabuleixing">
+        <div class="fabu">
+            <p class="ptoptil">请选择您要发布的类型</p>
+            <div class="ttrpo">
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/tuwen.png" alt=""/>
+                    </i>
+                    <p>图文</p>
+                </a>
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/lianjie.png" alt=""/>
+                    </i>
+                    <p>链接</p>
+                </a>
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/shipin.png" alt=""/>
+                    </i>
+                    <p>视频</p>
+                </a>
+                <a href="javascript:;">
+                    <i>
+                        <img src="../images/nav/zhibo.png" alt=""/>
+                    </i>
+                    <p>直播</p>
+                </a>
+            </div>
+            <div class="chafoot">
+                <a href="javascript:;">
+                    <img src="../images/own/cha.png" alt=""/>
+                </a>
+                <p>取消</p>
+            </div>
+        </div>
+    </div>
+    <!--更多-->
+    <!--底部导航开始-->
+    <div class="foot">
+        <div class="foot-c">
+            <div class="fc-l">
+                <a href="index.html">
+                    <i>
+                        <img src="../images/nav/ghome.png" alt=""/>
+                    </i>
+
+                    <p>首页</p>
+                </a>
+                <a href="messagelist.html" class="ms">
+                    <i>
+                        <img src="../images/nav/message.png" alt=""/>
+                    </i>
+                    <p>消息</p>
+                    <i class="h">
+                        <img src="../images/own/hongdian.png" alt=""/>
+                    </i>
+                </a>
+            </div>
+            <div class="fc-c1">
+
+            </div>
+            <div class="fc-c">
+                <a href="javascript:;">
+                    <img src="../images/nav/fabu.png" alt="" class="fabuimg"/>
+                </a>
+
+                <p>发布</p>
+            </div>
+            <div class="fc-l">
+                <a href="faxian.html">
+                    <i>
+                        <img src="../images/nav/faxian.png" alt=""/>
+                    </i>
+
+                    <p>发现</p>
+                </a>
+                <a href="my.html">
+                    <i>
+                        <img src="../images/nav/rmy.png" alt=""/>
+                    </i>
+
+                    <p class="redp">我的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--底部导航结束-->
+</div>
+<script>
+    $(document).ready(function () {
+        $(".fabuimg").on("click",function(){
+            $(".fabuleixing").show()
+            $(".ttrpo>a").addClass("animated bounceInUp")
+        })
+
+        $(".fabuleixing").on("click",function(){
+            $(".fabuleixing").hide()
+        })
+        $('.fabu').on('click',function(e){
+            e.stopPropagation();
+        })
+
+        $(".chafoot").on("click",function(){
+            $(".fabuleixing").hide()
+        })
+    })
+</script>
+</body>
+</html>

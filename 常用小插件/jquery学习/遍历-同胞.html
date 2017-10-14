@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-2.1.4.min.js"></script><!--这是jq的外联文件  必须在所有引用的script文件之前 因为要首先调用它才可以-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <p>p标签</p><br/>
+    <span>span标签</span><br/>
+    <i>i标签</i>
+    <a href="javascript:;">a标签</a>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+</div>
+<button class="btn">同胞元素siblings</button>
+<button class="btn1">同胞元素next</button>
+<button class="btn2">同胞元素nextall</button>
+<button class="btn3">在某两个标签之间的同胞元素</button>
+<script>
+
+
+    /*dom树中 所有元素向后遍历*/
+    /*prev(), prevAll() 以及 prevUntil() 方法的工作方式与下面的方法类似，只不过方向相反而已*/
+    $(document).ready(function(){
+        $(".btn").click(function(){
+            $("i").siblings().css("color","red");   /*所有的同胞元素*/
+        })
+        $(".btn1").click(function(){
+            $("i").next().css("color","red");     /*紧接着的同胞元素*/
+        })
+        $(".btn2").click(function(){
+            $("p").nextAll().css("color","red");         /* 紧接着p标签下的所有同胞元素*/
+        })
+        $(".btn3").click(function(){
+            $("h1").nextUntil("h5").css("color","red");         /*h1到h5之间的同胞元素不包括h1和h5*/
+        })
+    })
+</script>
+</body>
+</html>

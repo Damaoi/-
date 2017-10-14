@@ -1,0 +1,30 @@
+.box {
+  width: 7.5rem;
+  margin: 0 auto;
+  height: auto;
+  position: relative; }
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #007aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -2.5rem;
+  top: 2rem;
+  z-index: 9999; }
+  .circle i {
+    display: block;
+    width: 1.76rem;
+    height: 1.76rem; }
+    .circle i img {
+      width: 100%;
+      height: 100%; }
+
+.c {
+  left: 0; }
+
+/*# sourceMappingURL=style.css.map */

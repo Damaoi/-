@@ -1,0 +1,135 @@
+.zhimingdu {
+    width: 7.5rem; }
+.zhimingdu .zmd-gl {
+    width: 7.1rem;
+    margin: 0 auto; }
+.zhimingdu .zmd-gl ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7.1rem;
+    height: 1rem;
+    border-bottom: .01rem solid #d8d8d8; }
+.zhimingdu .zmd-gl ul li a i {
+    display: block;
+    width: .14rem;
+    height: .24rem; }
+.zhimingdu .zmd-gl ul li a i img {
+    width: 100%;
+    height: 100%;
+    display: block; }
+.zhimingdu .zmd-gl ul li a p {
+    color: #333333;
+    font-size: .3rem; }
+
+/*新版公用头部开始*/
+.zl-top {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    width: 7.5rem;
+    margin: 0 auto;
+    background-color: #f1f1f1; }
+.zl-top .zlt-c {
+    width: 7.02rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+.zl-top .zlt-c .zltc-l {
+    display: flex;
+    align-items: center;
+    width: 1.5rem;
+    height: .88rem; }
+.zl-top .zlt-c .zltc-l a {
+    display: block;
+    width: .14rem;
+    height: .24rem;  }
+.zl-top .zlt-c .zltc-l a img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+.zl-top .zlt-c .zltc-c {
+    width: 4.1rem;
+    height: .88rem;
+    line-height: .88rem;
+    text-align: center;
+    color: #333333;
+    font-size: .34rem; }
+.zl-top .zlt-c .zltc-r {
+    width: 1.5rem;
+    height: .88rem;
+    line-height: .88rem;
+    display: flex;
+    justify-content: flex-end; }
+.zl-top .zlt-c .zltc-r a {
+    color: #333333;
+    font-size: .34rem; }
+
+.ipt .ipt-c {
+    width: 7.02rem;
+    height: .88rem;
+    margin: .2rem auto;
+    display: flex;
+    justify-content: space-between; }
+.ipt .ipt-c input {
+    display: inline-block;
+    width: 6.37rem;
+    height: .88rem;
+    border: .01rem solid #989898;
+    border-right: none;
+    border-bottom-left-radius: .1rem;
+    border-top-left-radius: .1rem;
+    font-size: .3rem; }
+.ipt .ipt-c .clear {
+    width: .65rem;
+    height: .88rem;
+    border: .01rem solid #989898;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: .1rem;
+    border-top-right-radius: .1rem; }
+.ipt .ipt-c .clear i {
+    display: inline-block;
+    width: .3rem;
+    height: .3rem; }
+.ipt .ipt-c .clear i img {
+    width: .3rem;
+    height: .3rem; }
+
+/*新版公用头部开始*/
+
+
+.img{
+    width: 7.5rem;
+}
+.img-c{
+    width: 7.1rem;
+    margin: 0 auto;
+}
+.img-c ul li{
+    display: block;
+    width: 7.1rem;
+}
+.img-c ul li img{
+    height: 100%;
+    width: 100%;
+}
+.line{
+    width: 7.1rem;
+    height: 1rem;
+    margin: 0 auto;
+    border-bottom: .01rem solid #d8d8d8;
+}
+.bottom-p{
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .28rem;
+    color: #898989;
+    text-align: center;
+}

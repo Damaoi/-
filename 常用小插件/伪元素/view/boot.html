@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/swiper-3.4.2.min.js"></script>
+    <title>boot</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bb, .bb::before, .bb::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .bb {
+            width: 200px;
+            height: 200px;
+            margin:  20px auto;
+            background: url("img/Button-White-Large.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+            color: #69ca62;
+            box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+        }
+        .bb::before, .bb::after:hover{
+            content: '';
+            z-index: -1;
+            margin: -5%;
+            box-shadow: inset 0 0 0 2px;
+            animation: clipMe 8s linear infinite;
+        }
+        .bb::before {
+            animation-delay: -4s;
+        }
+        .bb:hover::after, .bb:hover::before {
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        @keyframes clipMe {
+            0%, 100% {
+                clip: rect(0px, 220px, 2px, 0px);
+            }
+            25% {
+                clip: rect(0px, 2px, 220px, 0px);
+            }
+            50% {
+                clip: rect(218px, 220px, 220px, 0px);
+            }
+            75% {
+                clip: rect(0px, 220px, 220px, 218px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="bb"></div>
+<!--
+流式布局:
+-->
+<!--<div class="container-fluid">-->
+    <!--<div class="row">-->
+        <!--<div class="col-xs-12 col-lg-6">-->
+            <!--<img src="../images/1.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-xs-12 col-lg-6">-->
+            <!--<img src="../images/1.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-xs-12 col-lg-6">-->
+            <!--<img src="../images/1.png" alt="">-->
+        <!--</div>-->
+        <!--<div class="col-xs-12 col-lg-6">-->
+            <!--<img src="../images/1.png" alt="">-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash;-->
+<!--固定布局:-->
+<!--&ndash;&gt;-->
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+        <!--<div class="col-md-1">.col-md-1</div>-->
+    <!--</div>-->
+<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-8">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="b1"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+        <!--&lt;!&ndash;<div class="b1"></div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-4">.col-md-4</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-4">.col-md-4</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-4">.col-md-4</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-6">.col-md-6</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<div class="col-md-6">.col-md-6</div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+
+
+
+
+</body>
+</html>

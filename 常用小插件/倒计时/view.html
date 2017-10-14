@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+    <script src="jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<button class="daojishi">点击获取</button>
+
+
+
+<!--disabled仅对button按钮生效-->
+<script>
+    $(".daojishi").click(function(){
+        getCode(this);
+    })
+    var num = 90;
+    function getCode(obj){
+        obj.innerHTML = "重新输入"+"("+num+"S"+")";
+        obj.disabled = true;
+        if(num == 0){
+            clearTimeout(t);
+            obj.innerHTML = "获取验证码";
+            obj.disabled = false;
+            num = 90;
+        }else{
+            var t = setTimeout(function(){getCode(obj)},1000);
+        }
+        num--;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+.box{
+    max-width: 7.5rem;
+    background-color: #eee;
+    overflow: hidden;
+}
+/*我的页面头部开始*/
+.mytop{
+    width: 7.5rem;
+    height: 4.55rem;
+    background: url("../images/myback.png");
+    background-size: 100%;
+}
+.kong{
+    width: 7.1rem;
+    height: .13rem;
+    margin: 0 auto;
+}
+.mtt{
+    width: 7.1rem;
+    height: .97rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.touxiang{
+    width: .85rem;
+    height: .85rem;
+    border-radius: 50%;
+    border: .06rem solid #3c4a9a;
+}
+.dianhua p{
+    font-size: .34rem;
+    color: #fff;
+}
+.touxiang img{
+    width: 100%;
+    border-radius: 50%;
+}
+.shezhi{
+    width: .4rem;
+    height: .4rem;
+}
+.shezhi img{
+    width: 100%;
+}
+.mtc{
+    margin-top: .89rem;
+    margin-left: 2.58rem;
+    width: 4.92rem;
+    height: .9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mtc-l{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mtc-p1{
+    color: #fff;
+    font-size: .24rem;
+}
+.mtc-p2{
+    color: #fbcf1f;
+    font-size: .54rem;
+}
+.mtc-r{
+    display: flex;
+    align-items: center;
+    border: .05rem solid #fff;
+    border-right: none;
+    width: 1.35rem;
+    height: .45rem;
+    flex-wrap: nowrap;
+    border-radius: 1rem 0 0 1rem;
+}
+.mtc-r a{
+    color: #fff;
+    font-size: .28rem;
+}
+.mtc-p3{
+    line-height: .45rem;
+    margin-left: .3rem;
+}
+
+/*我的页面头部结束*/
+
+
+/*我的订单开始*/
+.dd-all{
+    background-color: #fff;
+}
+.dd{
+    width: 7.1rem;
+    height: 2.16rem;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.dd ul li{
+    width: 7.1rem;
+    height: 1.08rem;
+    border-bottom: .01rem solid #f5f4f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dd-p1{
+    color: #000000;
+    font-size: .3rem;
+}
+.dd-p2{
+    color: #919191;
+    font-size: .24rem;
+}
+.dd-p3{
+    width: 1.25rem;
+}
+.dd-p3 a{
+    color: #919191;
+    font-size: .24rem;
+}
+.dd-r{
+    display: flex;
+    align-items: center;
+}
+.dd-r img{
+    width: .14rem;
+    height: .24rem;
+}
+.dd-i img{
+    margin-top: -.04rem;
+}
+/*我的订单结束*/
+
+
+/*常见功能开始*/
+.gn{
+    margin-top: .4rem;
+    width: 7.5rem;
+    height: 4.4rem;
+}
+.gn-top{
+    width: 7.5rem;
+    height: .78rem;
+    background-color: #fff;
+}
+.gn-top p{
+    line-height: .78rem;
+    color: #000000;
+    font-size: .3rem;
+    margin-left: .06rem;
+}
+.gn-foot{
+    width: 7.5rem;
+    height: 3.61rem;
+    background-color: #fff;
+}
+.gn-foot ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gn-foot ul li{
+    width: 1.85rem;
+    height: 1.77rem;
+    border-bottom: .01rem solid #e5e5e5;
+    border-top: .01rem solid #e5e5e5;
+    border-right: .01rem solid #e5e5e5;
+}
+.gn-foot img{
+    width: .66rem;
+    height: .66rem;
+    margin-top: .39rem;
+}
+.gn-foot p{
+    color: #212121;
+    font-size: .26rem;
+    margin-top: .26rem;
+}
+.gn-foot ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*常见功能开始*/
+
+
