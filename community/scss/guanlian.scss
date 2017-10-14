@@ -1,0 +1,67 @@
+.box-c{
+  width: 7.1rem;
+  margin: 0 auto;
+  .bc-tx{
+    width: 7.1rem;
+    height: 2.8rem;
+    margin-top: .2rem;
+    i{
+      margin: 0 auto;
+      padding-top: .4rem;
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+  }
+  p{
+    color: #c5c5c5;
+    font-size: .3rem;
+    span{
+      color: #212121;
+      font-size: .36rem;
+    }
+  }
+  span{
+    color: #212121;
+    font-size: .3rem;
+  }
+  .zhuce{
+    color: #fff;
+    font-size: .3rem;
+    display: block;
+    text-align: center;
+    width: 7.1rem;
+    height: .9rem;
+    line-height: .9rem;
+    background-color: #122a8c;
+    border-radius: .1rem;
+  }
+  .guanlian{
+    color: #122a8c;
+    font-size: .3rem;
+    display: block;
+    text-align: center;
+    border: .01rem solid #122a8c;
+    margin-top: .3rem;
+    width: 7.1rem;
+    height: .9rem;
+    line-height: .9rem;
+    background-color: #fff;
+    border-radius: .1rem;
+  }
+  .new-tz{
+    display: block;
+    width: 7.1rem;
+    height: 2rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #212121;
+    font-size: .3rem;
+
+  }
+}
