@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>gaimi</title>
+    <link rel="stylesheet" href="../css/reset.css"/>
+    <link rel="stylesheet" href="../css/gaimi.css"/>
+    <link rel="stylesheet" href="../css/animate.css"/>
+    <link rel="stylesheet" href="../css/style2.css"/>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/base.js"></script>
+</head>
+<body>
+<div class="box">
+    <!--头部开始-->
+    <div class="zl-top">
+        <div class="zlt-c">
+            <div class="zltc-l">
+                <a href="javascript:;">
+                    <img src="../images/huisejiantou.png" alt=""/>
+                </a>
+            </div>
+            <div class="zltc-c">
+                <p>修改密码</p>
+            </div>
+            <div class="zltc-r">
+                <a href="javascript:;">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--密码部分开始-->
+    <div class="passbox">
+        <div class="passbox-c">
+            <ul>
+                <li>
+                    <p>原密码</p>
+                    <input type="text" placeholder="请输入原来的登录密码" class="iup1"/>
+                    <nav>
+                        <i>
+                            <img src="../images/dele.png" alt="" style="display: none" class="dele1"/>
+                        </i>
+                    </nav>
+                </li>
+                <li>
+                    <p>新密码</p>
+                    <input type="text" placeholder="请输入新设置的登录密码" class="iup3"/>
+                    <nav>
+                        <i>
+                            <img src="../images/dele.png" alt="" style="display: none" class="dele3"/>
+                        </i>
+                    </nav>
+                </li>
+                <li>
+                    <p>确认密码</p>
+                    <input type="text" placeholder="请再次输入新设置的登录密码" class="iup2"/>
+                    <nav>
+                        <i>
+                            <img src="../images/dele.png" alt="" style="display: none" class="dele2"/>
+                        </i>
+                    </nav>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--密码部分结束-->
+
+    <!--提示部分开始-->
+    <div class="ts">
+        <div class="ts-c">
+            <p>
+                账号或密码错误,请重新输入！
+            </p>
+        </div>
+    </div>
+    <!-- 提示部分结束-->
+
+    <!--按钮部分开始-->
+    <div class="login-btn2">
+        <div class="login-btn-c">
+            <button>确&nbsp;&nbsp;定</button>
+        </div>
+    </div>
+    <!--按钮部分结束-->
+</div>
+<script>
+    $(document).ready(function () {
+        $(".dele1").click(function(){
+            $(".iup1").val("");
+            $(".dele1").hide();
+            $("button").css('background','#eee');
+            $("button").css("color","#b4b4b4");
+        })
+        $("input").on("input", function() {
+            if($(".iup1").val() == ""){
+                $(".dele1").css('display','none');
+            }else if($("iup1").val() != ""){
+                $(".dele1").css('display','block');
+            }
+        });
+        $(".dele2").click(function(){
+            $(".iup2").val("");
+            $(".dele2").hide();
+            $("button").css('background','#eee');
+            $("button").css("color","#b4b4b4");
+        })
+        $("input").on("input", function() {
+            if($(".iup2").val() == ""){
+                $(".dele2").css('display','none');
+            }else if($("iup2").val() != ""){
+                $(".dele2").css('display','block');
+            }
+        });
+        $(".dele3").click(function(){
+            $(".iup3").val("");
+            $(".dele3").hide();
+            $("button").css('background','#eee');
+            $("button").css("color","#b4b4b4");
+        })
+        $("input").on("input", function() {
+            if($(".iup3").val() == ""){
+                $(".dele3").css('display','none');
+            }else if($("iup3").val() != ""){
+                $(".dele3").css('display','block');
+            }
+        });
+        $("input").on("input", function() {
+            if(($("iup1").val() == "")&&($(".iup2").val() == "")&&($("iup3").val() == "")){
+                $("button").css('background','#eee');
+            } else if(($("iup1").val() != "")&&($(".iup2").val() != "")&&($("iup3").val() != "")){
+                $("button").css('background','#122a8c');
+                $("button").css("color","#fff")
+            }
+        });
+    })
+</script>
+</body>
+</html>

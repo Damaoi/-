@@ -1,0 +1,100 @@
+.box {
+  width: 7.5rem;
+  height: auto;
+  background-color: #f4f4f4;
+  padding-bottom: 1.5rem;
+  margin: 0 auto; }
+
+.zl-list {
+  width: 7.5rem;
+  background-color: #fff;
+  margin-bottom: .2rem; }
+  .zl-list .zll-c {
+    width: 7.02rem;
+    margin: 0 auto; }
+    .zl-list .zll-c ul li a {
+      display: inline-block;
+      width: 7.02rem;
+      height: .9rem;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: .01rem solid #cacaca; }
+      .zl-list .zll-c ul li a .zll-c-l {
+        width: 3.51rem;
+        display: flex;
+        align-items: center; }
+        .zl-list .zll-c ul li a .zll-c-l p {
+          color: #050505;
+          font-size: .3rem; }
+      .zl-list .zll-c ul li a .zll-c-r {
+        width: 3.51rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .zl-list .zll-c ul li a .zll-c-r .i-1 {
+          display: inline-block;
+          width: .64rem;
+          height: .64rem; }
+          .zl-list .zll-c ul li a .zll-c-r .i-1 img {
+            width: 100%;
+            height: 100%; }
+        .zl-list .zll-c ul li a .zll-c-r .i-2 {
+          margin-left: .2rem;
+          display: inline-block;
+          width: .14rem;
+          height: .24rem; }
+          .zl-list .zll-c ul li a .zll-c-r .i-2 img {
+            width: 100%;
+            height: 100%; }
+        .zl-list .zll-c ul li a .zll-c-r p {
+          color: #919191;
+          font-size: .3rem; }
+
+.bc-btn {
+  width: 7.5rem;
+  height: 1rem;
+  background-color: #122a8c;
+  font-size: .3rem;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+.zy-yewu {
+  width: 7.5rem;
+  height: auto; }
+  .zy-yewu .zyyw-c {
+    display: flex;
+    justify-content: space-between;
+    width: 7.02rem;
+    margin: 0 auto; }
+    .zy-yewu .zyyw-c .zyywc-l {
+      width: 1rem;
+      height: .9rem; }
+      .zy-yewu .zyyw-c .zyywc-l p {
+        color: #050505;
+        font-size: .3rem;
+        line-height: .9rem; }
+    .zy-yewu .zyyw-c .zyywc-c {
+      width: 5.72rem;
+      margin-top: .24rem; }
+      .zy-yewu .zyyw-c .zyywc-c p {
+        color: #919191;
+        font-size: 0.3rem !important; }
+    .zy-yewu .zyyw-c .zyywc-r {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: .3rem;
+      height: .9rem; }
+      .zy-yewu .zyyw-c .zyywc-r i {
+        display: inline-block;
+        width: .14rem;
+        height: .24rem; }
+        .zy-yewu .zyyw-c .zyywc-r i img {
+          width: 100%;
+          height: 100%; }
+
+/*# sourceMappingURL=gerenziliao.css.map */

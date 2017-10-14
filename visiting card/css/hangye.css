@@ -1,0 +1,23 @@
+.box {
+  width: 7.5rem;
+  height: auto;
+  background-color: #f4f4f4;
+  margin: 0 auto;
+  position: relative; }
+
+.hy-list {
+  width: 7.5rem;
+  background-color: #fff; }
+  .hy-list .hy-list-c {
+    width: 7.02rem;
+    margin: 0 auto; }
+    .hy-list .hy-list-c ul li {
+      width: 7.02rem;
+      height: .92rem;
+      border-bottom: .01rem solid #d8d8d8;
+      line-height: .92rem;
+      color: #333333;
+      font-size: .3rem;
+      display: flex; }
+
+/*# sourceMappingURL=hangye.css.map */
